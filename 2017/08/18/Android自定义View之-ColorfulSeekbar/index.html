@@ -133,17 +133,89 @@
 <div id="content-outer">
   <div id="content-inner">
     
+<article id="post">
+  <div class="post-page-title" style="background-color:#26A69A;background-image:url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1503388321851&amp;di=bb136348e12b96fdc76156668cfa2987&amp;imgtype=0&amp;src=http%3A%2F%2Fstatic.open-open.com%2Flib%2FuploadImg%2F20150420%2F20150420171855_500.jpg)" >
+  <h2>Android自定义View之-ColorfulProgressbar</h2>
+    
+  <p>作者:Ccapton &nbsp&nbsp 发布于:<time datetime="2017-08-17T18:50:48.000Z">
+          2017-08-18
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <h1 id="Android-ColorfulSeekbar"><a href="#Android-ColorfulSeekbar" class="headerlink" title="Android-ColorfulSeekbar"></a>Android-ColorfulSeekbar</h1><blockquote>
+<p>关于我，欢迎关注<br>  博客：ccapton(<a href="http://blog.csdn.net/ccapton" target="_blank" rel="external">http://blog.csdn.net/ccapton</a>) 微信：<a href="">Ccapton</a><br>  Github: (<a href="https://www.github.com/ccapton" target="_blank" rel="external">https://www.github.com/ccapton</a>)</p>
+</blockquote>
+<p>ColorfulSeekbar这个控件是我根据前作ColorfulProgressbar <a href="https://github.com/Ccapton/Android-ColorfulProgressBar" target="_blank" rel="external">https://github.com/Ccapton/Android-ColorfulProgressBar</a><br>变化而来的，进度条与之相比没有变化，功能与原生Seekbar没差别。</p>
+<p><img src="https://raw.githubusercontent.com/Ccapton/Android-ColorfulSeekbar/master/ColofulSeekbarDemo.gif" alt=""></p>
+<p>具体用法与ColorfulProgressbar类似，这里不再赘述。</p>
+<p>demo下载： <a href="https://raw.githubusercontent.com/Ccapton/Android-ColorfulSeekbar/master/ColorfulSeekbarDemo.apk" target="_blank" rel="external">https://raw.githubusercontent.com/Ccapton/Android-ColorfulSeekbar/master/ColorfulSeekbarDemo.apk</a></p>
+<h3 id="如何配置"><a href="#如何配置" class="headerlink" title="如何配置"></a>如何配置</h3><p>build.gradle(Project)</p>
+<pre class=" language-code"><code class="language-code">allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
+    }
+</code></pre>
+<p>build.gradle(Module:app)</p>
+<pre class=" language-code"><code class="language-code"> dependencies {
+          compile 'com.github.Ccapton:Android-ColorfulSeekbar:1.0'
+    }
+</code></pre>
+
+  </div>
+  <!--评论块-->
+    
+  <div id="disqus_thread" style="padding:30px;text-align: center;border-top:1px solid silver " data-diaque="ccapton.disqus.com"><button style="margin: 0 auto;background-color:#26A69A " class="btn" onclick="disqus()">加载评论(被墙则无法加载)</button></div>
+
+  <script>
+
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+       var disqus_config = function () {
+       this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+       this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+       };
+       */
+      function disqus() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script'),v = d.createElement('script'),disquUrl=document.getElementById("disqus_thread").dataset.diaque;
+          v.id = 'dsq-count-scr'
+          v.src= '//'+disquUrl+'/count.js';
+          s.src = 'https://'+disquUrl+'/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(v);
+          (d.head || d.body).appendChild(s);
+      }
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
 
 
-<div class="tags">
-  
-    <div id="archive">
-        
-          <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android开发/">Android开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DiskKeeper-Pro/">DiskKeeper Pro</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IntelliJ-IDEA-2017/">IntelliJ IDEA_2017</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/自定义View/">自定义View</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/软件分享/">软件分享</a></li></ul>
-        
-    </div>
-  
-
+  <!-- Next Nav -->
+    
+  <a href="/2017/08/14/Android自定义View之-ColorfulProgressbar/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
+</nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android-ColorfulSeekbar"><span class="post-toc-number">1.</span> <span class="post-toc-text">Android-ColorfulSeekbar</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#如何配置"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">如何配置</span></a></li></ol></li></ol></li></ol>
+</div>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
   </div>
 </div>
 <div id="bottom-outer">

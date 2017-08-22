@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  
+  <meta name="keywords" content="android开放者">
+  <meta name="description" content="我是一名android程序员">
+  
+  <title>Ccapton—博客</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="/css/materialize.min.css">
+    
+      <link rel="stylesheet" href="/css/main.min.css">
+    
+  
+  <style type="text/css">
+      html{
+          font-family: sans-serif;
+          font-weight: 300;
+      }
+      @font-face {
+          font-family: 'Material Icons';
+          font-style: normal;
+          font-weight: 400;
+          src: url(/fonts/MaterialIcons-Regular.eot);
+          src: url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+          url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+          url(/fonts/MaterialIcons-Regular.ttf) format('truetype')
+      }
+  </style>
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+<body>
+<div id="menu-box"><a href="javascript:void(0)" id="menu" data-activates="slide-out" class="button-collapse menu" ><span class="nav-btn"></span></a></div>
+<div id="menu-outer">
+  <div id="menu-inner">
+      <ul id="slide-out" class="side-nav" >
+    <div class="nav-header"  style="background-image: url(/images/header-bg.png);background-color:#26A69A">
+    <div class="header-box"><img src="/images/header.png" ondragstart="return false;"></div>
+    <p>Ccapton</p>
+    <div class="nav-link">
+        
+        
+        <a  href="http://www.github.com/ccapton" target="_blank"><div class="link-box github"></div></a>
+        
+        
+        <a href="mailto:http://example.com"><div class="link-box email"></div></a>
+        
+        
+        <a href="http://www.github.com/ccapton" target="_blank"><div class="link-box weibo"></div></a>
+        
+        
+        <a href="http://example.com" target="_blank"> <div class="link-box zhihu"></div></a>
+        
+    </div>
+    <div class="nav-search">
+        <form id="search-form"> <!-- 搜索框相关 -->
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索..." class="search form-control" autocomplete="off" autocorrect="off"/>
+            <div class="nav-search-img"><i class="material-icons">search</i></div>
+        </form>
+        <div id="local-search-result"></div> <!-- 搜索结果区 -->
+        <p class='no-result'>无搜索结果</p>
+    </div>
+</div>
+    <!--Homepage-->
+
+<li class="nav-list">
+    <a href="/" target="_self">
+        <div class="nav-ico"><i class="material-icons">home</i> </div><p>主页</p>
+    </a>
+</li>
+
+<!--archives-->
+
+<li class="nav-list dropdown-btn">
+    <a  class=""  target="_self">
+        <div class="nav-ico"><i class="material-icons">assignment</i></div><p>归档</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown" >
+    <li class="nav-dropdown-list">
+        <a class="archive-link" href="/archives/2017/08/">八月 2017<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/05/">五月 2017<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2016/09/">九月 2016<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2016/06/">六月 2016<span class="archive-count">1</span></a>
+    </li>
+</ul>
+<!--categories-->
+
+<li class="nav-list dropdown-btn">
+    <a   class=""  target="_self">
+        <div class="nav-ico"><i class="material-icons">dashboard</i></div><p>分类</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown" >
+    <li class="nav-dropdown-list">
+        <a class="category-link" href="/categories/Android开发/">Android开发<span class="category-count">3</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/软件分享/">软件分享<span class="category-count">2</span></a>
+    </li>
+</ul>
+<!--tags-->
+
+<li class="nav-list">
+    <a href="/archives" target="_self">
+        <div class="nav-ico"><i class="material-icons">bookmark</i> </div><p>标签</p>
+    </a>
+</li>
+
+<!--photo-->
+
+<li class="nav-list">
+    <a href="/photo" class="nopjax" target="_self">
+        <div class="nav-ico"><i class="material-icons">insert_photo</i> </div><p>影集</p>
+    </a>
+</li>
+
+<!--friends-->
+
+<!--about-->
+
+<li class="nav-list">
+    <a href="/about" target="_self">
+        <div class="nav-ico"><i class="material-icons">copyright</i> </div><p>关于</p>
+    </a>
+</li>
+
+
+</ul>
+
+  </div>
+</div>
+
+<div id="content-outer">
+  <div id="content-inner">
+    
+<article id="post">
+  <div class="post-page-title" style="background-color:#26A69A;background-image:url(https://raw.githubusercontent.com/Ccapton/Android-ColofulProgressBar/master/afterEdition.png)" >
+  <h2>Android自定义View之-ColorfulProgressbar</h2>
+    
+  <p>作者:Ccapton &nbsp&nbsp 发布于:<time datetime="2017-08-13T18:50:48.000Z">
+          2017-08-14
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <h1 id="Android-ColorfulProgressBar"><a href="#Android-ColorfulProgressBar" class="headerlink" title="Android-ColorfulProgressBar"></a>Android-ColorfulProgressBar</h1><blockquote>
+<p>关于我，欢迎关注<br>  博客：ccapton(<a href="http://blog.csdn.net/ccapton" target="_blank" rel="external">http://blog.csdn.net/ccapton</a>) 微信：<a href="">Ccapton</a><br>  Github: (<a href="https://www.github.com/ccapton" target="_blank" rel="external">https://www.github.com/ccapton</a>)</p>
+</blockquote>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介:"></a>简介:</h3><p>这是一个自定义的Progressbar，效果看着还行吧，滚动的双色斜条作为进度条，有点类似Bootstrap风格。原生Progress的基本操作都有，自行观摩我的源码吧，挺简单的。</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例:"></a>示例:</h3><p><img src="https://raw.githubusercontent.com/Ccapton/Android-ColofulProgressBar/master/ColorfulProgressBarDemo_1_0_3.gif" alt=""></p>
+<h3 id="演示Demo"><a href="#演示Demo" class="headerlink" title="演示Demo"></a>演示Demo</h3><p>当前是修改了视图的版本，如下图所示，第二进度条似乎更加立体了，它像是被镶嵌在了主控件中</p>
+<p><img src="https://raw.githubusercontent.com/Ccapton/Android-ColofulProgressBar/master/afterEdition.png" alt=""></p>
+<p>demo下载：<br><a href="https://github.com/Ccapton/Android-ColorfulProgressBar/blob/master/ColorfulProgressBarDemo_1_0_3.apk" target="_blank" rel="external">https://github.com/Ccapton/Android-ColorfulProgressBar/blob/master/ColorfulProgressBarDemo_1_0_3.apk</a></p>
+<h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><p>与原生Progress相比，感觉更漂亮一点，可以显示进度值，背景凹凸感明显，进度条效果更加立体。</p>
+<h3 id="原理说明"><a href="#原理说明" class="headerlink" title="原理说明"></a>原理说明</h3><p>额，挺简单的。不过感觉我的做法有点复杂了，我先自定义了一个View，专门作为进度条的显示图层,如下所示</p>
+<p><img src="https://raw.githubusercontent.com/Ccapton/Android-ColorfulProgressBar/master/ColorfulView.jpg" alt=""></p>
+<p>然后将其布局在高度不超过20dp的ColorfulProgressBar父布局中，设置Y方向的偏移量，然后动画循环改变Y坐标，实现斜条滚动的动画效果，当你调用setProgress方法时，则改变其在父布局的X坐标实现进度显示的功能，进度文字同样原理添加到了父布局中。</p>
+<h3 id="如何配置"><a href="#如何配置" class="headerlink" title="如何配置"></a>如何配置</h3><p>build.gradle(Project)</p>
+<pre class=" language-code"><code class="language-code">allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
+    }
+</code></pre>
+<p>build.gradle(Module:app)</p>
+<pre class=" language-code"><code class="language-code"> dependencies {
+             compile 'com.github.Ccapton:Android-ColorfulProgressBar:1.0.5'
+    }
+</code></pre>
+<h3 id="主要方法"><a href="#主要方法" class="headerlink" title="主要方法"></a>主要方法</h3><pre class=" language-code"><code class="language-code"> setStyle(String style) // ColofulProgressBar.STYLE_NORMAL、 ColofulProgressBar.STYLE_COLORFUL两种风格
+ setMaxProgress(long maxProgress)   // 设置进度最大值
+ setProgress(long progress);           //设置当前进度
+ setSecondProgress(long secondProgress);  //设置第二进度
+ setAnimation(false);                  // 关闭动画
+ showPercentText(false);                //隐藏进度文字
+ setHeight(int height);               // 设置整个控件高度
+ setWidth(int width);                // 设置整个控件宽度
+ setProgressColorRes(int progressColorRes);  // 设置进度条颜色一
+ setProgressColor2Res(int progressColor2Res)  // 设置进度条颜色二
+ setPercentColorRes(int percentColorRes);       //设置进度文字的颜色
+ setPercentShaderColorRes(int percentShadeColorRes);  //设置进度文字的阴影颜色
+ setBackgroundColorRes(int backgroundColorRes)     //设置控件背景色
+</code></pre>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p>例：在activity_main.xml中，</p>
+<pre class=" language-xml"><code class="language-xml">这是普通效果的Progressbar
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>com.capton.colorfulprogressbar.ColorfulProgressbar</span>
+        <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>@+id/colorfulProgressbar<span class="token punctuation">"</span></span>                        
+        <span class="token attr-name"><span class="token namespace">xmlns:</span>app</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://schemas.android.com/apk/res-auto<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">app:</span></span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value">@string/style_normal</span><span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">app:</span>max</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">app:</span>progress</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">app:</span>secondProgress</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>10<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">app:</span>progressColor1</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>@color/green<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">android:</span>layout_marginTop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>16dp<span class="token punctuation">"</span></span> 
+        <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>match_parent<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrap_content<span class="token punctuation">"</span></span>
+        <span class="token punctuation">></span></span>
+这是双色的Progressbar
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>com.capton.colorfulprogressbar.ColorfulProgressbar</span>
+        <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>@+id/colorfulProgressbar2<span class="token punctuation">"</span></span>                        
+        <span class="token attr-name"><span class="token namespace">xmlns:</span>app</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://schemas.android.com/apk/res-auto<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">app:</span></span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value">@string/style_colorful</span><span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">app:</span>max</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">app:</span>progress</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">app:</span>secondProgress</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>10<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">app:</span>progressColor1</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>@color/green<span class="token punctuation">"</span></span>
+    <span class="token attr-name"><span class="token namespace">app:</span>progressColor2</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>@color/orange<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">android:</span>layout_marginTop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>16dp<span class="token punctuation">"</span></span> 
+        <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>match_parent<span class="token punctuation">"</span></span>
+        <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrap_content<span class="token punctuation">"</span></span>
+        <span class="token punctuation">></span></span>
+</code></pre>
+<p>例：在MainActivity中</p>
+<pre class=" language-code"><code class="language-code">  ColorfulProgressbar progressbar;
+   @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+    progressbar= (ColorfulProgressbar) findViewById(R.id.colorfulProgressbar);
+    progressbar.setMaxProgress(100);
+        progressbar.setProgress(50);
+      //  progressbar.setSecondProgress(10);
+      // progressbar.setAnimation(false); 关闭动画
+      // progressbar.showPercentText(false); 隐藏进度文字
+
+    }
+</code></pre>
+<h3 id="作者的话"><a href="#作者的话" class="headerlink" title="作者的话"></a>作者的话</h3><p>  挺漂亮的ProgressBar，就是没啥技术含量。。。。具体需求大家自己随便研究琢磨</p>
+
+  </div>
+  <!--评论块-->
+    
+  <div id="disqus_thread" style="padding:30px;text-align: center;border-top:1px solid silver " data-diaque="ccapton.disqus.com"><button style="margin: 0 auto;background-color:#26A69A " class="btn" onclick="disqus()">加载评论(被墙则无法加载)</button></div>
+
+  <script>
+
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+       var disqus_config = function () {
+       this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+       this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+       };
+       */
+      function disqus() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script'),v = d.createElement('script'),disquUrl=document.getElementById("disqus_thread").dataset.diaque;
+          v.id = 'dsq-count-scr'
+          v.src= '//'+disquUrl+'/count.js';
+          s.src = 'https://'+disquUrl+'/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(v);
+          (d.head || d.body).appendChild(s);
+      }
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
+  <a href="/2017/08/18/Android自定义View之-ColorfulSeekbar/" id="post_nav-newer" class="post-nav-content prev-content">
+      新篇
+  </a>
+    
+
+
+  <!-- Next Nav -->
+    
+  <a href="/2017/05/10/软件分享-（Mac端）IntelliJ-IDEA-2017破解版/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
+</nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android-ColorfulProgressBar"><span class="post-toc-number">1.</span> <span class="post-toc-text">Android-ColorfulProgressBar</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#简介"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">简介:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#示例"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">示例:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#演示Demo"><span class="post-toc-number">1.0.3.</span> <span class="post-toc-text">演示Demo</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#特性"><span class="post-toc-number">1.0.4.</span> <span class="post-toc-text">特性</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#原理说明"><span class="post-toc-number">1.0.5.</span> <span class="post-toc-text">原理说明</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#如何配置"><span class="post-toc-number">1.0.6.</span> <span class="post-toc-text">如何配置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#主要方法"><span class="post-toc-number">1.0.7.</span> <span class="post-toc-text">主要方法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#使用方法"><span class="post-toc-number">1.0.8.</span> <span class="post-toc-text">使用方法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#作者的话"><span class="post-toc-number">1.0.9.</span> <span class="post-toc-text">作者的话</span></a></li></ol></li></ol></li></ol>
+</div>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
+  </div>
+</div>
+<div id="bottom-outer">
+  <div id="bottom-inner">
+    <a  id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#26A69A"><i class="material-icons material-up">vertical_align_top</i></div></a>
+
+
+<p >Copyright ©  2017  Ccapton—博客</p>
+<p >Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> & Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>
+<p style="font-size: 10px" id="footer-times" data-time="8/6/2016 00:00:00"></p>
+<script>
+    var beginTime=document.getElementById("footer-times").dataset.time
+    function show_date_time(){
+        var span=document.getElementById("footer-times")
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date(beginTime);//初始日期
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=Math.floor(e_hrsold);
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=Math.floor((e_hrsold-hrsold)*60);
+        seconds=Math.floor((e_minsold-minsold)*60);
+        span.innerHTML="本站已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+    }
+    show_date_time();
+</script>
+
+  </div>
+</div>
+
+<!--影集界面需要的资源-->
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/materialize.min.js"></script>
+
+<script src="/js/main.min.js"></script>
+
+
+<script>
+    NProgress.start();
+    NProgress.done();
+    lazy();
+    links();
+    window.onpopstate = menu();
+    //pjax操作
+    $(document).pjax('a:not(.nopjax)', '#content-inner', {fragment:'#content-inner', timeout:8000});
+    $(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done)
+        .on('pjax:end', () => {
+            dowmdiv();
+            lazy();
+            toc();
+            links();
+            menu();
+        });
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+</body>
+</html>
