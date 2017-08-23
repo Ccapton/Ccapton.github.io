@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -111,7 +111,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '5.1.2',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -401,29 +401,17 @@
 
       
         
-          
-            <h1 id="Android-ColorfulSeekbar"><a href="#Android-ColorfulSeekbar" class="headerlink" title="Android-ColorfulSeekbar"></a>Android-ColorfulSeekbar</h1><blockquote>
+          <h1 id="Android-ColorfulSeekbar"><a href="#Android-ColorfulSeekbar" class="headerlink" title="Android-ColorfulSeekbar"></a>Android-ColorfulSeekbar</h1><blockquote>
 <p>关于我，欢迎关注<br>  博客：ccapton(<a href="http://blog.csdn.net/ccapton" target="_blank" rel="external">http://blog.csdn.net/ccapton</a>) 微信：<a href="">Ccapton</a><br>  Github: (<a href="https://www.github.com/ccapton" target="_blank" rel="external">https://www.github.com/ccapton</a>)</p>
 </blockquote>
 <p>ColorfulSeekbar这个控件是我根据前作ColorfulProgressbar <a href="https://github.com/Ccapton/Android-ColorfulProgressBar" target="_blank" rel="external">https://github.com/Ccapton/Android-ColorfulProgressBar</a><br>变化而来的，进度条与之相比没有变化，功能与原生Seekbar没差别。</p>
-<p><img src="https://raw.githubusercontent.com/Ccapton/Android-ColorfulSeekbar/master/ColofulSeekbarDemo.gif" alt=""></p>
-<p>具体用法与ColorfulProgressbar类似，这里不再赘述。</p>
-<p>demo下载： <a href="https://raw.githubusercontent.com/Ccapton/Android-ColorfulSeekbar/master/ColorfulSeekbarDemo.apk" target="_blank" rel="external">https://raw.githubusercontent.com/Ccapton/Android-ColorfulSeekbar/master/ColorfulSeekbarDemo.apk</a></p>
-<h3 id="如何配置"><a href="#如何配置" class="headerlink" title="如何配置"></a>如何配置</h3><p>build.gradle(Project)</p>
-<pre class=" language-code"><code class="language-code">allprojects {
-        repositories {
-            ...
-            maven { url 'https://jitpack.io' }
-        }
-    }
-</code></pre>
-<p>build.gradle(Module:app)</p>
-<pre class=" language-code"><code class="language-code"> dependencies {
-          compile 'com.github.Ccapton:Android-ColorfulSeekbar:1.0'
-    }
-</code></pre>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/18/Android自定义View之-ColorfulSeekbar/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -573,94 +561,18 @@
 
       
         
-          
-            <h1 id="Android-ColorfulProgressBar"><a href="#Android-ColorfulProgressBar" class="headerlink" title="Android-ColorfulProgressBar"></a>Android-ColorfulProgressBar</h1><blockquote>
+          <h1 id="Android-ColorfulProgressBar"><a href="#Android-ColorfulProgressBar" class="headerlink" title="Android-ColorfulProgressBar"></a>Android-ColorfulProgressBar</h1><blockquote>
 <p>关于我，欢迎关注<br>  博客：ccapton(<a href="http://blog.csdn.net/ccapton" target="_blank" rel="external">http://blog.csdn.net/ccapton</a>) 微信：<a href="">Ccapton</a><br>  Github: (<a href="https://www.github.com/ccapton" target="_blank" rel="external">https://www.github.com/ccapton</a>)</p>
 </blockquote>
 <h3 id="简介"><a href="#简介" class="headerlink" title="简介:"></a>简介:</h3><p>这是一个自定义的Progressbar，效果看着还行吧，滚动的双色斜条作为进度条，有点类似Bootstrap风格。原生Progress的基本操作都有，自行观摩我的源码吧，挺简单的。</p>
 <h3 id="示例"><a href="#示例" class="headerlink" title="示例:"></a>示例:</h3><p><img src="https://raw.githubusercontent.com/Ccapton/Android-ColofulProgressBar/master/ColorfulProgressBarDemo_1_0_3.gif" alt=""></p>
-<h3 id="演示Demo"><a href="#演示Demo" class="headerlink" title="演示Demo"></a>演示Demo</h3><p>当前是修改了视图的版本，如下图所示，第二进度条似乎更加立体了，它像是被镶嵌在了主控件中</p>
-<p><img src="https://raw.githubusercontent.com/Ccapton/Android-ColofulProgressBar/master/afterEdition.png" alt=""></p>
-<p>demo下载：<br><a href="https://github.com/Ccapton/Android-ColorfulProgressBar/blob/master/ColorfulProgressBarDemo_1_0_3.apk" target="_blank" rel="external">https://github.com/Ccapton/Android-ColorfulProgressBar/blob/master/ColorfulProgressBarDemo_1_0_3.apk</a></p>
-<h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><p>与原生Progress相比，感觉更漂亮一点，可以显示进度值，背景凹凸感明显，进度条效果更加立体。</p>
-<h3 id="原理说明"><a href="#原理说明" class="headerlink" title="原理说明"></a>原理说明</h3><p>额，挺简单的。不过感觉我的做法有点复杂了，我先自定义了一个View，专门作为进度条的显示图层,如下所示</p>
-<p><img src="https://raw.githubusercontent.com/Ccapton/Android-ColorfulProgressBar/master/ColorfulView.jpg" alt=""></p>
-<p>然后将其布局在高度不超过20dp的ColorfulProgressBar父布局中，设置Y方向的偏移量，然后动画循环改变Y坐标，实现斜条滚动的动画效果，当你调用setProgress方法时，则改变其在父布局的X坐标实现进度显示的功能，进度文字同样原理添加到了父布局中。</p>
-<h3 id="如何配置"><a href="#如何配置" class="headerlink" title="如何配置"></a>如何配置</h3><p>build.gradle(Project)</p>
-<pre class=" language-code"><code class="language-code">allprojects {
-        repositories {
-            ...
-            maven { url 'https://jitpack.io' }
-        }
-    }
-</code></pre>
-<p>build.gradle(Module:app)</p>
-<pre class=" language-code"><code class="language-code"> dependencies {
-             compile 'com.github.Ccapton:Android-ColorfulProgressBar:1.0.5'
-    }
-</code></pre>
-<h3 id="主要方法"><a href="#主要方法" class="headerlink" title="主要方法"></a>主要方法</h3><pre class=" language-code"><code class="language-code"> setStyle(String style) // ColofulProgressBar.STYLE_NORMAL、 ColofulProgressBar.STYLE_COLORFUL两种风格
- setMaxProgress(long maxProgress)   // 设置进度最大值
- setProgress(long progress);           //设置当前进度
- setSecondProgress(long secondProgress);  //设置第二进度
- setAnimation(false);                  // 关闭动画
- showPercentText(false);                //隐藏进度文字
- setHeight(int height);               // 设置整个控件高度
- setWidth(int width);                // 设置整个控件宽度
- setProgressColorRes(int progressColorRes);  // 设置进度条颜色一
- setProgressColor2Res(int progressColor2Res)  // 设置进度条颜色二
- setPercentColorRes(int percentColorRes);       //设置进度文字的颜色
- setPercentShaderColorRes(int percentShadeColorRes);  //设置进度文字的阴影颜色
- setBackgroundColorRes(int backgroundColorRes)     //设置控件背景色
-</code></pre>
-<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p>例：在activity_main.xml中，</p>
-<pre class=" language-xml"><code class="language-xml">这是普通效果的Progressbar
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>com.capton.colorfulprogressbar.ColorfulProgressbar</span>
-        <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>@+id/colorfulProgressbar<span class="token punctuation">"</span></span>                        
-        <span class="token attr-name"><span class="token namespace">xmlns:</span>app</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://schemas.android.com/apk/res-auto<span class="token punctuation">"</span></span>
-        <span class="token attr-name"><span class="token namespace">app:</span></span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value">@string/style_normal</span><span class="token punctuation">"</span></span>
-        <span class="token attr-name"><span class="token namespace">app:</span>max</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100<span class="token punctuation">"</span></span>
-        <span class="token attr-name"><span class="token namespace">app:</span>progress</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50<span class="token punctuation">"</span></span>
-        <span class="token attr-name"><span class="token namespace">app:</span>secondProgress</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>10<span class="token punctuation">"</span></span>
-        <span class="token attr-name"><span class="token namespace">app:</span>progressColor1</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>@color/green<span class="token punctuation">"</span></span>
-        <span class="token attr-name"><span class="token namespace">android:</span>layout_marginTop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>16dp<span class="token punctuation">"</span></span> 
-        <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>match_parent<span class="token punctuation">"</span></span>
-        <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrap_content<span class="token punctuation">"</span></span>
-        <span class="token punctuation">></span></span>
-这是双色的Progressbar
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>com.capton.colorfulprogressbar.ColorfulProgressbar</span>
-        <span class="token attr-name"><span class="token namespace">android:</span>id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>@+id/colorfulProgressbar2<span class="token punctuation">"</span></span>                        
-        <span class="token attr-name"><span class="token namespace">xmlns:</span>app</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://schemas.android.com/apk/res-auto<span class="token punctuation">"</span></span>
-        <span class="token attr-name"><span class="token namespace">app:</span></span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value">@string/style_colorful</span><span class="token punctuation">"</span></span>
-        <span class="token attr-name"><span class="token namespace">app:</span>max</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100<span class="token punctuation">"</span></span>
-        <span class="token attr-name"><span class="token namespace">app:</span>progress</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50<span class="token punctuation">"</span></span>
-        <span class="token attr-name"><span class="token namespace">app:</span>secondProgress</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>10<span class="token punctuation">"</span></span>
-        <span class="token attr-name"><span class="token namespace">app:</span>progressColor1</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>@color/green<span class="token punctuation">"</span></span>
-    <span class="token attr-name"><span class="token namespace">app:</span>progressColor2</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>@color/orange<span class="token punctuation">"</span></span>
-        <span class="token attr-name"><span class="token namespace">android:</span>layout_marginTop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>16dp<span class="token punctuation">"</span></span> 
-        <span class="token attr-name"><span class="token namespace">android:</span>layout_width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>match_parent<span class="token punctuation">"</span></span>
-        <span class="token attr-name"><span class="token namespace">android:</span>layout_height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>wrap_content<span class="token punctuation">"</span></span>
-        <span class="token punctuation">></span></span>
-</code></pre>
-<p>例：在MainActivity中</p>
-<pre class=" language-code"><code class="language-code">  ColorfulProgressbar progressbar;
-   @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-    progressbar= (ColorfulProgressbar) findViewById(R.id.colorfulProgressbar);
-    progressbar.setMaxProgress(100);
-        progressbar.setProgress(50);
-      //  progressbar.setSecondProgress(10);
-      // progressbar.setAnimation(false); 关闭动画
-      // progressbar.showPercentText(false); 隐藏进度文字
-
-    }
-</code></pre>
-<h3 id="作者的话"><a href="#作者的话" class="headerlink" title="作者的话"></a>作者的话</h3><p>  挺漂亮的ProgressBar，就是没啥技术含量。。。。具体需求大家自己随便研究琢磨</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/14/Android自定义View之-ColorfulProgressbar/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -810,8 +722,7 @@
 
       
         
-          
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="530" height="86" src="//music.163.com/outchain/player?type=2&id=466794339&auto=0&height=66"></iframe>
+          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="530" height="86" src="//music.163.com/outchain/player?type=2&id=466794339&auto=0&height=66"></iframe>
 
 <h3 id="下载IntelliJ-IDEA-2017与JetbrainsCrack-2-6-2-jar"><a href="#下载IntelliJ-IDEA-2017与JetbrainsCrack-2-6-2-jar" class="headerlink" title="下载IntelliJ IDEA 2017与JetbrainsCrack-2.6.2.jar"></a>下载IntelliJ IDEA 2017与JetbrainsCrack-2.6.2.jar</h3><pre><code>JetbrainsCrack-2.6.2.jar
 
@@ -822,73 +733,14 @@ IntelliJ IDEA 2017版本
 
 链接:http://pan.baidu.com/s/1kVHoZ5t 
 密码:weu3
-</code></pre><h3 id="找到IntelliJ-IDEA，右键显示包内容，将JetbrainsCrack-2-6-2-jar复制到Contents-bin目录下"><a href="#找到IntelliJ-IDEA，右键显示包内容，将JetbrainsCrack-2-6-2-jar复制到Contents-bin目录下" class="headerlink" title="找到IntelliJ IDEA，右键显示包内容，将JetbrainsCrack-2.6.2.jar复制到Contents/bin目录下"></a>找到IntelliJ IDEA，右键显示包内容，将JetbrainsCrack-2.6.2.jar复制到Contents/bin目录下</h3><p><img src="http://img.blog.csdn.net/20170529220442606?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhhbmd5b25nMTI1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
-<h3 id="继续打开Contents-bin目录下目录下idea-vmoptions文件，在文件末尾追加上："><a href="#继续打开Contents-bin目录下目录下idea-vmoptions文件，在文件末尾追加上：" class="headerlink" title="继续打开Contents/bin目录下目录下idea.vmoptions文件，在文件末尾追加上："></a>继续打开Contents/bin目录下目录下idea.vmoptions文件，在文件末尾追加上：</h3><pre><code>-javaagent:JetbrainsCrack-2.6.2.jar
-</code></pre><h3 id="打开运行IntelliJ-IDEA，Help-gt-Register输入一下Code即可激活。"><a href="#打开运行IntelliJ-IDEA，Help-gt-Register输入一下Code即可激活。" class="headerlink" title="打开运行IntelliJ IDEA，Help-&gt;Register输入一下Code即可激活。"></a>打开运行IntelliJ IDEA，Help-&gt;Register输入一下Code即可激活。</h3><pre class=" language-code"><code class="language-code">{
-    "licenseId": "ThisCrackLicenseId",
-    "licenseeName": "你的名字",
-    "assigneeName": "",
-    "assigneeEmail": "你的邮箱",
-    "licenseRestriction": "Only Test! Please support genuine!!!",
-    "checkConcurrentUse": false,
-    "products": [
-        {
-            "code": "II",
-            "paidUpTo": "2099-12-31"
-        },
-        {
-            "code": "DM",
-            "paidUpTo": "2099-12-31"
-        },
-        {
-            "code": "AC",
-            "paidUpTo": "2099-12-31"
-        },
-        {
-            "code": "RS0",
-            "paidUpTo": "2099-12-31"
-        },
-        {
-            "code": "WS",
-            "paidUpTo": "2099-12-31"
-        },
-        {
-            "code": "DPN",
-            "paidUpTo": "2099-12-31"
-        },
-        {
-            "code": "RC",
-            "paidUpTo": "2099-12-31"
-        },
-        {
-            "code": "PS",
-            "paidUpTo": "2099-12-31"
-        },
-        {
-            "code": "DC",
-            "paidUpTo": "2099-12-31"
-        },
-        {
-            "code": "RM",
-            "paidUpTo": "2099-12-31"
-        },
-        {
-            "code": "CL",
-            "paidUpTo": "2099-12-31"
-        },
-        {
-            "code": "PC",
-            "paidUpTo": "2099-12-31"
-        }
-    ],
-    "hash": "2911276/0",
-    "gracePeriodDays": 7,
-    "autoProlongated": false
-}
 </code></pre>
-<p>原文链接：<a href="http://blog.csdn.net/zhangyong125/article/details/72804282" target="_blank" rel="external">http://blog.csdn.net/zhangyong125/article/details/72804282</a></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/10/软件分享-（Mac端）IntelliJ-IDEA-2017破解版/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1038,18 +890,16 @@ IntelliJ IDEA 2017版本
 
       
         
-          
-            <h1 id=""><a href="#" class="headerlink" title=" "></a> </h1><h3 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h3><p>应用下载页 <a href="http://www.anzhi.com/soft_2761007.html" target="_blank" rel="external">http://www.anzhi.com/soft_2761007.html</a> </p>
+          <h1 id=""><a href="#" class="headerlink" title=" "></a> </h1><h3 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h3><p>应用下载页 <a href="http://www.anzhi.com/soft_2761007.html" target="_blank" rel="external">http://www.anzhi.com/soft_2761007.html</a> </p>
 <p>直接扫码下载apk </p>
 <p><img src="https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/purecooking2.jpeg" alt=""></p>
-<p>《纯粹菜谱》是我本着练习异步网络请求，数据解析、数据库操作和云后端Bmob的第一个应用。菜谱数据来自聚合数据（已认证本应用）。</p>
-<h3 id="应用介绍"><a href="#应用介绍" class="headerlink" title="应用介绍"></a>应用介绍</h3><p>这是一款提供各式菜肴做法的app，菜谱五花八门，你想得到的菜肴都可通过关键词搜索到。目前只支持QQ认证登录（QQ空间分享）<br>，本来想做微信和微博分享的，但是后来我的电脑不小心卡机了，这个应用的源代码都丢失了，也就懒得去弄了。</p>
-<p><img src="http://img2.anzhi.com/data3/thumb/201701/03/17a12a238844c4d6f802be0c9c1c8983_78967200.jpg" alt=""><br><img src="http://www.anzhi.com/icon.php?u=ZGF0YTN8dGh1bWJ8MjAxNzAxfDAzfG9ZOW1BanB1UUVuRXBjQW5BZ0I2Mm5xNTVOQ1pPZDFXN0Z5dzliN3M4eVVxOVZGekFjclNvaWs0OHZ4YXJrbz0=" alt=""></p>
-<p><img src="http://www.anzhi.com/icon.php?u=ZGF0YTN8dGh1bWJ8MjAxNzAxfDAzfG9Za3dVRHcvUlI3RnBKRWpCRlJ3aWl2cDQ5UE1hOU5YN2d5eDg3dStwSEF1OVZoOUFjclhvaWs0OHZ4YXJrbz0=" alt=""><br><img src="http://www.anzhi.com/icon.php?u=ZGF0YTN8dGh1bWJ8MjAxNzAxfDAzfG9kb3dVMnB0UVUyZXBaRXNVUUF2alhQdHRJZVVPOVlBdmdtNTh1UzhvSGwxOVZsOEE4clJveWs0OHZ4YXJrbz0=" alt=""></p>
-<h3 id="开发历程"><a href="#开发历程" class="headerlink" title="开发历程"></a>开发历程</h3><p>由于是第一个Android项目，并没有用到很多第三方库和框架，所以有很多不成熟和冗余的代码。<br>开发过程中，让我受益最多的是，通过自己的代码实践做到了自己想要的效果，例如在Fragment中添加多个子Fragment，并实现父子Fragment的数据通信。<br>还有就是明白了Android应用上市所经历的各个步骤和细节，毕竟一步一个脚印走了过来，途中的艰辛我相信只有与我志同道合有相同经历的朋友才明白。</p>
-<h3 id="作者的话"><a href="#作者的话" class="headerlink" title="作者的话"></a>作者的话</h3><p>希望看到我这片文章的朋友能对我这个纯粹菜谱给些意见，谢谢了</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/02/18/PureCooking/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1199,40 +1049,20 @@ IntelliJ IDEA 2017版本
 
       
         
-          
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="530" height="86" src="//music.163.com/outchain/player?type=2&id=425280623&auto=0&height=66"></iframe>
+          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="530" height="86" src="//music.163.com/outchain/player?type=2&id=425280623&auto=0&height=66"></iframe>
 
 <p>下载链接 </p>
 <p><a href="https://github.com/Ccapton/EasyPlayer/blob/master/files/DiskKeeper.Pro_1.4.13_20170122.dmg" target="_blank" rel="external">https://github.com/Ccapton/EasyPlayer/blob/master/files/DiskKeeper.Pro_1.4.13_20170122.dmg</a></p>
 <p><img src="https://raw.githubusercontent.com/Ccapton/EasyPlayer/master/files/diskkeeper.jpg" alt="DiskKeeper Pro主界面"></p>
 <p>DiskKeeper Pro for mac是Mac平台上的一款磁盘碎片整理软件，Diskeeper Pro for mac只要达到预设的垃圾文件的数值就会触发自动清理功能，不会让用户再时常担心磁盘的垃圾问题。提高用户体验度。</p>
-<p><img src="https://raw.githubusercontent.com/Ccapton/EasyPlayer/master/files/diskkeeper2.jpg" alt="设置界面"></p>
-<p>功能特点</p>
-<ul>
-<li><p>从菜单栏启动快速清洗</p>
-</li>
-<li><p>应用缓存和垃圾数据</p>
-</li>
-<li><p>浏览器缓存和垃圾（Safari，Firefox，Chrome）</p>
-</li>
-<li><p>用户日志（保持您的保护和垃圾免费）</p>
-</li>
-<li><p>电子邮件缓存</p>
-</li>
-<li><p>垃圾箱</p>
-</li>
-</ul>
-<p>其他功能</p>
-<ul>
-<li><p>DiskKeeper Pro有一个可选的自动清理功能，每次达到预设的垃圾邮件大小阈值时都会触发。还支持可选的通知中心报告，通知您已自动清除的垃圾的大小。</p>
-</li>
-<li><p>高级但易于使用的集成卸载程序。只需删除或移动应用程序到垃圾桶和DiskKeeper Pro将完全卸载它，删除所有剩菜。</p>
-</li>
-<li><p>DiskKeeper Pro有一个特殊的“保持我清洁”模式。在这种模式下，它将保留在您的菜单栏，准备删除任何种类的快速清洁垃圾。最先进的先进清洁剂，拥有惊人的用户体验。</p>
-</li>
-</ul>
-
-          
+<p><img src="https://raw.githubusercontent.com/Ccapton/EasyPlayer/master/files/diskkeeper2.jpg" class="full-image"></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/09/10/软件分享-（Mac端）DiskKeeper-Pro破解版/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1542,7 +1372,7 @@ IntelliJ IDEA 2017版本
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.2</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.2</div>
 
 
         
@@ -1630,6 +1460,13 @@ IntelliJ IDEA 2017版本
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
 
   
     <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
