@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Android自定义View之-ColorfulProgressbar]]></title>
+    <title><![CDATA[Android自定义View之-ColorfulSeekbar]]></title>
     <url>%2F2017%2F08%2F18%2FAndroid%E8%87%AA%E5%AE%9A%E4%B9%89View%E4%B9%8B-ColorfulSeekbar%2F</url>
     <content type="text"><![CDATA[Android-ColorfulSeekbar 关于我，欢迎关注 博客：ccapton(http://blog.csdn.net/ccapton) 微信：Ccapton Github: (https://www.github.com/ccapton) ColorfulSeekbar这个控件是我根据前作ColorfulProgressbar https://github.com/Ccapton/Android-ColorfulProgressBar变化而来的，进度条与之相比没有变化，功能与原生Seekbar没差别。 具体用法与ColorfulProgressbar类似，这里不再赘述。 demo下载： https://raw.githubusercontent.com/Ccapton/Android-ColorfulSeekbar/master/ColorfulSeekbarDemo.apk 如何配置build.gradle(Project) allprojects { repositories { ... maven { url 'https://jitpack.io' } } } build.gradle(Module:app) dependencies { compile 'com.github.Ccapton:Android-ColorfulSeekbar:1.0' }]]></content>
       <categories>
@@ -77,14 +77,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[关于]]></title>
-    <url>%2Fabout%2Findex.html</url>
-    <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[分类]]></title>
     <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[关于]]></title>
+    <url>%2Fabout%2Findex.html</url>
+    <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐]]></content>
   </entry>
   <entry>
     <title><![CDATA[标签]]></title>
