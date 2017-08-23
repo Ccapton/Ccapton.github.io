@@ -39,6 +39,20 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[个人开发应用《纯粹菜谱》]]></title>
+    <url>%2F2017%2F02%2F18%2FPureCooking%2F</url>
+    <content type="text"><![CDATA[概况应用下载页 http://www.anzhi.com/soft_2761007.html 直接扫码下载apk 《纯粹菜谱》是我本着练习异步网络请求，数据解析、数据库操作和云后端Bmob的第一个应用。菜谱数据来自聚合数据（已认证本应用）。 应用介绍这是一款提供各式菜肴做法的app，菜谱五花八门，你想得到的菜肴都可通过关键词搜索到。目前只支持QQ认证登录（QQ空间分享），本来想做微信和微博分享的，但是后来我的电脑不小心卡机了，这个应用的源代码都丢失了，也就懒得去弄了。 开发历程由于是第一个Android项目，并没有用到很多第三方库和框架，所以有很多不成熟和冗余的代码。开发过程中，让我受益最多的是，通过自己的代码实践做到了自己想要的效果，例如在Fragment中添加多个子Fragment，并实现父子Fragment的数据通信。还有就是明白了Android应用上市所经历的各个步骤和细节，毕竟一步一个脚印走了过来，途中的艰辛我相信只有与我志同道合有相同经历的朋友才明白。 作者的话希望看到我这片文章的朋友能对我这个纯粹菜谱给些意见，谢谢了]]></content>
+      <categories>
+        <category>Android个人作品</category>
+      </categories>
+      <tags>
+        <tag>Android开发</tag>
+        <tag>Android应用</tag>
+        <tag>个人作品</tag>
+        <tag>纯粹菜谱</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[软件分享-（Mac端）DiskKeeper_Pro破解版]]></title>
     <url>%2F2016%2F09%2F10%2F%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB-%EF%BC%88Mac%E7%AB%AF%EF%BC%89DiskKeeper-Pro%E7%A0%B4%E8%A7%A3%E7%89%88%2F</url>
     <content type="text"><![CDATA[下载链接 https://github.com/Ccapton/EasyPlayer/blob/master/files/DiskKeeper.Pro_1.4.13_20170122.dmg DiskKeeper Pro for mac是Mac平台上的一款磁盘碎片整理软件，Diskeeper Pro for mac只要达到预设的垃圾文件的数值就会触发自动清理功能，不会让用户再时常担心磁盘的垃圾问题。提高用户体验度。 功能特点 从菜单栏启动快速清洗 应用缓存和垃圾数据 浏览器缓存和垃圾（Safari，Firefox，Chrome） 用户日志（保持您的保护和垃圾免费） 电子邮件缓存 垃圾箱 其他功能 DiskKeeper Pro有一个可选的自动清理功能，每次达到预设的垃圾邮件大小阈值时都会触发。还支持可选的通知中心报告，通知您已自动清除的垃圾的大小。 高级但易于使用的集成卸载程序。只需删除或移动应用程序到垃圾桶和DiskKeeper Pro将完全卸载它，删除所有剩菜。 DiskKeeper Pro有一个特殊的“保持我清洁”模式。在这种模式下，它将保留在您的菜单栏，准备删除任何种类的快速清洁垃圾。最先进的先进清洁剂，拥有惊人的用户体验。]]></content>
