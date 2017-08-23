@@ -62,4 +62,9 @@
         <tag>Android</tag>
       </tags>
   </entry>
+  <entry>
+    <title><![CDATA[tags]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
 </search>
