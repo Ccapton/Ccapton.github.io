@@ -116,7 +116,7 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/7287689-0480f9842611518d.gif?imageMogr2/auto-orient/strip">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/7287689-712e37a5e90e2ef4.gif?imageMogr2/auto-orient/strip">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/7287689-dd6aa2a9ae5aaff2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-08-24T12:42:15.000Z">
+<meta property="og:updated_time" content="2017-08-24T13:05:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="自制简易音乐播放器（未完成）数据来源：QQ音乐">
 <meta name="twitter:description" content="数据源本来只想重新练练RecyclerView的，一不小心又弄得复杂了。。。 无意中想起来搞个网络音乐播放器，本地的就算了，目前没时间去仔细弄了，但是这个没有多深入的逻辑控制，只是简单的播放逻辑，这也是很折磨人啊，大家看看就好了。于是上网搜了一下免费的音乐api，误打误撞找到一个用Java写的几个国内音乐搜索（QQ音乐，酷狗，虾米，网易云音乐）接口 https://github.com/Qril">
@@ -459,8 +459,7 @@
 <p>String retval = Base64.encodeToString(md5Bytes,Base64.DEFAULT);</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/7287689-5888b87d67577509.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
 <p>Base64工具类使用位置<br> WyMusic这个是网易云音乐的类，还有NetUtil类中也用到了Base64工具类，如果你想用的话请注意这点哟。</p>
-<p>效果图</p>
-<p>好吧，直接看我写的播放器效果吧。</p>
+<h3 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h3><p>好吧，直接看我写的播放器效果吧。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/7287689-1f4a2e543275053e.gif?imageMogr2/auto-orient/strip"></p>
 <p>搜索页面。这个程序有一些bug，不过也没关系啦，能听就行，后台也不会挂掉<br>有一些图标是自己画的，你们看得出来吗？好吧，肯定看不出来。啦啦啦。播放控件中的播放顺序四个模式的图标和右边的播放列表图标是我用AI画的，实在是觉得网上的图标太丑了，颜色还要自己调，不如直接用AI画出来，简单的线条UI还是能弄出来的</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/7287689-4571c2f1ddaa60cc.gif?imageMogr2/auto-orient/strip"></p>
@@ -477,8 +476,7 @@
 <p><a href="https://github.com/Ccapton/EasyPlayer/blob/master/%E4%B8%AA%E6%80%A7%E5%8C%96.apk" target="_blank" rel="external">https://github.com/Ccapton/EasyPlayer/blob/master/%E4%B8%AA%E6%80%A7%E5%8C%96.apk</a></p>
 <p>至于JNI开发，我还没怎么去接触诶，似乎都是要在移动端高效运行的程序才要？比如直播类等软件需要高效压缩摄像头采集的数据的算法，这就需要更接近底层的C与C++才能做到；还有大名鼎鼎的视频处理项目FFmpeg，本来在桌面端的项目，用于Android移动端简直不要太变态，很多播放器就用到了它的代码吧。需要保密的程序算法，要用到打包的so库来防止被反编译。</p>
 <p>好了，这篇文章就到这了，主要是自己写了这么一个功能单一程序，实际对大家有用的东西估计就是下面的链接了。那么下期见。</p>
-<p>用到的一些库、框架</p>
-<p>音乐数据源 MusicuuApi：<a href="https://github.com/Qrilee/MusicuuApi" target="_blank" rel="external">https://github.com/Qrilee/MusicuuApi</a></p>
+<h3 id="用到的一些库、框架"><a href="#用到的一些库、框架" class="headerlink" title="用到的一些库、框架"></a>用到的一些库、框架</h3><p>音乐数据源 MusicuuApi：<a href="https://github.com/Qrilee/MusicuuApi" target="_blank" rel="external">https://github.com/Qrilee/MusicuuApi</a></p>
 <p>图片加载 Glide：<a href="https://github.com/bumptech/glide" target="_blank" rel="external">https://github.com/bumptech/glide</a></p>
 <p>数据解析 Gson：<a href="https://github.com/google/gson" target="_blank" rel="external">https://github.com/google/gson</a></p>
 <p>网络通信 Volley ：<a href="https://github.com/mcxiaoke/android-volley" target="_blank" rel="external">https://github.com/mcxiaoke/android-volley</a></p>
@@ -491,8 +489,7 @@
 <p>Activity滑动退出控件 SwipeBackLayout：<a href="https://github.com/ikew0ng/SwipeBackLayout" target="_blank" rel="external">https://github.com/ikew0ng/SwipeBackLayout</a> （用在了新闻浏览页上）</p>
 <p>搜索等待动画 SLView （自己写的☺）：<a href="https://github.com/Ccapton/Android-SLView" target="_blank" rel="external">https://github.com/Ccapton/Android-SLView</a></p>
 <p>播放进度条ColorfulProgressbar（自己写的☺）: <a href="https://github.com/Ccapton/Android-ColorfulProgressBar" target="_blank" rel="external">https://github.com/Ccapton/Android-ColorfulProgressBar</a></p>
-<p>关于作者</p>
-<p>我的Github：<a href="https://github.com/Ccapton/" target="_blank" rel="external">https://github.com/Ccapton/</a> 欢迎来踩!</p>
+<h3 id="关于作者"><a href="#关于作者" class="headerlink" title="关于作者"></a>关于作者</h3><p>我的Github：<a href="https://github.com/Ccapton/" target="_blank" rel="external">https://github.com/Ccapton/</a> 欢迎来踩!</p>
 
       
     </div>
@@ -739,7 +736,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据源"><span class="nav-number">1.</span> <span class="nav-text">数据源</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据源"><span class="nav-number">1.</span> <span class="nav-text">数据源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#效果图"><span class="nav-number">2.</span> <span class="nav-text">效果图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用到的一些库、框架"><span class="nav-number">3.</span> <span class="nav-text">用到的一些库、框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于作者"><span class="nav-number">4.</span> <span class="nav-text">关于作者</span></a></li></ol></div>
             
 
           </div>
