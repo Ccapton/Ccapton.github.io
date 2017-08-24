@@ -41,7 +41,7 @@
   <entry>
     <title><![CDATA[个人开发应用《纯粹漫画》]]></title>
     <url>%2F2017%2F05%2F03%2FPureComic%2F</url>
-    <content type="text"><![CDATA[概况应用下载页 http://shouji.baidu.com/software/11411328.html 直接扫码下载apk 《纯粹漫画》是我根据前作《纯粹菜谱》改进而来的新作，这次采用了成熟的图片加载框架Glide，网络请求框架Okhttp和数据解析库Fastjson整合而成的漫画 阅读App。 应用介绍《纯粹漫画》的数据同样来自聚合数据，列表采用了更加高效的RecyclerView，配合图片加载框架Glide，使用户在刷新数据的时候更加流畅地浏览漫画信息。这次加入了广告SDK，在用户刷新列表和搜索漫画时便会展示广告。这次加入了用户登录模块，即用户可以注册本应用账号进行登录、数据更新与恢复。 开发历程一想到漫画所需的翻页元素，就想到了ViewPager，然后便通过加载Fragment展示每一页漫画数据的形式表现出来。但是一开始选用的数据适配器是FragmentPagerAdapter，导致ViewPager不能及时销毁产生的大量FragmentPagerAdapter导致手机内存紧张而卡顿。思考许久，一直以为是图片资源没有回收而导致内存泄漏的问题，后来总算想起来了FragmentStatePagerAdapter这个能自动释放Fragment页面资源的适配器。而漫画有时需要看到细节的地方，所以漫画页面要能实现放大缩小的效果，于是便上网找到了ScaleView（https://github.com/Ccapton/Android-ScaleView）这个比较实用的自定义View， 将其整合到项目中简直完美了。 作者的话希望看到我这片文章的朋友能对我这个纯粹漫画给些意见，谢谢了]]></content>
+    <content type="text"><![CDATA[概况应用下载页 http://shouji.baidu.com/software/11411328.html 直接扫码下载apk 《纯粹漫画》是我根据前作《纯粹菜谱》改进而来的新作，这次采用了成熟的图片加载框架Glide，网络请求框架Okhttp和数据解析库Fastjson整合而成的漫画 阅读App。 应用介绍《纯粹漫画》的数据同样来自聚合数据，列表采用了更加高效的RecyclerView，配合图片加载框架Glide，使用户在刷新数据的时候更加流畅地浏览漫画信息。这次加入了广告SDK，在用户刷新列表和搜索漫画时便会展示广告。这次加入了用户登录模块，即用户可以注册本应用账号进行登录、数据更新与恢复。 开发历程一想到漫画所需的翻页元素，就想到了ViewPager，然后便通过加载Fragment展示每一页漫画数据的形式表现出来。但是一开始选用的数据适配器是FragmentPagerAdapter，导致ViewPager不能及时销毁产生的大量FragmentPagerAdapter导致手机内存紧张而卡顿。思考许久，一直以为是图片资源没有回收而导致内存泄漏的问题，后来总算想起来了FragmentStatePagerAdapter这个能自动释放Fragment页面资源的适配器。而漫画有时需要看到细节的地方，所以漫画页面要能实现放大缩小的效果，于是便上网找到了ScaleView（https://github.com/Ccapton/Android-ScaleView） 这个比较实用的自定义View，将其整合到项目中简直完美了。 作者的话希望看到我这片文章的朋友能对我这个纯粹漫画给些意见，谢谢了]]></content>
       <categories>
         <category>Android个人作品</category>
       </categories>
@@ -96,13 +96,13 @@
     <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐]]></content>
   </entry>
   <entry>
-    <title><![CDATA[分类]]></title>
-    <url>%2Fcategories%2Findex.html</url>
+    <title><![CDATA[标签]]></title>
+    <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[标签]]></title>
-    <url>%2Ftags%2Findex.html</url>
+    <title><![CDATA[分类]]></title>
+    <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
