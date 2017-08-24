@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[自制简易音乐播放器（未完成）数据来源：QQ音乐]]></title>
+    <url>%2F2017%2F08%2F20%2Fmusic%2F</url>
+    <content type="text"><![CDATA[数据源本来只想重新练练RecyclerView的，一不小心又弄得复杂了。。。 无意中想起来搞个网络音乐播放器，本地的就算了，目前没时间去仔细弄了，但是这个没有多深入的逻辑控制，只是简单的播放逻辑，这也是很折磨人啊，大家看看就好了。于是上网搜了一下免费的音乐api，误打误撞找到一个用Java写的几个国内音乐搜索（QQ音乐，酷狗，虾米，网易云音乐）接口 https://github.com/Qrilee/MusicuuApi 请直接拷贝代码到你的工程里去，jar包也直接拷到libs下。 其中网易云好像被封了，访问不了，反正经过我的测试返回404信息。 在WyMusic、NetUtil类中，导入的sun.misc.BASE64Encoder 这个工具类必须换为 android.util.Base64，因为android中没有BASE64Encoder，取而代之的是Base64。其中的方法也按要需求调用，WyMusic.java中，我是这样使用的 String retval = Base64.encodeToString(md5Bytes,Base64.DEFAULT); Base64工具类使用位置 WyMusic这个是网易云音乐的类，还有NetUtil类中也用到了Base64工具类，如果你想用的话请注意这点哟。 效果图 好吧，直接看我写的播放器效果吧。 搜索页面。这个程序有一些bug，不过也没关系啦，能听就行，后台也不会挂掉有一些图标是自己画的，你们看得出来吗？好吧，肯定看不出来。啦啦啦。播放控件中的播放顺序四个模式的图标和右边的播放列表图标是我用AI画的，实在是觉得网上的图标太丑了，颜色还要自己调，不如直接用AI画出来，简单的线条UI还是能弄出来的 搜索页面，时间很长，这不怪我-_-！好吧搜索时间长也是这个搜索接口的原因，可能数据早已经通过网络获取到了，但解析时间过长吧，看原作者的后续更新吧。还有歌词的功能，这里就没去弄了，毕竟不是专业的播放器。我特别喜欢网易云音乐，可惜用这个接口目前我弄不到它的数据，网上其他方法我也找过了，几乎都是同一个方法（POST方式，添加请求头参数），这个也不例外，被服务拒绝了还是地址换了？有谁知道的吗 这是下拉菜单中的前台Notification,与音乐控制器关联着，音乐播放与界面刷新逻辑关系搞得我头大呀感觉移动端的逻辑问题很难缠，页面效果实现相比之下就了，现在那么多成熟又漂亮的第三方视图和动画，我们只需要稍微修改就能满足开发需求吧。 新闻模块，用的是极速数据提供的接口由于新闻数据api的数据有限，不像今日头条、新浪新闻等专业大户有海量数据，由于这里只是业余的程序，只需要刷出来固定的十几条最新数据就行了。 这是新闻的搜索页，也是挺长时间的，也不怪我好吗-_-?这些都是自己一字一句码出来效果，界面效果不是问题，就是逻辑关系搞得很蛋疼☹️。本来还好的Fragment，越来越臃肿，多少行代码我就不说了，简直扎心了，还好我的MainActivity，只有不到100行。因为MainActivity只管着几个Fragment的切换功能，作为Fragment的容器，几乎没有耗时的代码。 文件结构有点乱，这不是重点，毕竟只有这么十几个Java文件，要做大事的时候肯定要归类好代码文件看官们觉得咋样？没有用DataBinding这些东西，虽然早就听闻了，一看还有点难度，就放着了，以后肯定会用上的吧(现在有更好用的ButterKnife了，以后就用它了)。 令我满意的是播放顺序这块的逻辑没毛病，其他的东西就随便看看吧，哈哈。其中加载动画和播放进度条用是自己写的控件，Seekbar本来也是用自己的，后来出现bug了，不想浪费时间就用原生的了。代码有点杂乱，我就不贴了。这里给个安装包大家瞧瞧就行了， https://github.com/Ccapton/EasyPlayer/blob/master/%E4%B8%AA%E6%80%A7%E5%8C%96.apk 至于JNI开发，我还没怎么去接触诶，似乎都是要在移动端高效运行的程序才要？比如直播类等软件需要高效压缩摄像头采集的数据的算法，这就需要更接近底层的C与C++才能做到；还有大名鼎鼎的视频处理项目FFmpeg，本来在桌面端的项目，用于Android移动端简直不要太变态，很多播放器就用到了它的代码吧。需要保密的程序算法，要用到打包的so库来防止被反编译。 好了，这篇文章就到这了，主要是自己写了这么一个功能单一程序，实际对大家有用的东西估计就是下面的链接了。那么下期见。 用到的一些库、框架 音乐数据源 MusicuuApi：https://github.com/Qrilee/MusicuuApi 图片加载 Glide：https://github.com/bumptech/glide 数据解析 Gson：https://github.com/google/gson 网络通信 Volley ：https://github.com/mcxiaoke/android-volley 网络通信 Okhttp：https://github.com/square/okhttp 浏览器控件 AgentWeb：https://github.com/Justson/AgentWeb 上下拉刷新控件 SmartRefreshLayout: https://github.com/scwang90/SmartRefreshLayout 左右滑动删除列表项控件 Swipemenulistview: https://github.com/baoyongzhang/SwipeMenuListView 选项拖拽控件DragGridView：https://github.com/zhaoyu87/DragGridView（用在新闻频道的选择页里） Activity滑动退出控件 SwipeBackLayout：https://github.com/ikew0ng/SwipeBackLayout （用在了新闻浏览页上） 搜索等待动画 SLView （自己写的☺）：https://github.com/Ccapton/Android-SLView 播放进度条ColorfulProgressbar（自己写的☺）: https://github.com/Ccapton/Android-ColorfulProgressBar 关于作者 我的Github：https://github.com/Ccapton/ 欢迎来踩!]]></content>
+      <categories>
+        <category>Android个人作品</category>
+      </categories>
+      <tags>
+        <tag>Android开发</tag>
+        <tag>Android应用</tag>
+        <tag>个人作品</tag>
+        <tag>音乐播放器</tag>
+        <tag>QQ音乐</tag>
+        <tag>酷狗音乐</tag>
+        <tag>网易云音乐</tag>
+        <tag>虾米音乐</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Android自定义View之-ColorfulSeekbar]]></title>
     <url>%2F2017%2F08%2F18%2FAndroid%E8%87%AA%E5%AE%9A%E4%B9%89View%E4%B9%8B-ColorfulSeekbar%2F</url>
     <content type="text"><![CDATA[Android-ColorfulSeekbar 关于我，欢迎关注 博客：ccapton(http://blog.csdn.net/ccapton) 微信：Ccapton Github: (https://www.github.com/ccapton) ColorfulSeekbar这个控件是我根据前作ColorfulProgressbar https://github.com/Ccapton/Android-ColorfulProgressBar变化而来的，进度条与之相比没有变化，功能与原生Seekbar没差别。 具体用法与ColorfulProgressbar类似，这里不再赘述。 demo下载： https://raw.githubusercontent.com/Ccapton/Android-ColorfulSeekbar/master/ColorfulSeekbarDemo.apk 如何配置build.gradle(Project) allprojects { repositories { ... maven { url 'https://jitpack.io' } } } build.gradle(Module:app) dependencies { compile 'com.github.Ccapton:Android-ColorfulSeekbar:1.0' }]]></content>
@@ -91,6 +109,11 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[标签]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[关于]]></title>
     <url>%2Fabout%2Findex.html</url>
     <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐]]></content>
@@ -98,11 +121,6 @@
   <entry>
     <title><![CDATA[分类]]></title>
     <url>%2Fcategories%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[标签]]></title>
-    <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
