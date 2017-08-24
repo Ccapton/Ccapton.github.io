@@ -39,9 +39,23 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[个人开发应用《纯粹漫画》]]></title>
+    <url>%2F2017%2F05%2F03%2FPureComic%2F</url>
+    <content type="text"><![CDATA[概况应用下载页 http://shouji.baidu.com/software/11411328.html 直接扫码下载apk 《纯粹漫画》是我根据前作《纯粹菜谱》改进而来的新作，这次采用了成熟的图片加载框架Glide，网络请求框架Okhttp和数据解析库Fastjson整合而成的漫画 阅读App。 应用介绍《纯粹漫画》的数据同样来自聚合数据，列表采用了更加高效的RecyclerView，配合图片加载框架Glide，使用户在刷新数据的时候更加流畅地浏览漫画信息。这次加入了广告SDK，在用户刷新列表和搜索漫画时便会展示广告。这次加入了用户登录模块，即用户可以注册本应用账号进行登录、数据更新与恢复。 开发历程一想到漫画所需的翻页元素，就想到了ViewPager，然后便通过加载Fragment展示每一页漫画数据的形式表现出来。但是一开始选用的数据适配器是FragmentPagerAdapter，导致ViewPager不能及时销毁产生的大量FragmentPagerAdapter导致手机内存紧张而卡顿。思考许久，一直以为是图片资源没有回收而导致内存泄漏的问题，后来总算想起来了FragmentStatePagerAdapter这个能自动释放Fragment页面资源的适配器。而漫画有时需要看到细节的地方，所以漫画页面要能实现放大缩小的效果，于是便上网找到了ScaleView（https://github.com/Ccapton/Android-ScaleView）这个比较实用的自定义View， 将其整合到项目中简直完美了。 作者的话希望看到我这片文章的朋友能对我这个纯粹漫画给些意见，谢谢了]]></content>
+      <categories>
+        <category>Android个人作品</category>
+      </categories>
+      <tags>
+        <tag>Android开发</tag>
+        <tag>Android应用</tag>
+        <tag>个人作品</tag>
+        <tag>纯粹漫画</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[个人开发应用《纯粹菜谱》]]></title>
     <url>%2F2017%2F02%2F18%2FPureCooking%2F</url>
-    <content type="text"><![CDATA[概况应用下载页 http://www.anzhi.com/soft_2761007.html 直接扫码下载apk 《纯粹菜谱》是我本着练习异步网络请求，数据解析、数据库操作和云后端Bmob的第一个应用。菜谱数据来自聚合数据（已认证本应用）。 应用介绍这是一款提供各式菜肴做法的app，菜谱五花八门，你想得到的菜肴都可通过关键词搜索到。目前只支持QQ认证登录（QQ空间分享），本来想做微信和微博分享的，但是后来我的电脑不小心卡机了，这个应用的源代码都丢失了，也就懒得去弄了。 开发历程由于是第一个Android项目，并没有用到很多第三方库和框架，所以有很多不成熟和冗余的代码。开发过程中，让我受益最多的是，通过自己的代码实践做到了自己想要的效果，例如在Fragment中添加多个子Fragment，并实现父子Fragment的数据通信。还有就是明白了Android应用上市所经历的各个步骤和细节，毕竟一步一个脚印走了过来，途中的艰辛我相信只有与我志同道合有相同经历的朋友才明白。 作者的话希望看到我这片文章的朋友能对我这个纯粹菜谱给些意见，谢谢了]]></content>
+    <content type="text"><![CDATA[概况应用下载页 http://www.anzhi.com/soft_2761007.html 扫码下载apk 《纯粹菜谱》是我本着练习异步网络请求，数据解析、数据库操作和云后端Bmob的第一个应用。菜谱数据来自聚合数据（已认证本应用）。 应用介绍这是一款提供各式菜肴做法的app，菜谱五花八门，你想得到的菜肴都可通过关键词搜索到。目前只支持QQ认证登录（QQ空间分享），本来想做微信和微博分享的，但是后来我的电脑不小心卡机了，这个应用的源代码都丢失了，也就懒得去弄了。 开发历程由于是第一个Android项目，并没有用到很多第三方库和框架，所以有很多不成熟和冗余的代码。开发过程中，让我受益最多的是，通过自己的代码实践做到了自己想要的效果，例如在Fragment中添加多个子Fragment，并实现父子Fragment的数据通信。还有就是明白了Android应用上市所经历的各个步骤和细节，毕竟一步一个脚印走了过来，途中的艰辛我相信只有与我志同道合有相同经历的朋友才明白。 作者的话希望看到我这片文章的朋友能对我这个纯粹菜谱给些意见，谢谢了]]></content>
       <categories>
         <category>Android个人作品</category>
       </categories>
