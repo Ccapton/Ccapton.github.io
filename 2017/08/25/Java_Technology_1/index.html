@@ -112,7 +112,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/basic_usage.jpeg">
 <meta property="og:image" content="https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/apples.jpeg">
 <meta property="og:image" content="https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/apple.gif">
-<meta property="og:updated_time" content="2017-08-25T13:08:31.000Z">
+<meta property="og:updated_time" content="2017-08-25T13:18:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ccapton技术空间">
 <meta name="twitter:description" content="title: Java技术： Gif编码器(gifencoder)的实际应用(1)date: 2017-04-22 12:08:48categories: Android开发tags:  Java技术 FFmpeg 视频处理技术   Gif编码器 gifencoder  gifencoder 这是一个Java写的图片转Gif的框架 https://github.com/square/gifenc">
@@ -362,7 +362,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-25T21:08:31+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-25T21:18:07+08:00">
                 2017-08-25
               </time>
             
@@ -432,7 +432,9 @@
 <hr>
 <h3 id="Gif编码器-gifencoder"><a href="#Gif编码器-gifencoder" class="headerlink" title="Gif编码器 gifencoder"></a>Gif编码器 gifencoder</h3><p>  gifencoder 这是一个Java写的图片转Gif的框架 <a href="https://github.com/square/gifencoder" target="_blank" rel="external">https://github.com/square/gifencoder</a> </p>
 <p>  <img src="https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/apple.gif" alt=""> </p>
-<p>  本来想搜一下视频转Gif的相关框架的，找到了一个用JavaScript写 <a href="https://github.com/vvo/gifify" target="_blank" rel="external">https://github.com/vvo/gifify</a> ，但是我在安装<br>    其配置需求  ImageMagick 时发现 用命令$ brew install imagemagick –with-fontconfig时，安装到最后总是卡住了，去掉–with-fontconfig安装<br>    倒是能装进去，可是最后代码运行时又提醒我需要设置ImageMagick，弄来弄去还是没成功-_-!。于是便找到了图片转Gif的gifencoder这个框架</p>
+<p>本来想搜一下视频转Gif的相关框架的，找到了一个用JavaScript写 <a href="https://github.com/vvo/gifify" target="_blank" rel="external">https://github.com/vvo/gifify</a> ，但是</p>
+<a id="more"></a>
+<p>我在安装其配置需求  ImageMagick 时发现 用命令$ brew install imagemagick –with-fontconfig时，安装到最后总是卡住了，去掉–with-fontconfig安装倒是能装进去，可是最后代码运行时又提醒我需要设置ImageMagick，弄来弄去还是没成功-_-!。于是便找到了图片转Gif的gifencoder这个框架</p>
 <h3 id="gifencoder用法"><a href="#gifencoder用法" class="headerlink" title="gifencoder用法"></a>gifencoder用法</h3><p>  <img src="https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/basic_usage.jpeg"><br> 这是gifencoder的Github页上的基础用法</p>
 <h3 id="有关问题"><a href="#有关问题" class="headerlink" title="有关问题"></a>有关问题</h3><p> 但是没有交代清楚存放图片rgb颜色数据的二维整形数组该怎么获取，<br> 在Android上，好像并没有直接获得二维数据的方法。于是我尝试了用Bitmap的copyPixelsToBuffer()方法获取一维数组，如下所示</p>
 <pre class=" language-$xslt"><code class="language-$xslt">public  int[] convertImageToArray(File file) {
@@ -539,6 +541,7 @@ public class Main {
 <p>5张不同方向黑白渐变的苹果logo，把它们整合成gif后，就出现下面的效果了</p>
 <p>  <img src="https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/apple.gif" alt=""> </p>
 <h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>这里使用了BufferImage这个类，它是基于java的AWT控件的，而Android上并不支持AWT，于是也就不能用BufferImage了<br>，之前我的方法又不对。所以请问大家，有谁知道怎么在Android上使用这个gifencoder框架的吗？</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="530" height="86" src="//music.163.com/outchain/player?type=2&id=27417454&auto=0&height=66"></iframe>
 
       
     </div>
