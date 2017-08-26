@@ -100,7 +100,7 @@
   <entry>
     <title><![CDATA[龙珠Z中热血的bgm]]></title>
     <url>%2F2017%2F02%2F10%2Fshare_music2%2F</url>
-    <content type="text"><![CDATA[龙珠!]]></content>
+    <content type="text"><![CDATA[]]></content>
       <categories>
         <category>音乐分享</category>
       </categories>
@@ -114,7 +114,7 @@
   <entry>
     <title><![CDATA[英雄联盟S6全球总决赛 合集]]></title>
     <url>%2F2017%2F01%2F22%2Fshare_music%2F</url>
-    <content type="text"><![CDATA[音乐大厂 Riot ！]]></content>
+    <content type="text"><![CDATA[]]></content>
       <categories>
         <category>音乐分享</category>
       </categories>
@@ -149,6 +149,11 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[标签]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[分类]]></title>
     <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
@@ -157,10 +162,5 @@
     <title><![CDATA[关于]]></title>
     <url>%2Fabout%2Findex.html</url>
     <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[标签]]></title>
-    <url>%2Ftags%2Findex.html</url>
-    <content type="text"></content>
   </entry>
 </search>
