@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java技术:Gif编码器(gifencoder)的实际应用(2)]]></title>
+    <url>%2F2017%2F08%2F27%2FJava_Technology_2%2F</url>
+    <content type="text"><![CDATA[关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn Gif合成软件： 结合前几天的gif合成框架，我用Java的swing界面编程完成了这款Gif合成软件： https://pan.baidu.com/s/1slfUkcH 它能将若干张静态图片连接成gif图片。 mac下的效果： 输出的gif图片： 这是我将几张系统自带壁纸合成gif的过程，就不贴效果了。 在Mac下，Jar文件打开的过程中，初次生成Swing界面耗时比较长，要等10s左右；在Windows平台下则是秒开。 目前这个程序的算法只支持若干张同等尺寸的图片合成gif，而且每张图片中最好不要有透明度为0的像素点，即选取的图片要等宽等高，而且图片最好不要有透明的部分，否则透明的部分会被白色填充、或者直接合成失败。 由于gifencoder提供的api只有GifEncoder这个类，所以也没办法，功能比较单一，这个框架是square开发组织两年前的作品了，上次更新代码是9个月前，所以近期不太会有更新了，大家就随便看看吧。gifencoder框架地址 https://github.com/square/gifencoder]]></content>
+      <categories>
+        <category>Java技术</category>
+      </categories>
+      <tags>
+        <tag>个人作品</tag>
+        <tag>Java技术</tag>
+        <tag>Gif</tag>
+        <tag>Gif制作软件</tag>
+        <tag>图片处理技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java技术:Gif编码器(gifencoder)的实际应用(1)]]></title>
     <url>%2F2017%2F08%2F22%2FJava_Technology_1%2F</url>
     <content type="text"><![CDATA[Gif编码器 gifencoder gifencoder 这是一个Java写的图片转Gif的框架 https://github.com/square/gifencoder 本来想搜一下视频转Gif的相关框架的，找到了一个用JavaScript写 https://github.com/vvo/gifify ，但是 我在安装其配置需求 ImageMagick 时发现 用命令$ brew install imagemagick –with-fontconfig时，安装到最后总是卡住了，去掉–with-fontconfig安装倒是能装进去，可是最后代码运行时又提醒我需要设置ImageMagick，弄来弄去还是没成功-_-!。于是便找到了图片转Gif的gifencoder这个框架 gifencoder用法 这是gifencoder的Github页上的基础用法 有关问题 但是没有交代清楚存放图片rgb颜色数据的二维整形数组该怎么获取， 在Android上，好像并没有直接获得二维数据的方法。于是我尝试了用Bitmap的copyPixelsToBuffer()方法获取一维数组，如下所示 public int[] convertImageToArray(File file) { Bitmap bitmap= BitmapFactory.decodeFile(file.getAbsolutePath()); int rgbArray[]=new int[bitmap.getAllocationByteCount()]; Buffer buffer=IntBuffer.wrap(rgbArray); bitmap.copyPixelsToBuffer(buffer); bitmap.recycle(); return rgbArray; } 然后调用GifEncoder的另一个addImage方法 /** * Add an image to the GIF file. * * @param rgbData an image buffer in RGB format * @param width the number of pixels per row in the pixel array * @param options options to be applied to this image * @return this instance for chaining * @throws IOException if there was a problem writing to the given output stream */ public GifEncoder addImage(int[] rgbData, int width, ImageOptions options) throws IOException { addImage(Image.fromRgb(rgbData, width), options); return this; } 可是当我跑起来时，不知道是不是因为参数不正确还是咋地，怎么修改都会出现手机内存吃紧”Starting a blocking GC Alloc”，最后强制退出的问题，输出的gif图片也是只有1kb，即转换失败了，我觉得一开始获取一维数组的时候出现问题了，导致后面数据处理时间太长了。后来我还是放弃了gitencoder在Android上的应用了,果断选择在桌面端Java平台上继续试。 桌面端Java使用gitencoder我使用的是IntelliJ IDEA,直接下载jar包，引入java工程内,我使用这个框架的代码就下面这么点，就能输出想要的gif图片 import com.squareup.gifencoder.GifEncoder; import com.squareup.gifencoder.ImageOptions; import javax.imageio.ImageIO; import java.awt.image.BufferedImage; import java.io.*; public class Main { public static void main(String[] args) { // 读取图片到BufferedImage BufferedImage bf = readImage("/Users/capton/Desktop/apple1.png");//这里写你要读取的绝对路径+文件名 BufferedImage bf2 = readImage("/Users/capton/Desktop/apple2.png");//这里写你要读取的绝对路径+文件名 BufferedImage bf3 = readImage("/Users/capton/Desktop/apple3.png");//这里写你要读取的绝对路径+文件名 BufferedImage bf4 = readImage("/Users/capton/Desktop/apple4.png");//这里写你要读取的绝对路径+文件名 BufferedImage bf5 = readImage("/Users/capton/Desktop/apple5.png");//这里写你要读取的绝对路径+文件名 // 将图片转换为二维数组 int[][] rgbArray1 = convertImageToArray(bf); int[][] rgbArray2= convertImageToArray(bf2); int[][] rgbArray3= convertImageToArray(bf3); int[][] rgbArray4= convertImageToArray(bf4); int[][] rgbArray5= convertImageToArray(bf5); OutputStream outputStream = null; try { outputStream = new FileOutputStream("/Users/capton/Desktop/apple.gif"); ImageOptions options = new ImageOptions(); GifEncoder encoder=new GifEncoder(outputStream, 161, 182, 0); encoder.addImage(rgbArray1, options); encoder.addImage(rgbArray2, options); encoder.addImage(rgbArray3, options); encoder.addImage(rgbArray4, options); encoder.addImage(rgbArray5, options); encoder.finishEncoding(); } catch (FileNotFoundException e) { e.printStackTrace(); }catch (IOException e){ e.printStackTrace(); } finally{ try { outputStream.close(); } catch (IOException e) { e.printStackTrace(); } } } public static BufferedImage readImage(String imageFile){ File file = new File(imageFile); BufferedImage bf = null; try { bf = ImageIO.read(file); } catch (IOException e) { e.printStackTrace(); } return bf; } public static int[][] convertImageToArray(BufferedImage bf) { // 获取图片宽度和高度 int width = bf.getWidth(); int height = bf.getHeight(); // 将图片sRGB数据写入一维数组 int[] data = new int[width*height]; bf.getRGB(0, 0, width, height, data, 0, width); // 将一维数组转换为为二维数组 int[][] rgbArray = new int[height][width]; for(int i = 0; i < height; i++) for(int j = 0; j < width; j++) rgbArray[i][j] = data[i*width + j]; return rgbArray; } } 其中’ GifEncoder encoder=new GifEncoder(outputStream, 161, 182, 0);’这里161，182是图片的宽高(px),我们要把每一张图片的宽高都统一，然后把宽高通过这句代码设置完毕 5张不同方向黑白渐变的苹果logo，把它们整合成gif后，就出现下面的效果了 后记这里使用了BufferImage这个类，它是基于java的AWT控件的，而Android上并不支持AWT，于是也就不能用BufferImage了，之前我的方法又不对。所以请问大家，有谁知道怎么在Android上使用这个gifencoder框架的吗？在这之后，我打算仔细研究一些这个框架，用AWT把它做出图像界面来，这样方便大家使用这样一个java版的图片转Gif软件可好？]]></content>
@@ -22,8 +37,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>Android应用</tag>
         <tag>个人作品</tag>
+        <tag>Android应用</tag>
         <tag>音乐播放器</tag>
         <tag>QQ音乐</tag>
         <tag>酷狗音乐</tag>
@@ -78,8 +93,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>Android应用</tag>
         <tag>个人作品</tag>
+        <tag>Android应用</tag>
         <tag>纯粹漫画</tag>
       </tags>
   </entry>
@@ -92,8 +107,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>Android应用</tag>
         <tag>个人作品</tag>
+        <tag>Android应用</tag>
         <tag>纯粹菜谱</tag>
       </tags>
   </entry>
@@ -106,9 +121,9 @@
       </categories>
       <tags>
         <tag>音乐分享</tag>
-        <tag>BGM</tag>
         <tag>龙珠</tag>
         <tag>龙珠Z</tag>
+        <tag>BGM</tag>
       </tags>
   </entry>
   <entry>
@@ -120,8 +135,8 @@
       </categories>
       <tags>
         <tag>音乐分享</tag>
-        <tag>英雄联盟</tag>
         <tag>BGM</tag>
+        <tag>英雄联盟</tag>
       </tags>
   </entry>
   <entry>
@@ -149,11 +164,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[标签]]></title>
-    <url>%2Ftags%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[分类]]></title>
     <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
@@ -162,5 +172,10 @@
     <title><![CDATA[关于]]></title>
     <url>%2Fabout%2Findex.html</url>
     <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[标签]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
   </entry>
 </search>
