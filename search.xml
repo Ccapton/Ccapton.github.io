@@ -3,16 +3,16 @@
   <entry>
     <title><![CDATA[Java技术:Gif编码器(gifencoder)的实际应用(2)]]></title>
     <url>%2F2017%2F08%2F27%2FJava_Technology_2%2F</url>
-    <content type="text"><![CDATA[关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn Gif合成软件： 结合前几天的gif合成框架，我用Java的swing界面编程完成了这款Gif合成软件： https://pan.baidu.com/s/1slfUkcH 它能将若干张静态图片连接成gif图片。 mac下的效果： 输出的gif图片： 这是我将几张系统自带壁纸合成gif的过程，就不贴效果了。 在Mac下，Jar文件打开的过程中，初次生成Swing界面耗时比较长，要等10s左右；在Windows平台下则是秒开。 目前这个程序的算法只支持若干张同等尺寸的图片合成gif，而且每张图片中最好不要有透明度为0的像素点，即选取的图片要等宽等高，而且图片最好不要有透明的部分，否则透明的部分会被白色填充、或者直接合成失败。 由于gifencoder提供的api只有GifEncoder这个类，所以也没办法，功能比较单一，这个框架是square开发组织两年前的作品了，上次更新代码是9个月前，所以近期不太会有更新了，大家就随便看看吧。gifencoder框架地址 https://github.com/square/gifencoder]]></content>
+    <content type="text"><![CDATA[关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn Gif合成软件： 结合前几天的gif合成框架，我用Java的swing界面编程完成了这款Gif合成软件： https://pan.baidu.com/s/1slfUkcH若前面的面链接失效，请点这里https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/GifMaker.jar 它能将若干张静态图片连接成gif图片。 mac下的效果： 输出的gif图片： 这是我将几张系统自带壁纸合成gif的过程，就不贴效果了。 在Mac下，Jar文件打开的过程中，初次生成Swing界面耗时比较长，要等10s左右；在Windows平台下则是秒开。 目前这个程序的算法只支持若干张同等尺寸的图片合成gif，而且每张图片中最好不要有透明度为0的像素点，即选取的图片要等宽等高，而且图片最好不要有透明的部分，否则透明的部分会被白色填充、或者直接合成失败。 由于gifencoder提供的api只有GifEncoder这个类，所以也没办法，功能比较单一，这个框架是square开发组织两年前的作品了，上次更新代码是9个月前，所以近期不太会有更新了，大家就随便看看吧。gifencoder框架地址 https://github.com/square/gifencoder]]></content>
       <categories>
         <category>Java技术</category>
       </categories>
       <tags>
-        <tag>个人作品</tag>
         <tag>Java技术</tag>
         <tag>Gif</tag>
-        <tag>Gif制作软件</tag>
         <tag>图片处理技术</tag>
+        <tag>个人作品</tag>
+        <tag>Gif制作软件</tag>
       </tags>
   </entry>
   <entry>
@@ -121,9 +121,9 @@
       </categories>
       <tags>
         <tag>音乐分享</tag>
+        <tag>BGM</tag>
         <tag>龙珠</tag>
         <tag>龙珠Z</tag>
-        <tag>BGM</tag>
       </tags>
   </entry>
   <entry>
@@ -135,8 +135,8 @@
       </categories>
       <tags>
         <tag>音乐分享</tag>
-        <tag>BGM</tag>
         <tag>英雄联盟</tag>
+        <tag>BGM</tag>
       </tags>
   </entry>
   <entry>
@@ -164,14 +164,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[分类]]></title>
-    <url>%2Fcategories%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[关于]]></title>
     <url>%2Fabout%2Findex.html</url>
     <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[分类]]></title>
+    <url>%2Fcategories%2Findex.html</url>
+    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[标签]]></title>
