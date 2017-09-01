@@ -8,11 +8,11 @@
         <category>Java技术</category>
       </categories>
       <tags>
+        <tag>个人作品</tag>
         <tag>Java技术</tag>
         <tag>Gif</tag>
-        <tag>图片处理技术</tag>
-        <tag>个人作品</tag>
         <tag>Gif制作软件</tag>
+        <tag>图片处理技术</tag>
       </tags>
   </entry>
   <entry>
@@ -162,6 +162,11 @@
         <tag>Android开发</tag>
         <tag>Android</tag>
       </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[board]]></title>
+    <url>%2Fboard%2Findex.html</url>
+    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[分类]]></title>
