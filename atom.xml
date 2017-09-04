@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ccapton.cn/"/>
-  <updated>2017-09-01T14:43:43.000Z</updated>
+  <updated>2017-09-04T11:43:37.000Z</updated>
   <id>http://ccapton.cn/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MaterialDesign风格的Mvp-RxJava2应用初体验</title>
+    <link href="http://ccapton.cn/2017/09/03/mvp_rxjava_md/"/>
+    <id>http://ccapton.cn/2017/09/03/mvp_rxjava_md/</id>
+    <published>2017-09-03T04:08:48.000Z</published>
+    <updated>2017-09-04T11:43:37.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapto
+    
+    </summary>
+    
+      <category term="Android开发" scheme="http://ccapton.cn/categories/Android%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="Android" scheme="http://ccapton.cn/tags/Android/"/>
+    
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
+    
+  </entry>
   
   <entry>
     <title>Java技术:Gif编码器(gifencoder)的实际应用(2)</title>
@@ -35,13 +60,13 @@
       <category term="Java技术" scheme="http://ccapton.cn/categories/Java%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
-    
       <category term="Java技术" scheme="http://ccapton.cn/tags/Java%E6%8A%80%E6%9C%AF/"/>
     
       <category term="Gif" scheme="http://ccapton.cn/tags/Gif/"/>
     
       <category term="图片处理技术" scheme="http://ccapton.cn/tags/%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
       <category term="Gif制作软件" scheme="http://ccapton.cn/tags/Gif%E5%88%B6%E4%BD%9C%E8%BD%AF%E4%BB%B6/"/>
     
@@ -95,9 +120,9 @@
     
       <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
     
-      <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
-    
       <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
+    
+      <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
     
       <category term="音乐播放器" scheme="http://ccapton.cn/tags/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/"/>
     
@@ -215,9 +240,9 @@
     
       <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
     
-      <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
-    
       <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
+    
+      <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
     
       <category term="纯粹漫画" scheme="http://ccapton.cn/tags/%E7%BA%AF%E7%B2%B9%E6%BC%AB%E7%94%BB/"/>
     
@@ -244,9 +269,9 @@
     
       <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
     
-      <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
-    
       <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
+    
+      <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
     
       <category term="纯粹菜谱" scheme="http://ccapton.cn/tags/%E7%BA%AF%E7%B2%B9%E8%8F%9C%E8%B0%B1/"/>
     
@@ -270,11 +295,11 @@
     
       <category term="音乐分享" scheme="http://ccapton.cn/tags/%E9%9F%B3%E4%B9%90%E5%88%86%E4%BA%AB/"/>
     
-      <category term="BGM" scheme="http://ccapton.cn/tags/BGM/"/>
-    
       <category term="龙珠" scheme="http://ccapton.cn/tags/%E9%BE%99%E7%8F%A0/"/>
     
       <category term="龙珠Z" scheme="http://ccapton.cn/tags/%E9%BE%99%E7%8F%A0Z/"/>
+    
+      <category term="BGM" scheme="http://ccapton.cn/tags/BGM/"/>
     
   </entry>
   
@@ -296,9 +321,9 @@
     
       <category term="音乐分享" scheme="http://ccapton.cn/tags/%E9%9F%B3%E4%B9%90%E5%88%86%E4%BA%AB/"/>
     
-      <category term="英雄联盟" scheme="http://ccapton.cn/tags/%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F/"/>
-    
       <category term="BGM" scheme="http://ccapton.cn/tags/BGM/"/>
+    
+      <category term="英雄联盟" scheme="http://ccapton.cn/tags/%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F/"/>
     
   </entry>
   
