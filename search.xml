@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[Android端二维码生成器]]></title>
-    <url>%2F2017%2F09%2F06%2F%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8%2F</url>
+    <url>%2F2017%2F09%2F06%2Fqrcode%2F</url>
     <content type="text"><![CDATA[关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn 除了普通的文本链接，还可以将电子名片生成为二维码图片。 这个程序没有任何广告、没有任何恶意插件、病毒，生成过程不依赖网络，请放心使用。 下载链接http://git.oschina.net/ccapton/Files/raw/master/Qr%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8.apk]]></content>
       <categories>
         <category>软件分享</category>
@@ -148,9 +148,9 @@
       </categories>
       <tags>
         <tag>音乐分享</tag>
-        <tag>BGM</tag>
         <tag>龙珠</tag>
         <tag>龙珠Z</tag>
+        <tag>BGM</tag>
       </tags>
   </entry>
   <entry>
@@ -162,8 +162,8 @@
       </categories>
       <tags>
         <tag>音乐分享</tag>
-        <tag>英雄联盟</tag>
         <tag>BGM</tag>
+        <tag>英雄联盟</tag>
       </tags>
   </entry>
   <entry>
@@ -196,13 +196,13 @@
     <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐邮箱：437499914@qq.com 、chenweibin1125@foxmail.com微信：Ccapton]]></content>
   </entry>
   <entry>
-    <title><![CDATA[board]]></title>
-    <url>%2Fboard%2Findex.html</url>
+    <title><![CDATA[分类]]></title>
+    <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[分类]]></title>
-    <url>%2Fcategories%2Findex.html</url>
+    <title><![CDATA[board]]></title>
+    <url>%2Fboard%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
