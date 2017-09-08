@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Android端二维码生成器]]></title>
+    <url>%2F2017%2F09%2F06%2F%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8%2F</url>
+    <content type="text"><![CDATA[关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn 除了普通的文本链接，还可以将电子名片生成为二维码图片。 这个程序没有任何广告、没有任何恶意插件、病毒，生成过程不依赖网络，请放心使用。 下载链接 http://git.oschina.net/ccapton/Files/raw/master/Qr%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8.apk]]></content>
+      <categories>
+        <category>软件分享</category>
+      </categories>
+      <tags>
+        <tag>Android开发</tag>
+        <tag>Android</tag>
+        <tag>个人作品</tag>
+        <tag>软件分享</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[MD风格Mvp—RxJava2应用，MVP初体验]]></title>
     <url>%2F2017%2F09%2F05%2Fmvp_rxjava_md%2F</url>
     <content type="text"><![CDATA[关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn 项目地址https://github.com/Ccapton/Mvp-RxJava2Demo apk:http://git.oschina.net/ccapton/Files/raw/master/ccapton_mvp.apk 波尼音乐Githubdi地址https://github.com/wangchenyan/PonyMusic 之前，我写android代码涉及到数据与视图关系时，都是直接将数据加载到视图中，例如在RecyclerView.Adapter中的onBindViewHolder方法中例如: @Override public void onBindViewHolder(ViewHolder holder, int position) { TextView titleTv=((TextView)holder.itemView.findViewById(R.id.titleTv)); titleTv.setText(articleList.get(position)); } articleList 为通过网络获取解析后得到的Article集合。通过上面的代码可以看到，articleList是个全局变量，要么在RecyclerView.Adapter子类中，要么在Activity、Fragment中。这样的话如果要修改articleList中的数据，势必在Activity、Fragment或是RecyclerView.Adapter子类中操作，一两个数据集合不见得多几行代码，要是有4-5个或者更多呢？这样这些“容器”肯定会臃肿的非常厉害。这时就要对数据、视图与逻辑控制进行业务分离，即数据层、视图层与控制层要明确各种的工作，要做到分工明确又合作通畅。于是MVC与MVP模式便是我们整理代码逻辑的重要方式。关于MVC这里就不多说了，我直接来谈它的进化版MVP。 我通过阅读一篇文章 http://www.jianshu.com/p/9a6845b26856/ 对MVP模式有了一些理解。下面这段总结是精华 在MVP模式里通常包含4个要素：(1) View :负责绘制UI元素、与用户进行交互(在Android中体现为Activity);(2) View interface :需要View实现的接口，View通过View interface与Presenter进行交互，降低耦合，方便进行单元测试;(3) Model :负责存储、检索、操纵数据(有时也实现一个Model interface用来降低耦合);(4) Presenter :作为View与Model交互的中间纽带，处理与用户交互的负责逻辑。 用我的话总结起来，MVP最重要的点：是实现数据（Model）与视图（View）的分离。在构建好MVP代码后，通常情况我们1、先需要在Activity（Fragment）中实现View接口（此View非彼View），将其泛型设置为对应的Presenter，实现其抽象方法；例如： 、、、 public class MainActivity extends BaseActivity implements IView&lt;ArticlePresenter&gt;,View.OnClickListener 、、、 2、然后新建Presenter子类对象（View作为参数），通过Presenter内定义的方法将Bean数据（例如：Article对象）加载到数据层（Model）中，并将数据加载到视图层（View）中；例如在RecyclerView.Adapter中的onBindViewHolder方法中 @Override public void onBindViewHolder(ViewHolder holder, int position) { ArticlePresenter presenter=new ArticlePresenter(MainActivity.this); presenter.saveData(articles.get(position)); presenter.setDataOnView(holder.itemView); } 3、然后在第一步实现的抽象方法中，通过Presenter进行具体的视图（View）加载数据（Model）操作；例如： @Override public void setDataOnView(final ArticlePresenter presenter, View view) { TextView view1= (TextView) view.findViewById(R.id.title); TextView view2= (TextView) view.findViewById(R.id.author); TextView view3= (TextView) view.findViewById(R.id.date); view1.setText(((Article)presenter.getData()).getTitle()); view2.setText(((Article)presenter.getData()).getAuthor()); view3.setText(((Article)presenter.getData()).getDate()); RelativeLayout article_item = (RelativeLayout) view.findViewById(R.id.article_item); article_item.setOnClickListener(new View.OnClickListener() { @Override public void onClick(View v) { startActivity(WebActivity.class,((Article)presenter.getData()).getId()); } }); } 以上是我的MVP调用代码，看似比之前直接将数据设置到视图中代码量多是吧。但将数据操作的大量代码封装进了Model层中，Presenter就可以直接调用达到修改数据的目的，就可以在Activity中省下一大段代码了。 说了那么多，还有朋友不知道怎么写MVP代码，这是一个既简单又有点恶心的步骤，下面是我为这个应用写的MVP代码，虽然没有封装其他数据操作的方法，但是对于理解MVP来说够用了吧。首先是两个接口（IView、IModel）和一个抽象类IPresenterIView.java public interface IView&lt;IPresenter&gt;{ /** * 等待Present调用的方法，子类（例如Activity，Fragment）实现其具体代码 * @param iPresenter 返回的iPresenter本体对象 * @param view 你要加载的具体视图；例如在RecyclerView中， * onBindViewHolder方法里的viewHolder.itemView; */ void setDataOnView(IPresenter iPresenter,View view); } IModel.java public interface IModel{ /** * 设置Bean数据 * @param object */ void set(Object object); /** * 获取Bean数据 * @return */ Object get(); } IPresenter.java public abstract class IPresenter{ IView&lt;IPresenter&gt; iView; //Activity，Fragment实现此接口，等待IPresenter子类对象 回调 setDataOnView()方法 IModel iModel; //数据模型，不暴露给Activity，Fragment等IView子类 /** * 以IView子类作为参数的构造函数 * @param iView 例如，Activity.this */ public IPresenter(IView&lt;IPresenter&gt; iView){ this.iView=iView; } /** * 传入view，IPresenter子类将从Model层中获取Bean数据，再加载到view中（用于ListView,RecycerView等列表视图） * @param view */ public abstract void setDataOnView(View view); /** * 设置Bean数据到Model层的IModel子类中去 * @param object Bean数据对象，例如Article对象 */ public abstract void saveData(Object object); /** * 从Model层获取Bean数据 * @return */ public abstract Object getData(); } 接下来是上面三个父类的具体实现子类 Activity、ArticleModel、 ArticlePresenterAcitivity只需要实现IView接口即可，并实现其抽象方法。上面已经给出了代码 ArticleModel.java public class ArticleModel implements IModel { private Article mArticle=new Article(); @Override public void set(Object object) { mArticle= (Article) object; } @Override public Object get() { return mArticle; } } ArticlePresenter.java public class ArticlePresenter extends IPresenter{ public ArticlePresenter(IView iView){ super(iView); this.iModel=new ArticleModel(); } @Override public void setDataOnView(View view) { iView.setDataOnView(ArticlePresenter.this,view); } @Override public void saveData(Object object) { iModel.set(object); } @Override public Object getData() { return this.iModel.get(); } } 通过上面代码可以看出，ArticlePresenter实现了父类的saveData(Object object)，setData(Objec object)和getData()方法。 getData()：从IModel子类(ArticleModel)对象中返回具体的数据 saveData(Object object)：通过IModel子类(ArticleModel)对象iModel的set(object)方法将数据存入Model中，等待调用。 setData(Objec object)：通过Activity(IView子类)对象iView的setDataOnView(ArticlePresenter.this,view)操作,将数据加载到视图中。 至此，我对于MVP模式的理解到此为止，欢迎朋友们与我交流探讨！ 下面是这个Demo用到的各种库与框架： compile &#39;com.android.support:design:25.3.1&#39; compile &#39;com.lapism:searchview:5.0.0-alpha4&#39; compile &#39;com.scwang.smartrefresh:SmartRefreshLayout:1.0.3&#39; compile &#39;com.scwang.smartrefresh:SmartRefreshHeader:1.0.3&#39; compile &#39;de.hdodenhof:circleimageview:2.1.0&#39; compile &#39;me.xiaopan:sketch:2.4.1&#39; compile &#39;online.osslab:CircleProgress:1.0.0&#39; compile &#39;com.github.Ccapton:Android-ColorfulProgressBar:1.0.5&#39; compile &#39;cn.hugeterry.coordinatortablayout:coordinatortablayout:1.1.0&#39; compile &#39;com.jakewharton:butterknife:8.8.1&#39; annotationProcessor &#39;com.jakewharton:butterknife-compiler:8.8.1&#39; compile &#39;io.reactivex.rxjava2:rxandroid:2.0.1&#39; compile &#39;io.reactivex.rxjava2:rxjava:2.1.3&#39; compile &#39;com.squareup.okhttp3:okhttp:3.8.1&#39; compile &#39;com.github.bumptech.glide:glide:3.8.0&#39; annotationProcessor &#39;com.github.bumptech.glide:compiler:4.0.0&#39; compile &#39;com.just.agentweb:agentweb:2.0.0&#39; compile &#39;com.blankj:utilcode:1.8.5&#39; 欢迎大家来踩我的Github https://github.com/ccapton 、博客 http://ccapton.cn]]></content>
@@ -50,8 +64,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>个人作品</tag>
         <tag>Android应用</tag>
+        <tag>个人作品</tag>
         <tag>音乐播放器</tag>
         <tag>QQ音乐</tag>
         <tag>酷狗音乐</tag>
@@ -106,8 +120,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>个人作品</tag>
         <tag>Android应用</tag>
+        <tag>个人作品</tag>
         <tag>纯粹漫画</tag>
       </tags>
   </entry>
@@ -120,8 +134,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>个人作品</tag>
         <tag>Android应用</tag>
+        <tag>个人作品</tag>
         <tag>纯粹菜谱</tag>
       </tags>
   </entry>
@@ -134,9 +148,9 @@
       </categories>
       <tags>
         <tag>音乐分享</tag>
-        <tag>BGM</tag>
         <tag>龙珠</tag>
         <tag>龙珠Z</tag>
+        <tag>BGM</tag>
       </tags>
   </entry>
   <entry>
@@ -148,8 +162,8 @@
       </categories>
       <tags>
         <tag>音乐分享</tag>
-        <tag>英雄联盟</tag>
         <tag>BGM</tag>
+        <tag>英雄联盟</tag>
       </tags>
   </entry>
   <entry>
@@ -177,23 +191,23 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[关于]]></title>
-    <url>%2Fabout%2Findex.html</url>
-    <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐邮箱：437499914@qq.com 、chenweibin1125@foxmail.com微信：Ccapton]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[board]]></title>
-    <url>%2Fboard%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[分类]]></title>
     <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
+    <title><![CDATA[关于]]></title>
+    <url>%2Fabout%2Findex.html</url>
+    <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐邮箱：437499914@qq.com 、chenweibin1125@foxmail.com微信：Ccapton]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[标签]]></title>
     <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[board]]></title>
+    <url>%2Fboard%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
