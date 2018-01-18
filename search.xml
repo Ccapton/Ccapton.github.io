@@ -48,10 +48,10 @@
         <category>Java技术</category>
       </categories>
       <tags>
-        <tag>个人作品</tag>
         <tag>Java技术</tag>
         <tag>Gif</tag>
         <tag>图片处理技术</tag>
+        <tag>个人作品</tag>
         <tag>Gif制作软件</tag>
       </tags>
   </entry>
@@ -77,8 +77,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>个人作品</tag>
         <tag>Android应用</tag>
+        <tag>个人作品</tag>
         <tag>音乐播放器</tag>
         <tag>QQ音乐</tag>
         <tag>酷狗音乐</tag>
@@ -133,8 +133,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>个人作品</tag>
         <tag>Android应用</tag>
+        <tag>个人作品</tag>
         <tag>纯粹漫画</tag>
       </tags>
   </entry>
@@ -147,8 +147,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>个人作品</tag>
         <tag>Android应用</tag>
+        <tag>个人作品</tag>
         <tag>纯粹菜谱</tag>
       </tags>
   </entry>
@@ -209,6 +209,11 @@
     <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐邮箱：437499914@qq.com 、chenweibin1125@foxmail.com微信：Ccapton]]></content>
   </entry>
   <entry>
+    <title><![CDATA[标签]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[board]]></title>
     <url>%2Fboard%2Findex.html</url>
     <content type="text"></content>
@@ -216,11 +221,6 @@
   <entry>
     <title><![CDATA[分类]]></title>
     <url>%2Fcategories%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[标签]]></title>
-    <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
