@@ -115,7 +115,7 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/7287689-98fbcfa698185640.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/7287689-5fb7ae2710844482.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/7287689-db4fc10774b8c674.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-01-18T13:34:26.635Z">
+<meta property="og:updated_time" content="2018-01-18T13:53:52.455Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android 一天时间撸一个文件(路径)选择器FileChooser">
 <meta name="twitter:description" content="关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn  前言额，突然心血来潮，把这个功能给做出来了。之前一直以为要一次遍历手机的所有文件再显示出来，后来仔细想了会，没那么复杂，只需要先指定一个">
@@ -445,8 +445,7 @@
 <p>关于我，欢迎关注<br>csdn博客：ccapton(<a href="http://blog.csdn.net/ccapton" target="_blank" rel="external">http://blog.csdn.net/ccapton</a>) 微信：<a href="">Ccapton</a><br>Github: (<a href="https://www.github.com/ccapton" target="_blank" rel="external">https://www.github.com/ccapton</a>)<br>个人博客:<a href="http://www.ccapton.cn/" target="_blank" rel="external">http://www.ccapton.cn</a></p>
 </blockquote>
 <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>额，突然心血来潮，把这个功能给做出来了。之前一直以为要一次遍历手机的所有文件再显示出来，后来仔细想了会，没那么复杂，只需要先指定一个路径再获取其子目录，即可完成我想要的效果。 </p>
- <a id="more"></a>
-<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="http://upload-images.jianshu.io/upload_images/7287689-f58aceee04d38231.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""> <img src="http://upload-images.jianshu.io/upload_images/7287689-98fbcfa698185640.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""> </p>
+<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="http://upload-images.jianshu.io/upload_images/7287689-f58aceee04d38231.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br> <a id="more"></a><br><img src="http://upload-images.jianshu.io/upload_images/7287689-98fbcfa698185640.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""> </p>
 <h3 id="传送门"><a href="#传送门" class="headerlink" title="传送门"></a>传送门</h3><p><strong><a href="https://github.com/Ccapton/FileChooser" target="_blank" rel="external">https://github.com/Ccapton/FileChooser</a></strong></p>
 <h3 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h3><p> <img src="http://upload-images.jianshu.io/upload_images/7287689-5fb7ae2710844482.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2121515255059_.pic.jpg"><br><strong>FileChooser、FileChooserActivity、FileTourController</strong> 这三个类实现界面与文件列表展示逻辑的耦合与内聚。 </p>
 <p>不过，因为我用到了databinding框架和vectorDrawable文件，所以要在app的build.gradle中如下图绿色框配置代码。<br> <img src="http://upload-images.jianshu.io/upload_images/7287689-db4fc10774b8c674.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
