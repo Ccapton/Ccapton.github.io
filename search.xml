@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[利用Bmob云后端云函数实现移动应用与数据库的数据交互]]></title>
     <url>%2F2018%2F01%2F24%2Fbmob_cloud_function%2F</url>
-    <content type="text"><![CDATA[关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn 一、前言由于自己没有专心研究后端技术，很多与数据库打交道的工作让我这个菜鸟弄起来很麻烦，之前做android应用用到自己的独立数据都是寄托于bmob云后端平台，但是一直调用的是它集成在android端的sdk代码来实现数据库数据的更新与获取。这段时间突然想到这个调用sdk代码的方式真的是太僵硬了，而且把大量原本应该自由变更的逻辑写死在了移动应用内，以后业务需求变了就只能更新app了。所以用云函数进行app数据交互是一个对于移动端开发者获取、更新数据的最佳方式吧。 图中被涂掉的部分是你的bmob应用的Secret Key。 二、如何调用云函数通过查看官方的教程，我们发现有多种途径android，iOS，Restful, C# , Javascript, php, web都可以调用云函数，根据不同的平台我们可以选择对应平台的sdk代码调用云函数，不过我今天写这篇文章的目的是为了展示最通用最自由来获取数据的方式，所以用的是 直接用访问http的方式 云函数的http调用的url拼接规则为1. GET方式http://cloud.bmob.cn/{Secret Key}/{云函数名}?{参数名}={值}&amp;{参数名}={值}… get方式可在浏览器直接输入地址和参数查看数据，测试的时候用get很直观，但是为了安全起见还是用post方式吧 2. POST方式需要在你的应用内编写相关POST代码(主要是把参数体添加到云函数所在的url例如 http://cloud.bmob.cn/{Secret Key}/{云函数名}) (ps:大括号 { } 不要写上去，括号里的内容才是你要替换的)调用方式就写到这里，不懂的朋友可以联系我 (我也是看bmob文档的) 三、如何写云函数官方教程 http://doc.bmob.cn/cloud_function/web/develop_doc/ 1.首先先创建一个自定义的云函数 2.命名这个函数，并确认这样一个空的云函数就部署好了， 3.了解云函数结构空的云函数如下所示 function onRequest(request, response, modules) { // 云函数包括三大参数 request, response, modules // request 对象包含请求体的所有信息和操作 // response 对象包含返回体的所有信息和操作 // modules 是Bmob云函数提供给大家的各种对象处理的模块 /*包括数据库对象（oData）、文件对象（oFile）、地理位置对象 （oLocation）、关联关系对象（oRelation）、原子操作对象（oAtom）、 数据批量操作对象（oBatch）、数组对象（oArray）、消息推送对象（oPush）、 云函数对象（oFunctions）、HTTP对象（oHttp）、字符编码转换对象（oEncodeing）、 事件对象（oEvent）、bql对象（oBql）、html元素解析对象（oHtmlparser）、 加密对象（oCrypto）。 */ /* 示例： //获取数据库对象 var db = modules.oData; //下面进行其他操作 */ } 我对于云函数的介绍就这么多，很多内容我也是刚接触，不懂的朋友都去看文档，看文档，看文档(重要的事情说三遍)。 ####4 .示例云函数代码(自己写的登录模块) function onRequest(request, response, modules) { var httptype = request.method; var username_get = request.query.username; var password_get = request.query.password; var userinfo_get = request.query.userinfo; var username_post = request.body.username; var password_post = request.body.password; var userinfo_post = request.body.userinfo; var username; var password; var userinfo; if (&quot;GET&quot; == httptype) { //采用get方式调用云函数 username = username_get; password = password_get; userinfo = userinfo_get; }else{ //采用post方式调用云函数 username = username_post; password = password_post; userinfo = username_post; } var db = modules.oData; if(username === &quot;&quot; || username === null ){ response.send(&quot;用户名不能为空&quot;); } else if(password === &quot;&quot; || password === null){ response.send(&quot;密码不能为空&quot;); }else{ db.userSignUp({ &quot;data&quot;:{&quot;username&quot;:username,&quot;password&quot;:password} //用户注册的信息，格式为JSON },function(err,data){ response.send(data);//回调函数 if(data){ var dataObject = JSON.parse(data); if(dataObject.error == null){ //需要设置登录之后获取的sessionToken头信息 db.setHeader({&quot;X-Bmob-Session-Token&quot;:dataObject.sessionToken}); db.updateUserByObjectId({&quot;objectId&quot;:dataObject.objectId ,data:JSON.parse(userinfo)},function(err,data){ response.send(&quot;更新成功&quot;); }) }else{ response.send(&quot;找不到该用户！&quot;); } }else{ response.send(err); } }); } } 四、通过android调用云函数(访问http方式) android端更新用户信息，关键代码源码 https://github.com/Ccapton/BaseApp网路请求框架我用的是okgo库(okhttp封装库 https://github.com/jeasonlzy/okhttp-OkGo) binding.update.setOnClickListener(new View.OnClickListener() { @Override public void onClick(View v) { String url = getString(R.string.bmob_function_base_url) + getString(R.string.bmob_function_update); JSONObject jsonObject = new JSONObject(); try { jsonObject.put(&quot;face&quot;,binding.face.getText().toString()); jsonObject.put(&quot;birthday&quot;,binding.birthday.getText().toString()); } catch (JSONException e) { e.printStackTrace(); } OkGo.&lt;String&gt;post(url) .tag(UpdateFragment.this.getActivity()) .params(&quot;username&quot;,binding.phone.getText().toString()) .params(&quot;password&quot;,binding.psw.getText().toString()) .params(&quot;userinfo&quot;,jsonObject.toString()) .execute(new StringCallback() { @Override public void onSuccess(Response&lt;String&gt; response) { System.out.println(&quot;UpdateFragment.onSuccess&quot;); ToastUtils.showShort(response.body()); } }); } }); 五、后记昨天我也是刚刚写完三个云函数：注册、登录、更新信息，感觉很不错，所以才有写这篇文章的动机。目前云函数功能在bmob应用创建前40天免费，之后要收费了，要商用的小伙伴要注意续费呦，现在云函数的使用价格是50元/月。 好吧，祝各位工作顺利、生活愉快！欢迎访问我的github https://github.com/Ccaptonandroid端测试项目 https://github.com/Ccapton/BaseApp]]></content>
+    <content type="text"><![CDATA[关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cnE-mail: 437499914@qq.com、chenweibin1125@foxmail.com 一、前言由于自己没有专心研究后端技术，很多与数据库打交道的工作让我这个菜鸟弄起来很麻烦，之前做android应用用到自己的独立数据都是寄托于bmob云后端平台，但是一直调用的是它集成在android端的sdk代码来实现数据库数据的更新与获取。这段时间突然想到这个调用sdk代码的方式真的是太僵硬了，而且把大量原本应该自由变更的逻辑写死在了移动应用内，以后业务需求变了就只能更新app了。所以用云函数进行app数据交互是一个对于移动端开发者获取、更新数据的最佳方式吧。 图中被涂掉的部分是你的bmob应用的Secret Key。 二、如何调用云函数通过查看官方的教程，我们发现有多种途径android，iOS，Restful, C# , Javascript, php, web都可以调用云函数，根据不同的平台我们可以选择对应平台的sdk代码调用云函数，不过我今天写这篇文章的目的是为了展示最通用最自由来获取数据的方式，所以用的是 直接用访问http的方式 云函数的http调用的url拼接规则为1. GET方式http://cloud.bmob.cn/{Secret Key}/{云函数名}?{参数名}={值}&amp;{参数名}={值}… get方式可在浏览器直接输入地址和参数查看数据，测试的时候用get很直观，但是为了安全起见还是用post方式吧 2. POST方式需要在你的应用内编写相关POST代码(主要是把参数体添加到云函数所在的url例如 http://cloud.bmob.cn/{Secret Key}/{云函数名}) (ps:大括号 { } 不要写上去，括号里的内容才是你要替换的)调用方式就写到这里，不懂的朋友可以联系我 (我也是看bmob文档的) 三、如何写云函数官方教程 http://doc.bmob.cn/cloud_function/web/develop_doc/ 1.首先先创建一个自定义的云函数 2.命名这个函数，并确认这样一个空的云函数就部署好了， 3.了解云函数结构空的云函数如下所示 function onRequest(request, response, modules) { // 云函数包括三大参数 request, response, modules // request 对象包含请求体的所有信息和操作 // response 对象包含返回体的所有信息和操作 // modules 是Bmob云函数提供给大家的各种对象处理的模块 /*包括数据库对象（oData）、文件对象（oFile）、地理位置对象 （oLocation）、关联关系对象（oRelation）、原子操作对象（oAtom）、 数据批量操作对象（oBatch）、数组对象（oArray）、消息推送对象（oPush）、 云函数对象（oFunctions）、HTTP对象（oHttp）、字符编码转换对象（oEncodeing）、 事件对象（oEvent）、bql对象（oBql）、html元素解析对象（oHtmlparser）、 加密对象（oCrypto）。 */ /* 示例： //获取数据库对象 var db = modules.oData; //下面进行其他操作 */ } 我对于云函数的介绍就这么多，很多内容我也是刚接触，不懂的朋友都去看文档，看文档，看文档(重要的事情说三遍)。 ####4 .示例云函数代码(自己写的登录模块) function onRequest(request, response, modules) { var httptype = request.method; var username_get = request.query.username; var password_get = request.query.password; var userinfo_get = request.query.userinfo; var username_post = request.body.username; var password_post = request.body.password; var userinfo_post = request.body.userinfo; var username; var password; var userinfo; if (&quot;GET&quot; == httptype) { //采用get方式调用云函数 username = username_get; password = password_get; userinfo = userinfo_get; }else{ //采用post方式调用云函数 username = username_post; password = password_post; userinfo = username_post; } var db = modules.oData; if(username === &quot;&quot; || username === null ){ response.send(&quot;用户名不能为空&quot;); } else if(password === &quot;&quot; || password === null){ response.send(&quot;密码不能为空&quot;); }else{ db.userSignUp({ &quot;data&quot;:{&quot;username&quot;:username,&quot;password&quot;:password} //用户注册的信息，格式为JSON },function(err,data){ response.send(data);//回调函数 if(data){ var dataObject = JSON.parse(data); if(dataObject.error == null){ //需要设置登录之后获取的sessionToken头信息 db.setHeader({&quot;X-Bmob-Session-Token&quot;:dataObject.sessionToken}); db.updateUserByObjectId({&quot;objectId&quot;:dataObject.objectId ,data:JSON.parse(userinfo)},function(err,data){ response.send(&quot;更新成功&quot;); }) }else{ response.send(&quot;找不到该用户！&quot;); } }else{ response.send(err); } }); } } 四、通过android调用云函数(访问http方式) android端更新用户信息，关键代码源码 https://github.com/Ccapton/BaseApp网路请求框架我用的是okgo库(okhttp封装库 https://github.com/jeasonlzy/okhttp-OkGo) binding.update.setOnClickListener(new View.OnClickListener() { @Override public void onClick(View v) { String url = getString(R.string.bmob_function_base_url) + getString(R.string.bmob_function_update); JSONObject jsonObject = new JSONObject(); try { jsonObject.put(&quot;face&quot;,binding.face.getText().toString()); jsonObject.put(&quot;birthday&quot;,binding.birthday.getText().toString()); } catch (JSONException e) { e.printStackTrace(); } OkGo.&lt;String&gt;post(url) .tag(UpdateFragment.this.getActivity()) .params(&quot;username&quot;,binding.phone.getText().toString()) .params(&quot;password&quot;,binding.psw.getText().toString()) .params(&quot;userinfo&quot;,jsonObject.toString()) .execute(new StringCallback() { @Override public void onSuccess(Response&lt;String&gt; response) { System.out.println(&quot;UpdateFragment.onSuccess&quot;); ToastUtils.showShort(response.body()); } }); } }); 五、后记昨天我也是刚刚写完三个云函数：注册、登录、更新信息，感觉很不错，所以才有写这篇文章的动机。目前云函数功能在bmob应用创建前40天免费，之后要收费了，要商用的小伙伴要注意续费呦，现在云函数的使用价格是50元/月。 好吧，祝各位工作顺利、生活愉快！欢迎访问我的github https://github.com/Ccaptonandroid端测试项目 https://github.com/Ccapton/BaseApp]]></content>
       <categories>
         <category>Android</category>
       </categories>
@@ -65,8 +65,8 @@
         <tag>个人作品</tag>
         <tag>Java技术</tag>
         <tag>Gif</tag>
-        <tag>图片处理技术</tag>
         <tag>Gif制作软件</tag>
+        <tag>图片处理技术</tag>
       </tags>
   </entry>
   <entry>
@@ -175,9 +175,9 @@
       </categories>
       <tags>
         <tag>音乐分享</tag>
+        <tag>BGM</tag>
         <tag>龙珠</tag>
         <tag>龙珠Z</tag>
-        <tag>BGM</tag>
       </tags>
   </entry>
   <entry>
@@ -189,8 +189,8 @@
       </categories>
       <tags>
         <tag>音乐分享</tag>
-        <tag>BGM</tag>
         <tag>英雄联盟</tag>
+        <tag>BGM</tag>
       </tags>
   </entry>
   <entry>
@@ -218,8 +218,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[分类]]></title>
-    <url>%2Fcategories%2Findex.html</url>
+    <title><![CDATA[board]]></title>
+    <url>%2Fboard%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
@@ -228,13 +228,13 @@
     <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐邮箱：437499914@qq.com 、chenweibin1125@foxmail.com微信：Ccapton]]></content>
   </entry>
   <entry>
-    <title><![CDATA[标签]]></title>
-    <url>%2Ftags%2Findex.html</url>
+    <title><![CDATA[分类]]></title>
+    <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[board]]></title>
-    <url>%2Fboard%2Findex.html</url>
+    <title><![CDATA[标签]]></title>
+    <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
