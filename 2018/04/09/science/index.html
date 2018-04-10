@@ -116,7 +116,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/2.jpeg">
 <meta property="og:image" content="https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/3.jpeg">
 <meta property="og:image" content="https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/4.jpeg">
-<meta property="og:updated_time" content="2018-04-09T16:08:34.975Z">
+<meta property="og:updated_time" content="2018-04-10T12:32:00.435Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用自建国外服务器开启专属于自己的VPN服务(brook框架)，翻墙上网速度快到飞起！">
 <meta name="twitter:description" content="关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cnE-mail: 437499914@qq.com、chenweibin1125@foxmail.com我的简书   https://www.">
@@ -445,18 +445,12 @@
         <blockquote>
 <p>关于我，欢迎关注<br>csdn博客：ccapton(<a href="http://blog.csdn.net/ccapton" target="_blank" rel="external">http://blog.csdn.net/ccapton</a>) 微信：<a href="">Ccapton</a><br>Github: (<a href="https://www.github.com/ccapton" target="_blank" rel="external">https://www.github.com/ccapton</a>)<br>个人博客:<a href="http://www.ccapton.cn/" target="_blank" rel="external">http://www.ccapton.cn</a><br>E-mail: 437499914@qq.com、chenweibin1125@foxmail.com<br>我的简书   <a href="https://www.jianshu.com/u/df3b46206dc4" target="_blank" rel="external">https://www.jianshu.com/u/df3b46206dc4</a></p>
 </blockquote>
-<h3 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h3><hr>
-
-<p>之前科学上网时，一直是买一些vpn提供商的服务，但是性价比非常低。因为自己不是天天翻墙查资料、看youtube视频，每个月10-20块的支出感觉有点多余，加上他们的速度简直不敢恭维，卡的不行。后来找了一个免费的vpn平台，还是因为它的速度，让我提不起兴趣每次上网的时候去开启软件，因为一旦开启的vpn，浏览国内的ip内容就会很慢。终于前两天在逛今日头条的时候看到一个关于自建谷歌服务器（国外ip的服务器）科学上网的视频(这段视频很快被今日头条官方和谐掉了2333，还好我眼疾手快，很快就明白了之中的原理)，加上我对Linux服务器的理解，很快就搭建了一个外服的vpn服务系统，现在能通过各平台客户端连接到vpn服务器并科学上网了，速度简直出乎所有人意料的快，令我非常满意。现在特地写出这篇博文给小伙伴们分享一下，让你们体验从所未有的科学冲浪！</p>
+<h3 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h3><p>之前科学上网时，一直是买一些vpn提供商的服务，但是性价比非常低。因为自己不是天天翻墙查资料、看youtube视频，每个月10-20块的支出感觉有点多余，加上他们的速度简直不敢恭维，卡的不行。后来找了一个免费的vpn平台，还是因为它的速度，让我提不起兴趣每次上网的时候去开启软件，因为一旦开启的vpn，浏览国内的ip内容就会很慢。终于前两天在逛今日头条的时候看到一个关于自建谷歌服务器（国外ip的服务器）科学上网的视频(这段视频很快被今日头条官方和谐掉了2333，还好我眼疾手快，很快就明白了之中的原理)，加上我对Linux服务器的理解，很快就搭建了一个外服的vpn服务系统，现在能通过各平台客户端连接到vpn服务器并科学上网了，速度简直出乎所有人意料的快，令我非常满意。现在特地写出这篇博文给小伙伴们分享一下，让你们体验从所未有的科学冲浪！</p>
 <a id="more"></a>
 <p><strong>Youtube的1080p视频拖放</strong></p>
 <p><img src="https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/youtube.gif" alt="youtube的1080p视频拖放"></p>
-<h3 id="二、原理"><a href="#二、原理" class="headerlink" title="二、原理"></a>二、原理</h3><hr>
-
-<p><strong>这个vpn的根本原理是：一个境外ip的服务器转发国内客户端的网络请求，即服务器充当一个路由器的功能，所有境外ip的内容都会经由服务器返回给对应客户端</strong></p>
-<h3 id="三、私人VPN搭建概要"><a href="#三、私人VPN搭建概要" class="headerlink" title="三、私人VPN搭建概要"></a>三、私人VPN搭建概要</h3><hr>
-
-<ul>
+<h3 id="二、原理"><a href="#二、原理" class="headerlink" title="二、原理"></a>二、原理</h3><p><strong>这个vpn的根本原理是：一个境外ip的服务器转发国内客户端的网络请求，即服务器充当一个路由器的功能，所有境外ip的内容都会经由服务器返回给对应客户端</strong></p>
+<h3 id="三、私人VPN搭建概要"><a href="#三、私人VPN搭建概要" class="headerlink" title="三、私人VPN搭建概要"></a>三、私人VPN搭建概要</h3><ul>
 <li>搭建一个境外的Linux服务器(我搭建的是Ubuntu，因为Ubuntu集成了很多常用的指令集合)</li>
 <li>通过ssh访问Linux服务器，在Linux服务器内搭建VPN服务（brook框架），这里需要提前安装Go语言的环境（brook服务器框架是go语音写的）</li>
 <li>客户端（Windows ,Mac ,Android ,Ios）填写Linux服务器的公共ipv4地址、端口 ，密码访问Linux服务器的vpn服务。这样就可以科学上网了</li>
@@ -466,7 +460,7 @@
 <h3 id="四、代码材料"><a href="#四、代码材料" class="headerlink" title="四、代码材料"></a>四、代码材料</h3><ul>
 <li><p>Go语言环境搭建教程 <a href="http://www.runoob.com/go/go-environment.html" target="_blank" rel="external">http://www.runoob.com/go/go-environment.html</a></p>
 </li>
-<li><p>brook框架 <a href="https://github.com/txthinking/brook" target="_blank" rel="external">https://github.com/txthinking/brook</a></p>
+<li><p>brook框架 <a href="https://github.com/txthinking/brook" target="_blank" rel="external">https://github.com/txthinking/brook</a> (请仔细阅读此框架的文档)</p>
 <p> 1、brook服务器 <a href="https://github.com/txthinking/brook/releases/download/v20180401/brook" target="_blank" rel="external">https://github.com/txthinking/brook/releases/download/v20180401/brook</a> （根据你的服务器内核在github说明页选择对应版本）</p>
 <p> 2、brook客户端 （Android客户端为例，可按照需要选择相应的平台）<a href="https://github.com/txthinking/brook/releases/download/v20180401/Brook.apk" target="_blank" rel="external">https://github.com/txthinking/brook/releases/download/v20180401/Brook.apk</a></p>
 </li>
@@ -500,9 +494,7 @@
 <p><strong>4、客户端brook连接到vpn（android为例）</strong></p>
 <p>下载 <a href="https://github.com/txthinking/brook/releases/download/v20180401/Brook.apk" target="_blank" rel="external">https://github.com/txthinking/brook/releases/download/v20180401/Brook.apk</a></p>
 <p><img src="https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/4.jpeg" width="300px"></p>
-<h3 id="六、后记"><a href="#六、后记" class="headerlink" title="六、后记"></a>六、后记</h3><hr>
-
-<p>到此，这个vpn系统就弄好了！非常快的科学上网体验，你值得拥有！<br>本来想在简书和csdn上发这篇文章的，但是最近国家打击vpn软件非常严厉，关于翻墙，科学上网的文章教程一律不得发布、转载了。所以就写在我的博客里吧<br>希望有缘人看到这篇文章就多来我的博客、简书、github留言哈！<br>有什么问题不懂的也可以邮件联系我</p>
+<h3 id="六、后记"><a href="#六、后记" class="headerlink" title="六、后记"></a>六、后记</h3><p>到此，这个vpn系统就弄好了！非常快的科学上网体验，你值得拥有！<br>本来想在简书和csdn上发这篇文章的，但是最近国家打击vpn软件非常严厉，关于翻墙，科学上网的文章教程一律不得发布、转载了。所以就写在我的博客里吧<br>希望有缘人看到这篇文章就多来我的博客、简书、github留言哈！<br>有什么问题不懂的也可以邮件联系我</p>
 <blockquote>
 <p>E-mail: 437499914@qq.com、chenweibin1125@foxmail.com</p>
 </blockquote>
