@@ -13,6 +13,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[基于cocos2d-x引擎的角色控制器]]></title>
+    <url>%2F2018%2F06%2F20%2Frolecontroller%2F</url>
+    <content type="text"><![CDATA[关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn 最近开始学习cocos2d-x引擎，用来做一些2d小游戏。在基本做完一个飞机大战游戏的情况下，感觉手机玩沙盒2d游戏需要一个控制角色移动的控制手柄，不然光靠点屏幕是不精确而又费劲的体验。于是开始写了一个角色控制器RoleController，效果如下项目地址https://github.com/Ccapton/Cocos2d-x-RoleController演示程序apkhttps://raw.githubusercontent.com/Ccapton/Cocos2d-x-RoleController/master/Fightman-debug.apk RoleController.h内容 #ifndef __ROLE_CONTROLLER_H__ #define __ROLE_CONTROLLER_H__ #include &quot;cocos2d.h&quot; USING_NS_CC; #include &quot;string&quot; class RoleControllerListenr { public: // velocity 为控制球相对于控制中心的偏移量， // 你可以在具体的实现方法内利用定时更新函数对此结果进行利用，进而实现对精灵的位置控制 virtual void onControllerTouchBegan(Vec2 velocity) = 0; virtual void onControllerTouchMoving(Vec2 velocity) = 0; virtual void onControllerTouchEnded(Vec2 velocity) = 0; }; class RoleController : public Layer { private: RoleController() {} public: bool touchIngInside = false; float radius = 0; float ball_d_bg = 0; Vec2 offset; Color4F bg_color = Color4F(-1.0f,-1.0f,-1.0f,-1.0f); Color4F ball_color = Color4F(-1.0f, -1.0f, -1.0f, -1.0f);; Node * tempLayer; Node * tempLayer2; std::string bg_resouce_path; std::string ball_resouce_path; static RoleController* createController(float radius,const Vec2 offset); RoleControllerListenr * listener; virtual bool init(); void createBg(); void createBall(); void setPositioin(Vec2 position); void setOffset(Vec2 offset); void setBgResoucePath(std::string path); void setBallResoucePath(std::string path); bool touchBeganCallback(Touch* touch, Event* event); void touchMovedCallback(Touch* touch, Event* event); void touchEndedCallback(Touch* touch, Event* event); void setRoleControllerListenr(RoleControllerListenr * listener); CREATE_FUNC(RoleController); }; #endif 本来想把它做完再发文章的，但是觉得没什么人看我的文章，也就算了，毕竟这个控制器挺简单的。 原理主要是靠触摸事件来判断手指位置来判断是否其在控制器内，若是则使小圆的位置跟随触摸移动。若一开始触摸从控制器内，然后往外移动最后离开控制器范围，则小球则会在控制内移动然后根据手指落点的位置而在控制器的圆边界上移动。这个控制器最复杂的地方是： 计算这个小球在控制器边界移动的坐标，最后解决了这个算法，一个简单的控制器变完成了9成。.通过高中数学的解析几何知识 我得到了下面这个算法： // 控制器小球在控制器边界圆上移动时，其坐标的算法 // targetX,targetY为所求圆边界上的坐标 （这是仅有的两个未知量） // centerP.x为控制器中心横坐标，centerP.y为控制器中心纵坐标 // touchP.x为触控点横坐标，touchP.y为触控点纵坐标 // distance 为触控点距离控制器中心的距离，radius则是圆形控制器的半径 float targetX = 0, targetY = 0; if (touchP.x &gt; centerP.x &amp;&amp; touchP.y &gt; centerP.y) { targetX = centerP.x + radius * (touchP.x - centerP.x) / distance; targetY = centerP.y + radius * (touchP.y - centerP.y) / distance; }else if (touchP.x &lt; centerP.x &amp;&amp; touchP.y &gt; centerP.y) { targetX = centerP.x - radius * (centerP.x - touchP.x) / distance; targetY = centerP.y + radius * (touchP.y - centerP.y) / distance; }else if (touchP.x &lt; centerP.x &amp;&amp; touchP.y &lt; centerP.y) { targetX = centerP.x - radius * (centerP.x - touchP.x) / distance; targetY = centerP.y - radius * (centerP.y - touchP.y) / distance; }else if (touchP.x &gt; centerP.x &amp;&amp; touchP.y &lt; centerP.y) { targetX = centerP.x + radius * (touchP.x - centerP.x) / distance; targetY = centerP.y - radius * (centerP.y - touchP.y ) / distance; } 最后便是回调结果了，将小球相对于控制器中心的偏移量Vec2传递出去，这里用到了RoleControllerListenr这个类作为接口，你需要在合适的地方继承此接口类并实现其抽象函数 class RoleControllerListenr { public: // velocity 为控制球相对于控制中心的偏移量， // 你可以在具体的实现方法内利用定时更新函数对此结果进行利用，进而实现对精灵的位置控制 virtual void onControllerTouchBegan(Vec2 velocity) = 0; // 开始触摸控制器 virtual void onControllerTouchMoving(Vec2 velocity) = 0; // 控制器小球移动中 virtual void onControllerTouchEnded(Vec2 velocity) = 0; // 结束触摸控制器 }; 后记很多人估计看到这一头雾水，这里很多的代码是基于cocos2dx这个游戏开发引擎的，看不懂很正常，对游戏开发感兴趣的朋友可以去官网仔细阅读一下文档。好了，关于这个控制器就介绍到这了，希望你们会喜欢。别忘了关注我，给我星星https://github.com/Ccapton]]></content>
+      <categories>
+        <category>游戏开发</category>
+      </categories>
+      <tags>
+        <tag>游戏开发</tag>
+        <tag>Cocos2d-x</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[利用自建国外服务器开启专属于自己的VPN服务(brook框架)，翻墙上网速度快到飞起！]]></title>
     <url>%2F2018%2F04%2F09%2Fscience%2F</url>
     <content type="text"><![CDATA[关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cnE-mail: 437499914@qq.com、chenweibin1125@foxmail.com我的简书 https://www.jianshu.com/u/df3b46206dc4 一、前言之前科学上网时，一直是买一些vpn提供商的服务，但是性价比非常低。因为自己不是天天翻墙查资料、看youtube视频，每个月10-20块的支出感觉有点多余，加上他们的速度简直不敢恭维，卡的不行。后来找了一个免费的vpn平台，还是因为它的速度，让我提不起兴趣每次上网的时候去开启软件，因为一旦开启的vpn，浏览国内的ip内容就会很慢。终于前两天在逛今日头条的时候看到一个关于自建谷歌服务器（国外ip的服务器）科学上网的视频(这段视频很快被今日头条官方和谐掉了2333，还好我眼疾手快，很快就明白了之中的原理)，加上我对Linux服务器的理解，很快就搭建了一个外服的vpn服务系统，现在能通过各平台客户端连接到vpn服务器并科学上网了，速度简直出乎所有人意料的快，令我非常满意。现在特地写出这篇博文给小伙伴们分享一下，让你们体验从所未有的科学冲浪！ Youtube的1080p视频拖放 二、原理这个vpn的根本原理是：一个境外ip的服务器转发国内客户端的网络请求，即服务器充当一个路由器的功能，所有境外ip的内容都会经由服务器返回给对应客户端 三、私人VPN搭建概要 搭建一个境外的Linux服务器(我搭建的是Ubuntu，因为Ubuntu集成了很多常用的指令集合) 通过ssh访问Linux服务器，在Linux服务器内搭建VPN服务（brook框架），这里需要提前安装Go语言的环境（brook服务器框架是go语音写的） 客户端（Windows ,Mac ,Android ,Ios）填写Linux服务器的公共ipv4地址、端口 ，密码访问Linux服务器的vpn服务。这样就可以科学上网了 搭建服务器，说实话，如果一点基础知识都没有的话，弄起来确实有点懵，不过用过国内的云服务（阿里云，腾讯云，京东云的云主机服务）的朋友就很容易上手了，因为这些东西都是大同小异的。 国内的dns服务器会屏蔽掉谷歌、youtube等很多公司的内容服务ip，但他们提供给个人用户的云服务器ip不会被屏蔽） 四、代码材料 Go语言环境搭建教程 http://www.runoob.com/go/go-environment.html brook框架 https://github.com/txthinking/brook (请仔细阅读此框架的文档) 1、brook服务器 https://github.com/txthinking/brook/releases/download/v20180401/brook （根据你的服务器内核在github说明页选择对应版本） 2、brook客户端 （Android客户端为例，可按照需要选择相应的平台）https://github.com/txthinking/brook/releases/download/v20180401/Brook.apk 五、具体步骤1、搭建服务器： 这里我选择了亚马逊的云服务器，因为他们有一年云服务免费使用的福利套餐！！！（谷歌云也是免费一年，还有300美元的云服务消费额度） （1）首先用你的邮箱注册一个亚马逊云服务的账号（最好不要用QQ邮箱，很有可能收不到验证邮件！），我用的是Foxmail，这也是腾讯的邮箱（和QQ邮箱绑定的），你们可以用网易邮箱。登录你的控制台，然后填写一个很重要的支付账号，需要提供一个信用卡信息。如果你有信用卡，就如实填写，没有就去淘宝买一个虚拟的visa卡（8块左右）（提前和淘宝客户沟通买虚拟Visa的用途，他提供卡号，过期日期），然后按照下图操作： 关于美国公民的用户信息格式可以参考 http://www.haoweichi.com/ （里面的信用卡都是没用的，我只是给你看地址和邮编的对应格式） 填写完支付账号后，就等个几小时（上面写一天内会验证完，实际很快，我的不用一小时就验证完了），等系统验证信用卡真实后就可以进入控制台生成云服务器了 （2）搭建亚马逊Linux服务器(EC2)教程 https://jingyan.baidu.com/article/0eb457e5d7848403f0a90545.html 2、搭建代码环境 (需要了解 指令 cd 、wget ) （1）通过ssh登录Linux服务器（控制台有教程） （2）先搭建go语言环境 http://www.runoob.com/go/go-environment.html (如果出现权限报错，请在指令前加 sudo 再执行，下载文件的指令的格式为： wget 文件地址) （3）下载brook服务器 https://github.com/txthinking/brook/releases/download/v20180401/brook （根据你的服务器内核在github说明页选择对应版本） wget https://github.com/txthinking/brook/releases/download/v20180401/brook 3、运行brook服务器 先改变brook文件执行权限 chmod +x brook 开跑程序！！！ 前台模式 ./brook server -l :9999 -p 6666 后台模式 nohup ./brook server -l :9999 -p 6666 &amp; (ps：9999是端口号，6666是你要设定的密码，这两个都可以修改) 前台模式下：CTRL+C 退出brook程序后台模式下：先 CTRL+C 后 killall brook 退出brook程序brook服务器的具体操作请阅读源码说明 https://github.com/txthinking/brook/wiki/How-to-run-Brook-Server-on-Linux%3F (如果下载brook时，你更改了brook的保存路径，就用 cd 指令更改当前目录为brook文件的目录路径) 4、客户端brook连接到vpn（android为例） 下载 https://github.com/txthinking/brook/releases/download/v20180401/Brook.apk 六、后记到此，这个vpn系统就弄好了！非常快的科学上网体验，你值得拥有！本来想在简书和csdn上发这篇文章的，但是最近国家打击vpn软件非常严厉，关于翻墙，科学上网的文章教程一律不得发布、转载了。所以就写在我的博客里吧希望有缘人看到这篇文章就多来我的博客、简书、github留言哈！有什么问题不懂的也可以邮件联系我 E-mail: 437499914@qq.com、chenweibin1125@foxmail.com 好吧，祝各位工作顺利、生活愉快！ 我的github https://github.com/Ccapton我的简书 https://www.jianshu.com/u/df3b46206dc4]]></content>
@@ -201,9 +214,9 @@
       </categories>
       <tags>
         <tag>音乐分享</tag>
+        <tag>BGM</tag>
         <tag>龙珠</tag>
         <tag>龙珠Z</tag>
-        <tag>BGM</tag>
       </tags>
   </entry>
   <entry>
@@ -215,8 +228,8 @@
       </categories>
       <tags>
         <tag>音乐分享</tag>
-        <tag>BGM</tag>
         <tag>英雄联盟</tag>
+        <tag>BGM</tag>
       </tags>
   </entry>
   <entry>
