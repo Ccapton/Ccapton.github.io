@@ -47,12 +47,14 @@
     <link href="http://ccapton.cn/2018/06/20/rolecontroller/"/>
     <id>http://ccapton.cn/2018/06/20/rolecontroller/</id>
     <published>2018-06-20T04:08:48.000Z</published>
-    <updated>2018-07-30T05:00:54.958Z</updated>
+    <updated>2018-07-30T05:02:50.679Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapto
+&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href=&quot;&quot;&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最近开始学习cocos2d-x引擎，用来做一些2d小游戏。在基本做完一个飞机大战游戏的情况下，感觉手机玩沙盒2d游戏需要一个控制角色移动的控制手柄，不然光靠点屏幕是不精确而又费劲的体验。于是开始写了一个角色控制器RoleController，效果如下&lt;br&gt;&lt;img src=&quot;https://upload-images.jianshu.io/upload_images/7287689-e3d6e9e0d0e41a7a.gif?imageMogr2/auto-orient/strip&quot; alt=&quot;效果还行吧&quot;&gt;&lt;br&gt;
     
     </summary>
     

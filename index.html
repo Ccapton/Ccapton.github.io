@@ -596,104 +596,17 @@
 
       
         
-          
-            <blockquote>
+          <blockquote>
 <p>关于我，欢迎关注<br>csdn博客：ccapton(<a href="http://blog.csdn.net/ccapton" target="_blank" rel="external">http://blog.csdn.net/ccapton</a>) 微信：<a href="">Ccapton</a><br>Github: (<a href="https://www.github.com/ccapton" target="_blank" rel="external">https://www.github.com/ccapton</a>)<br>个人博客:<a href="http://www.ccapton.cn/" target="_blank" rel="external">http://www.ccapton.cn</a></p>
 </blockquote>
-<p>最近开始学习cocos2d-x引擎，用来做一些2d小游戏。在基本做完一个飞机大战游戏的情况下，感觉手机玩沙盒2d游戏需要一个控制角色移动的控制手柄，不然光靠点屏幕是不精确而又费劲的体验。于是开始写了一个角色控制器RoleController，效果如下<br><img src="https://upload-images.jianshu.io/upload_images/7287689-e3d6e9e0d0e41a7a.gif?imageMogr2/auto-orient/strip" alt="效果还行吧"><br>项目地址<br><a href="https://github.com/Ccapton/Cocos2d-x-RoleController" target="_blank" rel="external">https://github.com/Ccapton/Cocos2d-x-RoleController</a><br>演示程序apk<br><a href="https://raw.githubusercontent.com/Ccapton/Cocos2d-x-RoleController/master/Fightman-debug.apk" target="_blank" rel="external">https://raw.githubusercontent.com/Ccapton/Cocos2d-x-RoleController/master/Fightman-debug.apk</a></p>
-<p>RoleController.h内容</p>
-<pre><code>#ifndef __ROLE_CONTROLLER_H__
-#define __ROLE_CONTROLLER_H__
-
-#include &quot;cocos2d.h&quot;
-USING_NS_CC;
-
-#include &quot;string&quot;
-
-
-class RoleControllerListenr {
-public:
-    // velocity 为控制球相对于控制中心的偏移量，
-    // 你可以在具体的实现方法内利用定时更新函数对此结果进行利用，进而实现对精灵的位置控制
-   virtual void onControllerTouchBegan(Vec2 velocity) = 0;
-   virtual void onControllerTouchMoving(Vec2 velocity) = 0;
-   virtual void onControllerTouchEnded(Vec2 velocity) = 0;
-};
-
-class RoleController : public Layer {
-private:
-    RoleController() {}
-public:
-    bool touchIngInside = false;
-    float radius = 0;
-    float ball_d_bg = 0;
-    Vec2 offset;
-    Color4F bg_color = Color4F(-1.0f,-1.0f,-1.0f,-1.0f);
-    Color4F ball_color = Color4F(-1.0f, -1.0f, -1.0f, -1.0f);;
-    Node * tempLayer;
-    Node * tempLayer2;
-    std::string bg_resouce_path;
-    std::string ball_resouce_path;
-
-    static RoleController* createController(float radius,const Vec2 offset);
-
-    RoleControllerListenr * listener;
-
-    virtual bool init(); 
-
-    void createBg();
-    void createBall();
-
-    void setPositioin(Vec2 position);
-    void setOffset(Vec2 offset);
-
-    void setBgResoucePath(std::string path);
-    void setBallResoucePath(std::string path);
-
-    bool touchBeganCallback(Touch* touch, Event* event);
-    void touchMovedCallback(Touch* touch, Event* event);
-    void touchEndedCallback(Touch* touch, Event* event);
-
-    void setRoleControllerListenr(RoleControllerListenr * listener);
-
-    CREATE_FUNC(RoleController);
-};
-#endif
-</code></pre><p>本来想把它做完再发文章的，但是觉得没什么人看我的文章，也就算了，毕竟这个控制器挺简单的。</p>
-<h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>主要是靠触摸事件来判断手指位置来判断是否其在控制器内，若是则使小圆的位置跟随触摸移动。若一开始触摸从控制器内，然后往外移动最后离开控制器范围，则小球则会在控制内移动然后根据手指落点的位置而在控制器的圆边界上移动。这个控制器最复杂的地方是：</p>
-<p> <strong>计算这个小球在控制器边界移动的坐标，最后解决了这个算法，一个简单的控制器变完成了9成</strong>。.<br>通过高中数学的解析几何知识<br><img src="https://upload-images.jianshu.io/upload_images/7287689-c32db9727b3745a0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="求圆边界坐标"></p>
-<p>我得到了下面这个算法：</p>
-<pre><code>// 控制器小球在控制器边界圆上移动时，其坐标的算法
-// targetX,targetY为所求圆边界上的坐标 （这是仅有的两个未知量）
-// centerP.x为控制器中心横坐标，centerP.y为控制器中心纵坐标
-// touchP.x为触控点横坐标，touchP.y为触控点纵坐标
-// distance 为触控点距离控制器中心的距离，radius则是圆形控制器的半径
-float targetX = 0, targetY = 0;
-if (touchP.x &gt; centerP.x &amp;&amp; touchP.y &gt; centerP.y) {
-    targetX = centerP.x + radius * (touchP.x - centerP.x) / distance;
-    targetY = centerP.y + radius * (touchP.y - centerP.y) / distance;
-}else if (touchP.x &lt; centerP.x &amp;&amp; touchP.y &gt; centerP.y) {
-    targetX = centerP.x - radius * (centerP.x - touchP.x) / distance;
-    targetY = centerP.y + radius * (touchP.y - centerP.y) / distance;
-}else if (touchP.x &lt; centerP.x &amp;&amp; touchP.y &lt; centerP.y) {
-    targetX = centerP.x - radius * (centerP.x - touchP.x) / distance;
-    targetY = centerP.y - radius * (centerP.y - touchP.y) / distance;
-}else if (touchP.x &gt; centerP.x &amp;&amp; touchP.y &lt; centerP.y) {
-    targetX = centerP.x + radius * (touchP.x - centerP.x) / distance;
-    targetY = centerP.y - radius * (centerP.y - touchP.y ) / distance;
-}
-</code></pre><p><strong>最后便是回调结果了，将小球相对于控制器中心的偏移量Vec2传递出去</strong>，这里用到了<strong>RoleControllerListenr</strong>这个类作为接口，你需要在合适的地方继承此接口类并实现其抽象函数</p>
-<pre><code>class RoleControllerListenr {
-public:
-    // velocity 为控制球相对于控制中心的偏移量，
-    // 你可以在具体的实现方法内利用定时更新函数对此结果进行利用，进而实现对精灵的位置控制
-   virtual void onControllerTouchBegan(Vec2 velocity) = 0;  // 开始触摸控制器
-   virtual void onControllerTouchMoving(Vec2 velocity) = 0; // 控制器小球移动中
-   virtual void onControllerTouchEnded(Vec2 velocity) = 0;  // 结束触摸控制器
-};
-</code></pre><h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>很多人估计看到这一头雾水，这里很多的代码是基于cocos2dx这个游戏开发引擎的，看不懂很正常，对游戏开发感兴趣的朋友可以去官网仔细阅读一下文档。好了，关于这个控制器就介绍到这了，希望你们会喜欢。<br>别忘了关注我，给我星星<br><a href="https://github.com/Ccapton" target="_blank" rel="external">https://github.com/Ccapton</a></p>
-
-          
+<p>最近开始学习cocos2d-x引擎，用来做一些2d小游戏。在基本做完一个飞机大战游戏的情况下，感觉手机玩沙盒2d游戏需要一个控制角色移动的控制手柄，不然光靠点屏幕是不精确而又费劲的体验。于是开始写了一个角色控制器RoleController，效果如下<br><img src="https://upload-images.jianshu.io/upload_images/7287689-e3d6e9e0d0e41a7a.gif?imageMogr2/auto-orient/strip" alt="效果还行吧"><br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/06/20/rolecontroller/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
