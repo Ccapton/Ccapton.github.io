@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ccapton.cn/"/>
-  <updated>2018-04-10T12:32:00.435Z</updated>
+  <updated>2018-07-30T04:48:44.904Z</updated>
   <id>http://ccapton.cn/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用python打造一个基于socket的文件（夹）传输系统</title>
+    <link href="http://ccapton.cn/2018/07/30/filetransporter/"/>
+    <id>http://ccapton.cn/2018/07/30/filetransporter/</id>
+    <published>2018-07-30T04:08:48.000Z</published>
+    <updated>2018-07-30T04:48:44.904Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href=&quot;&quot;&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;这段时间在学习python，接触到了网络编程中的socket这块，加上自己在用的Linux服务器都是原生支持python的，于是乎有了个做文件传输功能程序的想法。毕竟python语言中，有下载功能的框架一抓一大把，但是主机与主机间快速搭建文件（夹）传输通道的程序似乎不常见，因为我刚接触python不久，有但是我不知道也不奇怪，总得来说，自己做一个练手，成就感满满。&lt;/p&gt;
+&lt;h1 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/Ccapton/python-stuff/tree/master/filetransporter&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/Ccapton/python-stuff/tree/master/filetransporter&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;实操预览&quot;&gt;&lt;a href=&quot;#实操预览&quot; class=&quot;headerlink&quot; title=&quot;实操预览&quot;&gt;&lt;/a&gt;实操预览&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://upload-images.jianshu.io/upload_images/7287689-4a2b853991324404.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;本地主机发送文件到远端服务器主机&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="http://ccapton.cn/categories/Python/"/>
+    
+    
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
+    
+      <category term="Python" scheme="http://ccapton.cn/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>利用自建国外服务器开启专属于自己的VPN服务(brook框架)，翻墙上网速度快到飞起！</title>
@@ -179,13 +206,13 @@
       <category term="Java技术" scheme="http://ccapton.cn/categories/Java%E6%8A%80%E6%9C%AF/"/>
     
     
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
+    
       <category term="Java技术" scheme="http://ccapton.cn/tags/Java%E6%8A%80%E6%9C%AF/"/>
     
       <category term="Gif" scheme="http://ccapton.cn/tags/Gif/"/>
     
       <category term="图片处理技术" scheme="http://ccapton.cn/tags/%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
       <category term="Gif制作软件" scheme="http://ccapton.cn/tags/Gif%E5%88%B6%E4%BD%9C%E8%BD%AF%E4%BB%B6/"/>
     
@@ -414,11 +441,11 @@
     
       <category term="音乐分享" scheme="http://ccapton.cn/tags/%E9%9F%B3%E4%B9%90%E5%88%86%E4%BA%AB/"/>
     
-      <category term="BGM" scheme="http://ccapton.cn/tags/BGM/"/>
-    
       <category term="龙珠" scheme="http://ccapton.cn/tags/%E9%BE%99%E7%8F%A0/"/>
     
       <category term="龙珠Z" scheme="http://ccapton.cn/tags/%E9%BE%99%E7%8F%A0Z/"/>
+    
+      <category term="BGM" scheme="http://ccapton.cn/tags/BGM/"/>
     
   </entry>
   
@@ -440,9 +467,9 @@
     
       <category term="音乐分享" scheme="http://ccapton.cn/tags/%E9%9F%B3%E4%B9%90%E5%88%86%E4%BA%AB/"/>
     
-      <category term="英雄联盟" scheme="http://ccapton.cn/tags/%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F/"/>
-    
       <category term="BGM" scheme="http://ccapton.cn/tags/BGM/"/>
+    
+      <category term="英雄联盟" scheme="http://ccapton.cn/tags/%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F/"/>
     
   </entry>
   

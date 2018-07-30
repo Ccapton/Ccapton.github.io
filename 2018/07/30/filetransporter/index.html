@@ -85,7 +85,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Android开发,个人作品,Android应用,音乐播放器,QQ音乐,酷狗音乐,网易云音乐,虾米音乐," />
+  <meta name="keywords" content="个人作品,Python," />
 
 
 
@@ -103,26 +103,21 @@
 
 
 
-<meta name="description" content="数据源本来只想重新练练RecyclerView的，一不小心又弄得复杂了。。。 无意中想起来搞个网络音乐播放器，本地的就算了，目前没时间去仔细弄了，但是这个没有多深入的逻辑控制，只是简单的播放逻辑，这也是很折磨人啊，大家看看就好了。于是上网搜了一下免费的音乐api，误打误撞找到一个用Java写的几个国内音乐搜索（QQ音乐，酷狗，虾米，网易云音乐）接口 https://github.com/Qrile">
-<meta name="keywords" content="Android开发,个人作品,Android应用,音乐播放器,QQ音乐,酷狗音乐,网易云音乐,虾米音乐">
+<meta name="description" content="关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn  前言这段时间在学习python，接触到了网络编程中的socket这块，加上自己在用的Linux服务器都是原生支持python的，于是乎有">
+<meta name="keywords" content="个人作品,Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="自制简易音乐播放器（未完成）数据来源：QQ音乐">
-<meta property="og:url" content="http://ccapton.cn/2017/08/20/music/index.html">
+<meta property="og:title" content="用python打造一个基于socket的文件（夹）传输系统">
+<meta property="og:url" content="http://ccapton.cn/2018/07/30/filetransporter/index.html">
 <meta property="og:site_name" content="Ccapton技术空间">
-<meta property="og:description" content="数据源本来只想重新练练RecyclerView的，一不小心又弄得复杂了。。。 无意中想起来搞个网络音乐播放器，本地的就算了，目前没时间去仔细弄了，但是这个没有多深入的逻辑控制，只是简单的播放逻辑，这也是很折磨人啊，大家看看就好了。于是上网搜了一下免费的音乐api，误打误撞找到一个用Java写的几个国内音乐搜索（QQ音乐，酷狗，虾米，网易云音乐）接口 https://github.com/Qrile">
+<meta property="og:description" content="关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn  前言这段时间在学习python，接触到了网络编程中的socket这块，加上自己在用的Linux服务器都是原生支持python的，于是乎有">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/7287689-5888b87d67577509.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/7287689-1f4a2e543275053e.gif?imageMogr2/auto-orient/strip">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/7287689-4571c2f1ddaa60cc.gif?imageMogr2/auto-orient/strip">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/7287689-95ba7325de816e23.gif?imageMogr2/auto-orient/strip">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/7287689-0480f9842611518d.gif?imageMogr2/auto-orient/strip">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/7287689-712e37a5e90e2ef4.gif?imageMogr2/auto-orient/strip">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/7287689-dd6aa2a9ae5aaff2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-09-01T14:44:10.000Z">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7287689-4a2b853991324404.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7287689-b55bce0a8dc80139.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-07-30T04:48:44.904Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="自制简易音乐播放器（未完成）数据来源：QQ音乐">
-<meta name="twitter:description" content="数据源本来只想重新练练RecyclerView的，一不小心又弄得复杂了。。。 无意中想起来搞个网络音乐播放器，本地的就算了，目前没时间去仔细弄了，但是这个没有多深入的逻辑控制，只是简单的播放逻辑，这也是很折磨人啊，大家看看就好了。于是上网搜了一下免费的音乐api，误打误撞找到一个用Java写的几个国内音乐搜索（QQ音乐，酷狗，虾米，网易云音乐）接口 https://github.com/Qrile">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/7287689-5888b87d67577509.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:title" content="用python打造一个基于socket的文件（夹）传输系统">
+<meta name="twitter:description" content="关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn  前言这段时间在学习python，接触到了网络编程中的socket这块，加上自己在用的Linux服务器都是原生支持python的，于是乎有">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/7287689-4a2b853991324404.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -152,13 +147,13 @@
 
 
 
-  <link rel="canonical" href="http://ccapton.cn/2017/08/20/music/"/>
+  <link rel="canonical" href="http://ccapton.cn/2018/07/30/filetransporter/"/>
 
 
 
 
 
-  <title>自制简易音乐播放器（未完成）数据来源：QQ音乐 | Ccapton技术空间</title>
+  <title>用python打造一个基于socket的文件（夹）传输系统 | Ccapton技术空间</title>
   
 
 
@@ -339,7 +334,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ccapton.cn/2017/08/20/music/">
+    <link itemprop="mainEntityOfPage" href="http://ccapton.cn/2018/07/30/filetransporter/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ccapton">
@@ -356,7 +351,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">自制简易音乐播放器（未完成）数据来源：QQ音乐</h1>
+          <h1 class="post-title" itemprop="name headline">用python打造一个基于socket的文件（夹）传输系统</h1>
         
 
         <div class="post-meta">
@@ -368,8 +363,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-20T12:50:48+08:00">
-                2017-08-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-30T12:08:48+08:00">
+                2018-07-30
               </time>
             
 
@@ -391,8 +386,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android个人作品/" itemprop="url" rel="index">
-                    <span itemprop="name">Android个人作品</span>
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
                   </a>
                 </span>
 
@@ -408,7 +403,7 @@
 
           
           
-             <span id="/2017/08/20/music/" class="leancloud_visitors" data-flag-title="自制简易音乐播放器（未完成）数据来源：QQ音乐">
+             <span id="/2018/07/30/filetransporter/" class="leancloud_visitors" data-flag-title="用python打造一个基于socket的文件（夹）传输系统">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -444,49 +439,84 @@
       
 
       
-        <h3 id="数据源"><a href="#数据源" class="headerlink" title="数据源"></a>数据源</h3><p>本来只想重新练练RecyclerView的，一不小心又弄得复杂了。。。</p>
-<p>无意中想起来搞个网络音乐播放器，本地的就算了，目前没时间去仔细弄了，但是这个没有多深入的逻辑控制，只是简单的播放逻辑，这也是很折磨人啊，大家看看就好了。于是上网搜了一下免费的音乐api，误打误撞找到一个用Java写的几个国内音乐搜索（QQ音乐，酷狗，虾米，网易云音乐）接口</p>
-<p><a href="https://github.com/Qrilee/MusicuuApi" target="_blank" rel="external">https://github.com/Qrilee/MusicuuApi</a></p>
-<p>请直接拷贝代码到你的工程里去，jar包也直接拷到libs下。</p>
-<p>其中网易云好像被封了，访问不了，反正经过我的测试返回404信息。</p>
+        <blockquote>
+<p>关于我，欢迎关注<br>csdn博客：ccapton(<a href="http://blog.csdn.net/ccapton" target="_blank" rel="external">http://blog.csdn.net/ccapton</a>) 微信：<a href="">Ccapton</a><br>Github: (<a href="https://www.github.com/ccapton" target="_blank" rel="external">https://www.github.com/ccapton</a>)<br>个人博客:<a href="http://www.ccapton.cn/" target="_blank" rel="external">http://www.ccapton.cn</a></p>
+</blockquote>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这段时间在学习python，接触到了网络编程中的socket这块，加上自己在用的Linux服务器都是原生支持python的，于是乎有了个做文件传输功能程序的想法。毕竟python语言中，有下载功能的框架一抓一大把，但是主机与主机间快速搭建文件（夹）传输通道的程序似乎不常见，因为我刚接触python不久，有但是我不知道也不奇怪，总得来说，自己做一个练手，成就感满满。</p>
+<h1 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h1><p><a href="https://github.com/Ccapton/python-stuff/tree/master/filetransporter" target="_blank" rel="external">https://github.com/Ccapton/python-stuff/tree/master/filetransporter</a></p>
+<h1 id="实操预览"><a href="#实操预览" class="headerlink" title="实操预览"></a>实操预览</h1><p><img src="https://upload-images.jianshu.io/upload_images/7287689-4a2b853991324404.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="本地主机发送文件到远端服务器主机"></p>
 <a id="more"></a>
-<p>在WyMusic、NetUtil类中，导入的sun.misc.BASE64Encoder 这个工具类必须换为 android.util.Base64，因为android中没有BASE64Encoder，取而代之的是Base64。其中的方法也按要需求调用，WyMusic.java中，我是这样使用的</p>
-<p>String retval = Base64.encodeToString(md5Bytes,Base64.DEFAULT);</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/7287689-5888b87d67577509.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<p>Base64工具类使用位置<br> WyMusic这个是网易云音乐的类，还有NetUtil类中也用到了Base64工具类，如果你想用的话请注意这点哟。</p>
-<h3 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h3><p>好吧，直接看我写的播放器效果吧。</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/7287689-1f4a2e543275053e.gif?imageMogr2/auto-orient/strip"></p>
-<p>搜索页面。这个程序有一些bug，不过也没关系啦，能听就行，后台也不会挂掉<br>有一些图标是自己画的，你们看得出来吗？好吧，肯定看不出来。啦啦啦。播放控件中的播放顺序四个模式的图标和右边的播放列表图标是我用AI画的，实在是觉得网上的图标太丑了，颜色还要自己调，不如直接用AI画出来，简单的线条UI还是能弄出来的</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/7287689-4571c2f1ddaa60cc.gif?imageMogr2/auto-orient/strip"></p>
-<p>搜索页面，时间很长，这不怪我-_-！好吧<br>搜索时间长也是这个搜索接口的原因，可能数据早已经通过网络获取到了，但解析时间过长吧，看原作者的后续更新吧。还有歌词的功能，这里就没去弄了，毕竟不是专业的播放器。我特别喜欢网易云音乐，可惜用这个接口目前我弄不到它的数据，网上其他方法我也找过了，几乎都是同一个方法（POST方式，添加请求头参数），这个也不例外，被服务拒绝了还是地址换了？有谁知道的吗</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/7287689-95ba7325de816e23.gif?imageMogr2/auto-orient/strip"></p>
-<p>这是下拉菜单中的前台Notification,与音乐控制器关联着，音乐播放与界面刷新逻辑关系搞得我头大呀<br>感觉移动端的逻辑问题很难缠，页面效果实现相比之下就了，现在那么多成熟又漂亮的第三方视图和动画，我们只需要稍微修改就能满足开发需求吧。</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/7287689-0480f9842611518d.gif?imageMogr2/auto-orient/strip"></p>
-<p>新闻模块，用的是极速数据提供的接口<br>由于新闻数据api的数据有限，不像今日头条、新浪新闻等专业大户有海量数据，由于这里只是业余的程序，只需要刷出来固定的十几条最新数据就行了。</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/7287689-712e37a5e90e2ef4.gif?imageMogr2/auto-orient/strip"></p>
-<p>这是新闻的搜索页，也是挺长时间的，也不怪我好吗-_-?<br>这些都是自己一字一句码出来效果，界面效果不是问题，就是逻辑关系搞得很蛋疼☹️。本来还好的Fragment，越来越臃肿，多少行代码我就不说了，简直扎心了，还好我的MainActivity，只有不到100行。因为MainActivity只管着几个Fragment的切换功能，作为Fragment的容器，几乎没有耗时的代码。</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/7287689-dd6aa2a9ae5aaff2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<p>文件结构有点乱，这不是重点，毕竟只有这么十几个Java文件，要做大事的时候肯定要归类好代码文件<br>看官们觉得咋样？没有用DataBinding这些东西，虽然早就听闻了，一看还有点难度，就放着了，以后肯定会用上的吧(现在有更好用的ButterKnife了，以后就用它了)。</p>
-<p>令我满意的是播放顺序这块的逻辑没毛病，其他的东西就随便看看吧，哈哈。其中加载动画和播放进度条用是自己写的控件，Seekbar本来也是用自己的，后来出现bug了，不想浪费时间就用原生的了。代码有点杂乱，我就不贴了。这里给个安装包大家瞧瞧就行了，</p>
-<p><a href="https://github.com/Ccapton/EasyPlayer/blob/master/%E4%B8%AA%E6%80%A7%E5%8C%96.apk" target="_blank" rel="external">https://github.com/Ccapton/EasyPlayer/blob/master/%E4%B8%AA%E6%80%A7%E5%8C%96.apk</a></p>
-<p>至于JNI开发，我还没怎么去接触诶，似乎都是要在移动端高效运行的程序才要？比如直播类等软件需要高效压缩摄像头采集的数据的算法，这就需要更接近底层的C与C++才能做到；还有大名鼎鼎的视频处理项目FFmpeg，本来在桌面端的项目，用于Android移动端简直不要太变态，很多播放器就用到了它的代码吧。需要保密的程序算法，要用到打包的so库来防止被反编译。</p>
-<p>好了，这篇文章就到这了，主要是自己写了这么一个功能单一程序，实际对大家有用的东西估计就是下面的链接了。那么下期见。</p>
-<h3 id="用到的一些库、框架"><a href="#用到的一些库、框架" class="headerlink" title="用到的一些库、框架"></a>用到的一些库、框架</h3><p>音乐数据源 MusicuuApi：<a href="https://github.com/Qrilee/MusicuuApi" target="_blank" rel="external">https://github.com/Qrilee/MusicuuApi</a></p>
-<p>图片加载 Glide：<a href="https://github.com/bumptech/glide" target="_blank" rel="external">https://github.com/bumptech/glide</a></p>
-<p>数据解析 Gson：<a href="https://github.com/google/gson" target="_blank" rel="external">https://github.com/google/gson</a></p>
-<p>网络通信 Volley ：<a href="https://github.com/mcxiaoke/android-volley" target="_blank" rel="external">https://github.com/mcxiaoke/android-volley</a></p>
-<p>网络通信 Okhttp：<a href="https://github.com/square/okhttp" target="_blank" rel="external">https://github.com/square/okhttp</a></p>
-<p>浏览器控件 AgentWeb：<a href="https://github.com/Justson/AgentWeb" target="_blank" rel="external">https://github.com/Justson/AgentWeb</a></p>
-<p>上下拉刷新控件 SmartRefreshLayout: <a href="https://github.com/scwang90/SmartRefreshLayout" target="_blank" rel="external">https://github.com/scwang90/SmartRefreshLayout</a></p>
-<p>左右滑动删除列表项控件 Swipemenulistview:</p>
-<p><a href="https://github.com/baoyongzhang/SwipeMenuListView" target="_blank" rel="external">https://github.com/baoyongzhang/SwipeMenuListView</a></p>
-<p>选项拖拽控件DragGridView：<a href="https://github.com/zhaoyu87/DragGridView（用在新闻频道的选择页里）" target="_blank" rel="external">https://github.com/zhaoyu87/DragGridView（用在新闻频道的选择页里）</a></p>
-<p>Activity滑动退出控件 SwipeBackLayout：<a href="https://github.com/ikew0ng/SwipeBackLayout" target="_blank" rel="external">https://github.com/ikew0ng/SwipeBackLayout</a> （用在了新闻浏览页上）</p>
-<p>搜索等待动画 SLView （自己写的☺）：<a href="https://github.com/Ccapton/Android-SLView" target="_blank" rel="external">https://github.com/Ccapton/Android-SLView</a></p>
-<p>播放进度条ColorfulProgressbar（自己写的☺）: <a href="https://github.com/Ccapton/Android-ColorfulProgressBar" target="_blank" rel="external">https://github.com/Ccapton/Android-ColorfulProgressBar</a></p>
-<h3 id="关于作者"><a href="#关于作者" class="headerlink" title="关于作者"></a>关于作者</h3><p>我的Github：<a href="https://github.com/Ccapton/" target="_blank" rel="external">https://github.com/Ccapton/</a> 欢迎来踩!</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="530" height="86" src="//music.163.com/outchain/player?type=2&id=423015272&auto=0&height=66"></iframe>
+<h1 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h1><p><img src="https://upload-images.jianshu.io/upload_images/7287689-b55bce0a8dc80139.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文件传输系统"><br>以上思维导图仅供参考，毕竟表达能力有限，具体功能要追究到代码处才能分析其原理。</p>
+<h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>基于socket的通信，相信会编程的朋友都不陌生，而通过socket来传输文件也是很常见的，但是这仅仅是对于单个文件来说很容易实现。如果是多文件呢？我在实现本系统之前尝试了几次，用单一socket通道来传输多文件不切实际，因为调用socket.recv()方法的时候，返回的数据格式是原始数据str类型，要分割不同文件的数据有很大难度。</p>
+<p>因为涉及到接收、发送方两端文件数据接收和发送进度的统一性，就要用另外的指令来控制传输工作不乱套，于是我想到多开一个socket作为<strong>传输指令</strong>的通道，这样指令和数据就分离了，也就容易控制传输工作了！所以有了<code>指令线程</code>和<code>数据线程</code>之分。</p>
+<p>要实现传输整个文件夹，首先要遍历这个文件夹，把在其内的所有文件结构准确无误的还原出来；因为是通过一个socket通过传输数据，所以传输文件只能一个接一个来，这样，文件的遍历工作只能等前一个文件传输完毕后才能继续进行，于是又要对遍历工作设计一番。经过改造，我在文件查找（遍历）器内加入了while循环体和供外界继承的回调类，这样就能达到我想要的文件通过socket按顺序传输的效果了。<br>文件查找器FileFinder（阻塞型）源码：</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">import</span> os<span class="token punctuation">,</span>time
+<span class="token comment" spellcheck="true"># 文件、文件夹寻找类 (阻塞型)</span>
+<span class="token comment" spellcheck="true"># 阻塞的设计： 为了等待调用者的耗时操作【否则很快就完成了文件的遍历任务，调用者达不到顺序操作文件(夹)的意图】</span>
+<span class="token keyword">class</span> <span class="token class-name">FileFinder</span><span class="token punctuation">:</span>
+   <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>finderCallback<span class="token punctuation">)</span><span class="token punctuation">:</span>
+       self<span class="token punctuation">.</span>finderCallback <span class="token operator">=</span> finderCallback
+       <span class="token comment" spellcheck="true"># 文件（夹）路径下所有文件的总大小</span>
+       self<span class="token punctuation">.</span>sum_size <span class="token operator">=</span> <span class="token number">0</span>
+       <span class="token comment" spellcheck="true"># 调用者控制的参数，若为False,则遍历工作继续进行，若为True，则阻塞任务，等待调用者完成它的其他耗时操作后在考虑是否改变此值</span>
+       self<span class="token punctuation">.</span>recycle <span class="token operator">=</span> <span class="token boolean">True</span>
+       <span class="token comment" spellcheck="true"># 调用者控制的参数，若为False,则正常工作，若为True，则当recycle为False时遍历工作不阻塞快速完成，recycle为True时遍历工作阻塞</span>
+       self<span class="token punctuation">.</span>off <span class="token operator">=</span> <span class="token boolean">False</span>
 
+    <span class="token comment" spellcheck="true"># 文件（夹）找到时的回调类</span>
+   <span class="token keyword">class</span> <span class="token class-name">FinderCallback</span><span class="token punctuation">:</span>
+       <span class="token comment" spellcheck="true"># 找到文件夹</span>
+       <span class="token keyword">def</span> <span class="token function">onFindDir</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>dir_path<span class="token punctuation">)</span><span class="token punctuation">:</span>
+           <span class="token keyword">pass</span>
+       <span class="token comment" spellcheck="true"># 找到文件</span>
+       <span class="token keyword">def</span> <span class="token function">onFindFile</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>file_path<span class="token punctuation">,</span>size<span class="token punctuation">)</span><span class="token punctuation">:</span>
+           <span class="token keyword">pass</span>
+       <span class="token comment" spellcheck="true"># 预留的刷新函数</span>
+       <span class="token keyword">def</span> <span class="token function">onRefresh</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+           <span class="token keyword">pass</span>
+
+   <span class="token comment" spellcheck="true"># 查找文件（夹）方法</span>
+   <span class="token keyword">def</span> <span class="token function">list_flie</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>root_dir<span class="token punctuation">)</span><span class="token punctuation">:</span>
+       <span class="token keyword">if</span>  os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>isfile<span class="token punctuation">(</span>root_dir<span class="token punctuation">)</span><span class="token punctuation">:</span>
+           <span class="token keyword">while</span> self<span class="token punctuation">.</span>recycle<span class="token punctuation">:</span>
+               time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">0.05</span><span class="token punctuation">)</span>
+           <span class="token keyword">if</span> self<span class="token punctuation">.</span>finderCallback<span class="token punctuation">:</span>
+               self<span class="token punctuation">.</span>finderCallback<span class="token punctuation">.</span>onFindFile<span class="token punctuation">(</span>root_dir<span class="token punctuation">,</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>getsize<span class="token punctuation">(</span>root_dir<span class="token punctuation">)</span><span class="token punctuation">)</span>
+               self<span class="token punctuation">.</span>finderCallback<span class="token punctuation">.</span>onRefresh<span class="token punctuation">(</span><span class="token punctuation">)</span>
+               <span class="token keyword">if</span> <span class="token operator">not</span> self<span class="token punctuation">.</span>off<span class="token punctuation">:</span>
+                  self<span class="token punctuation">.</span>recycle <span class="token operator">=</span> <span class="token boolean">True</span>
+       <span class="token keyword">else</span><span class="token punctuation">:</span>
+           dirlist <span class="token operator">=</span> os<span class="token punctuation">.</span>listdir<span class="token punctuation">(</span>root_dir<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 列出文件夹下所有的目录与文件</span>
+           <span class="token keyword">for</span> dir <span class="token keyword">in</span> dirlist<span class="token punctuation">:</span>
+               path <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>root_dir<span class="token punctuation">,</span> dir<span class="token punctuation">)</span>
+               <span class="token keyword">if</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>isfile<span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                   <span class="token keyword">while</span> self<span class="token punctuation">.</span>recycle<span class="token punctuation">:</span>
+                       time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">0.05</span><span class="token punctuation">)</span>
+                   <span class="token keyword">if</span> self<span class="token punctuation">.</span>finderCallback<span class="token punctuation">:</span>
+                       self<span class="token punctuation">.</span>finderCallback<span class="token punctuation">.</span>onFindFile<span class="token punctuation">(</span>path<span class="token punctuation">,</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>getsize<span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">)</span>
+                       self<span class="token punctuation">.</span>finderCallback<span class="token punctuation">.</span>onRefresh<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                       <span class="token keyword">if</span> <span class="token operator">not</span> self<span class="token punctuation">.</span>off<span class="token punctuation">:</span>
+                          self<span class="token punctuation">.</span>recycle <span class="token operator">=</span> <span class="token boolean">True</span>
+               <span class="token keyword">else</span><span class="token punctuation">:</span>
+                   <span class="token keyword">while</span> self<span class="token punctuation">.</span>recycle<span class="token punctuation">:</span>
+                       time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">0.05</span><span class="token punctuation">)</span>
+                   <span class="token keyword">if</span> self<span class="token punctuation">.</span>finderCallback<span class="token punctuation">:</span>
+                       self<span class="token punctuation">.</span>finderCallback<span class="token punctuation">.</span>onFindDir<span class="token punctuation">(</span>path<span class="token punctuation">)</span>
+                       self<span class="token punctuation">.</span>finderCallback<span class="token punctuation">.</span>onRefresh<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                       <span class="token keyword">if</span> <span class="token operator">not</span> self<span class="token punctuation">.</span>off<span class="token punctuation">:</span>
+                          self<span class="token punctuation">.</span>recycle <span class="token operator">=</span> <span class="token boolean">True</span>
+                   <span class="token comment" spellcheck="true"># 递归调用（当遍历到文件夹时，继续遍历，直到当前文件夹下没有文件夹为止）</span>
+                   self<span class="token punctuation">.</span>list_flie<span class="token punctuation">(</span>path<span class="token punctuation">)</span>
+</code></pre>
+<p>通过继承FileFinder的回调类FinderCallback，重写其 onFindDir(self,dir_path) 和onFindFile(self,file_path,size)方法，在这两个方法里面发送相关指令到接收端。</p>
+<p>但最难的就是两端的指令线程内的socket指令信息的处理，这需要深入代码去具体研究，本人能力有限，也就不细说了。需要研究一番的朋友，请移步该项目地址 <a href="https://github.com/Ccapton/python-stuff/tree/master/filetransporter" target="_blank" rel="external">https://github.com/Ccapton/python-stuff/tree/master/filetransporter</a></p>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>运行接收端程序，需要一个能访问的地址，也即是说最好是局域网内进行文件传输工作，因为局域网本地ip都是可以直接访问的，若是在公共网络传输文件，必须知道接收方主机的公网ip和内网ip。<br>例如我现在用到接收方主机是腾讯云的主机，内网ip是10.135.xxx.xxx,公网ip是111.120.xxx.xxx。该主机内，运行接收（服务）端程序</p>
+<pre class=" language-python"><code class="language-python">python3 ftserver<span class="token punctuation">.</span>py <span class="token operator">-</span>i <span class="token number">10.135</span><span class="token punctuation">.</span>xxx<span class="token punctuation">.</span>xxx <span class="token operator">-</span>d <span class="token operator">/</span>home<span class="token operator">/</span>ubuntu<span class="token operator">/</span>downloads
+</code></pre>
+<p>而在你的主机运行发送（客户）端程序发送文件夹bilibili</p>
+<pre class=" language-python"><code class="language-python">python3 ftclient<span class="token punctuation">.</span>py <span class="token operator">-</span>i <span class="token number">111.120</span><span class="token punctuation">.</span>xxx<span class="token punctuation">.</span>xxx <span class="token operator">-</span>f <span class="token operator">/</span>Users<span class="token operator">/</span>capton<span class="token operator">/</span>desktop<span class="token operator">/</span>bilibili
+</code></pre>
+<p>因为腾讯云、阿里云等国内虚拟主机供应商是采用NAT地址转换对云主机进行地址分配的，所以按照我上面的步骤来运行两端程序才能连通。</p>
 
       
     </div>
@@ -533,21 +563,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Android开发/" rel="tag"># Android开发</a>
-          
             <a href="/tags/个人作品/" rel="tag"># 个人作品</a>
           
-            <a href="/tags/Android应用/" rel="tag"># Android应用</a>
-          
-            <a href="/tags/音乐播放器/" rel="tag"># 音乐播放器</a>
-          
-            <a href="/tags/QQ音乐/" rel="tag"># QQ音乐</a>
-          
-            <a href="/tags/酷狗音乐/" rel="tag"># 酷狗音乐</a>
-          
-            <a href="/tags/网易云音乐/" rel="tag"># 网易云音乐</a>
-          
-            <a href="/tags/虾米音乐/" rel="tag"># 虾米音乐</a>
+            <a href="/tags/Python/" rel="tag"># Python</a>
           
         </div>
       
@@ -560,8 +578,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/18/Android自定义View之-ColorfulSeekbar/" rel="next" title="Android自定义View之-ColorfulSeekbar">
-                <i class="fa fa-chevron-left"></i> Android自定义View之-ColorfulSeekbar
+              <a href="/2018/04/09/science/" rel="next" title="利用自建国外服务器开启专属于自己的VPN服务(brook框架)，翻墙上网速度快到飞起！">
+                <i class="fa fa-chevron-left"></i> 利用自建国外服务器开启专属于自己的VPN服务(brook框架)，翻墙上网速度快到飞起！
               </a>
             
           </div>
@@ -569,10 +587,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/22/Java_Technology_1/" rel="prev" title="Java技术:Gif编码器(gifencoder)的实际应用(1)">
-                Java技术:Gif编码器(gifencoder)的实际应用(1) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -739,7 +753,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据源"><span class="nav-number">1.</span> <span class="nav-text">数据源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#效果图"><span class="nav-number">2.</span> <span class="nav-text">效果图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用到的一些库、框架"><span class="nav-number">3.</span> <span class="nav-text">用到的一些库、框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于作者"><span class="nav-number">4.</span> <span class="nav-text">关于作者</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#项目地址"><span class="nav-number">2.</span> <span class="nav-text">项目地址</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实操预览"><span class="nav-number">3.</span> <span class="nav-text">实操预览</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#思维导图"><span class="nav-number">4.</span> <span class="nav-text">思维导图</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#原理"><span class="nav-number">5.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注意"><span class="nav-number">6.</span> <span class="nav-text">注意</span></a></li></ol></div>
             
 
           </div>
