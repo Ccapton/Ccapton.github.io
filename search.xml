@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[利用python抓包、爬取裡蕃收藏夹（移动app）数据，整理成API]]></title>
     <url>%2F2018%2F08%2F04%2Flifan%2F</url>
-    <content type="text"><![CDATA[关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn 岛国裡蕃Api岛国裡蕃api数据展示数据来源:裡蕃收藏夹 裡蕃收藏夹app截图： ###自建web站点截图： 本来看看最近的新番的，又重新下载了裡蕃收藏夹，后来发现，它居然直接用webview承载所有页面数据了。于是便抓了一下包，便是发现了一个很好的爬虫练手机会，加上自己用过flask，便把它的数据呈现出来了 项目地址https://github.com/Ccapton/python-stuff/tree/master/lifan 技术要点 Charles抓包手机网络数据，获取关键用户cookie 携带cookie利用requests获取数据 beautifulsoup解析数据 peewee微型数据库保存数据 flask建立微型web服务器、展示网页站点 flask-restful输出json数据 具体细节就请各位到这个项目源码查看了，相信你们都能读懂全部内容]]></content>
+    <content type="text"><![CDATA[关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn 岛国裡蕃Api岛国裡蕃api数据展示数据来源:裡蕃收藏夹 裡蕃收藏夹app截图： 自建web站点截图： 本来看看最近的新番的，又重新下载了裡蕃收藏夹，后来发现，它居然直接用webview承载所有页面数据了。于是便抓了一下包，便是发现了一个很好的爬虫练手机会，加上自己用过flask，便把它的数据呈现出来了 项目地址https://github.com/Ccapton/python-stuff/tree/master/lifan 技术要点 Charles抓包手机网络数据，获取关键用户cookie 携带cookie利用requests获取数据 beautifulsoup解析数据 peewee微型数据库保存数据 flask建立微型web服务器、展示网页站点 flask-restful输出json数据 具体细节就请各位到这个项目源码查看了，相信你们都能读懂全部内容]]></content>
       <categories>
         <category>Python</category>
       </categories>
@@ -117,10 +117,10 @@
         <category>Java技术</category>
       </categories>
       <tags>
-        <tag>个人作品</tag>
         <tag>Java技术</tag>
         <tag>Gif</tag>
         <tag>图片处理技术</tag>
+        <tag>个人作品</tag>
         <tag>Gif制作软件</tag>
       </tags>
   </entry>
@@ -146,8 +146,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>Android应用</tag>
         <tag>个人作品</tag>
+        <tag>Android应用</tag>
         <tag>音乐播放器</tag>
         <tag>QQ音乐</tag>
         <tag>酷狗音乐</tag>
@@ -202,8 +202,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>Android应用</tag>
         <tag>个人作品</tag>
+        <tag>Android应用</tag>
         <tag>纯粹漫画</tag>
       </tags>
   </entry>
@@ -216,8 +216,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>Android应用</tag>
         <tag>个人作品</tag>
+        <tag>Android应用</tag>
         <tag>纯粹菜谱</tag>
       </tags>
   </entry>
@@ -273,14 +273,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[标签]]></title>
-    <url>%2Ftags%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[关于]]></title>
     <url>%2Fabout%2Findex.html</url>
     <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐邮箱：437499914@qq.com 、chenweibin1125@foxmail.com微信：Ccapton]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[board]]></title>
+    <url>%2Fboard%2Findex.html</url>
+    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[分类]]></title>
@@ -288,8 +288,8 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[board]]></title>
-    <url>%2Fboard%2Findex.html</url>
+    <title><![CDATA[标签]]></title>
+    <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
