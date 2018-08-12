@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ccapton.cn/"/>
-  <updated>2018-08-10T16:10:35.946Z</updated>
+  <updated>2018-08-12T13:35:44.346Z</updated>
   <id>http://ccapton.cn/</id>
   
   <author>
@@ -14,6 +14,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>科学上网最优方案 ( VPS + Lotsever加速 + ShadowSocks / Brook )</title>
+    <link href="http://ccapton.cn/2018/08/09/science2/"/>
+    <id>http://ccapton.cn/2018/08/09/science2/</id>
+    <published>2018-08-09T04:08:48.000Z</published>
+    <updated>2018-08-12T13:35:44.346Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href=&quot;&quot;&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;br&gt;E-mail: 437499914@qq.com、chenweibin1125@foxmail.com&lt;br&gt;我的简书   &lt;a href=&quot;https://www.jianshu.com/u/df3b46206dc4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.jianshu.com/u/df3b46206dc4&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/science2.jpeg&quot; class=&quot;full-image&quot;&gt; &lt;/p&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;关于 VPS (Virtual Private Server 虚拟专用服务器) ，搞技术的朋友都不会陌生，这个服务最近今年在国内外都很火热。我这几年科学上网后，个人感觉：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关于购买vpn服务上网&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;搭建、使用vps来科学上网的性价比似乎远不及买一个&lt;strong&gt;vpn服务账号&lt;/strong&gt;来的高&lt;/li&gt;
+&lt;li&gt;vpn服务商稳定性不能保证，因为之前买过一些套餐，有时会很慢才能脸上，甚至最后服务商直接跑了。服务供应商如果不能稳定的生存下去，那么你买的服务也随流产&lt;/li&gt;
+&lt;li&gt;每家vpn服务商提供的客户端都不一样，导致每次换服务商就要下载新的客户端&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;关于自建vps上网&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果选购的vps带宽不高的话，看youtube视频的速度、清晰度也不如人意&lt;/li&gt;
+&lt;li&gt;选对一个实惠且稳定的vps供应商很重要，由于不是用于企业服务，仅仅是个人用来科学上网，vps除了高带宽和基本的cpu性能，根本不需要多余的配置&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不要选购大品牌vps，因为买的人很多，国外ip流量很大，会被中国政府屏蔽ip! 例如：vultr&lt;/strong&gt;，虽然vultr的计费方式是按分钟计费，可以重新部署新的系统来实现更换ip的目的，但是我试了很多次，每次分配的ip都无法ping通。于是我放弃了，浪费了精力、时间和金钱&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;所以选对一个相对冷门又稳定的vps供应商很重要，配合Lotsever加速技术（提高服务器处理网络数据的效率），再搭建ss/brook服务器，客户端就能享受相对稳定、快速的视频观看体验了&lt;/p&gt;
+&lt;h4 id=&quot;1080p直播&quot;&gt;&lt;a href=&quot;#1080p直播&quot; class=&quot;headerlink&quot; title=&quot;1080p直播&quot;&gt;&lt;/a&gt;1080p直播&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/science.jpeg&quot; class=&quot;full-image&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/science2.jpeg&quot; class=&quot;full-image&quot;&gt; &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="科学上网" scheme="http://ccapton.cn/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+      <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+      <category term="VPS" scheme="http://ccapton.cn/tags/VPS/"/>
+    
+      <category term="ShadowSocks" scheme="http://ccapton.cn/tags/ShadowSocks/"/>
+    
+      <category term="Brook" scheme="http://ccapton.cn/tags/Brook/"/>
+    
+  </entry>
   
   <entry>
     <title>利用python抓包、爬取裡蕃收藏夹（移动app）数据，整理成API</title>
@@ -268,13 +312,13 @@
       <category term="Java技术" scheme="http://ccapton.cn/categories/Java%E6%8A%80%E6%9C%AF/"/>
     
     
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
+    
       <category term="Java技术" scheme="http://ccapton.cn/tags/Java%E6%8A%80%E6%9C%AF/"/>
     
       <category term="Gif" scheme="http://ccapton.cn/tags/Gif/"/>
     
       <category term="图片处理技术" scheme="http://ccapton.cn/tags/%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
       <category term="Gif制作软件" scheme="http://ccapton.cn/tags/Gif%E5%88%B6%E4%BD%9C%E8%BD%AF%E4%BB%B6/"/>
     
@@ -328,9 +372,9 @@
     
       <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
     
-      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
-    
       <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
+    
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
       <category term="音乐播放器" scheme="http://ccapton.cn/tags/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/"/>
     
@@ -448,9 +492,9 @@
     
       <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
     
-      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
-    
       <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
+    
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
       <category term="纯粹漫画" scheme="http://ccapton.cn/tags/%E7%BA%AF%E7%B2%B9%E6%BC%AB%E7%94%BB/"/>
     
@@ -477,9 +521,9 @@
     
       <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
     
-      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
-    
       <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
+    
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
       <category term="纯粹菜谱" scheme="http://ccapton.cn/tags/%E7%BA%AF%E7%B2%B9%E8%8F%9C%E8%B0%B1/"/>
     
@@ -557,28 +601,6 @@
       <category term="软件分享" scheme="http://ccapton.cn/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
     
       <category term="DiskKeeper Pro" scheme="http://ccapton.cn/tags/DiskKeeper-Pro/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android技术</title>
-    <link href="http://ccapton.cn/2016/06/18/Android%E6%8A%80%E6%9C%AF/"/>
-    <id>http://ccapton.cn/2016/06/18/Android技术/</id>
-    <published>2016-06-17T18:50:48.000Z</published>
-    <updated>2017-09-01T13:32:09.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;这是新的篇章，敬请期待&quot;&gt;&lt;a href=&quot;#这是新的篇章，敬请期待&quot; class=&quot;headerlink&quot; title=&quot;这是新的篇章，敬请期待&quot;&gt;&lt;/a&gt;这是新的篇章，敬请期待&lt;/h3&gt;
-    
-    </summary>
-    
-      <category term="Android开发" scheme="http://ccapton.cn/categories/Android%E5%BC%80%E5%8F%91/"/>
-    
-    
-      <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
-    
-      <category term="Android" scheme="http://ccapton.cn/tags/Android/"/>
     
   </entry>
   
