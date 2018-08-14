@@ -134,8 +134,8 @@
         <tag>个人作品</tag>
         <tag>Java技术</tag>
         <tag>Gif</tag>
-        <tag>图片处理技术</tag>
         <tag>Gif制作软件</tag>
+        <tag>图片处理技术</tag>
       </tags>
   </entry>
   <entry>
@@ -244,9 +244,9 @@
       </categories>
       <tags>
         <tag>音乐分享</tag>
+        <tag>BGM</tag>
         <tag>龙珠</tag>
         <tag>龙珠Z</tag>
-        <tag>BGM</tag>
       </tags>
   </entry>
   <entry>
@@ -258,8 +258,8 @@
       </categories>
       <tags>
         <tag>音乐分享</tag>
-        <tag>BGM</tag>
         <tag>英雄联盟</tag>
+        <tag>BGM</tag>
       </tags>
   </entry>
   <entry>
@@ -287,13 +287,13 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[关于]]></title>
-    <url>%2Fabout%2Findex.html</url>
-    <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐邮箱：437499914@qq.com 、chenweibin1125@foxmail.com微信：Ccapton]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[board]]></title>
     <url>%2Fboard%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[标签]]></title>
+    <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
@@ -302,8 +302,8 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[标签]]></title>
-    <url>%2Ftags%2Findex.html</url>
-    <content type="text"></content>
+    <title><![CDATA[关于]]></title>
+    <url>%2Fabout%2Findex.html</url>
+    <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐邮箱：437499914@qq.com 、chenweibin1125@foxmail.com微信：Ccapton]]></content>
   </entry>
 </search>
