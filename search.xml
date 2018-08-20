@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[科学上网最优方案 ( VPS + Lotsever加速 + ShadowSocks / Brook )]]></title>
     <url>%2F2018%2F08%2F09%2Fscience2%2F</url>
-    <content type="text"><![CDATA[关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cnE-mail: 437499914@qq.com、chenweibin1125@foxmail.com我的简书 https://www.jianshu.com/u/df3b46206dc4 前言关于 VPS (Virtual Private Server 虚拟专用服务器) ，搞技术的朋友都不会陌生，这个服务最近今年在国内外都很火热。我这几年科学上网后，个人感觉： 关于购买vpn服务上网 搭建、使用vps来科学上网的性价比似乎远不及买一个vpn服务账号来的高 vpn服务商稳定性不能保证，因为之前买过一些套餐，有时会很慢才能脸上，甚至最后服务商直接跑了。服务供应商如果不能稳定的生存下去，那么你买的服务也随流产 每家vpn服务商提供的客户端都不一样，导致每次换服务商就要下载新的客户端 关于自建vps上网 如果选购的vps带宽不高的话，看youtube视频的速度、清晰度也不如人意 选对一个实惠且稳定的vps供应商很重要，由于不是用于企业服务，仅仅是个人用来科学上网，vps除了高带宽和基本的cpu性能，根本不需要多余的配置 不要选购大品牌vps，因为买的人很多，国外ip流量很大，会被中国政府屏蔽ip! 例如：vultr，虽然vultr的计费方式是按分钟计费，可以重新部署新的系统来实现更换ip的目的，但是我试了很多次，每次分配的ip都无法ping通。于是我放弃了，浪费了精力、时间和金钱 所以选对一个相对冷门又稳定的vps供应商很重要，配合Lotsever加速技术（提高服务器处理网络数据的效率），再搭建ss/brook服务器，客户端就能享受相对稳定、快速的视频观看体验了 1080p直播 选购VPS这里我介绍一个vps供应商 搬瓦工官网 搬瓦工中文介绍目前仅支持安装Linux系统，既然搞技术，Linux是永远绕不过去的话题，大家就用Linux吧 虽然想通过这篇文章推荐给更多的人用这个供应商，但是又怕用的人多了，然后被政府针对封ip。俗话说的人怕出名，猪怕壮，完全能表达我对于搬瓦工这个平台的担忧。只希望大家不用利用vps去做违法的事就行了，一旦染上黑点，这家企业在大陆的活路就会断掉 搬瓦工最低的套餐价格目前是19.99美元/年（折合人民币约140元/年），相信大家完全可以接收这个价格，毕竟没用过谁也不敢保证国外竟然有这么低价格的vps。根据搬瓦工中文介绍 提供的优惠码购买、部署完你想要的vps后，就可以通过ssh进入服务器进行下一步配置了 我的vps后台 Lotsever加速我部署搬瓦工服务器（Ubuntu）已经有10多天了，但是看youtube视频速度很不理想，很多时候只能看480p，稍微提高到720p以上就会卡顿，但是我在github上找到一个加速脚本后，使这个服务器网络传输效率翻了三十几倍（1080p直播图2 连接速度为28894kbps ,而没开加速前大概是300-500kps），完全不虚一些vpn服务的速度！点我打开 Lotsever加速源码地址 （这个Lotsever加速目前仅支持Centos/Debian/Ubuntu）按照其说明配置加速后，就可以进行 shadowsocks/brook 服务端的搭建了 利用Brook程序搭建 shadowsocks、brook 服务端点我打开 Brook源码地址根据你的服务器类型选择下载对应的Brook程序 为方便执行命令，请将下载好的程序统一改名为brook,然后授予执行权限 chmod +x brook 开启brook服务./brook server -l :9999 -p 666 后台运行 nohup ./brook server -l :9999 -p 666 &amp; 其中9999为端口号，666为密码 开启shadowsocks服务默认加密方式 aes-256-cfb ./brook ssserver -l :9999 -p 666 后台运行 nohup ./brook ssserver -l :9999 -p 666 &amp; 其中9999为端口号，666为密码 关闭所有brook进程killall brook 运行客户端下载 如果在服务器开启的是brook服务，那么你必须下载对应的brook客户端，然后填入服务器地址、端口，密码进行连接 如果开启的是shadowsocks服务，那么可以用brook客户端、或者支持shadowsocks技术的客户端进行连接。 点我打开 Brook客户端 下载页面 点我打开 Shadowsocks Windows 下载页面 点我打开 Shadowsocks Android 下载页面 点我打开 Shadowsocks 苹果（Mac）下载页面 Shadowsocks IOS客户端请用国外appleid登录appstore,搜索shadowsocks并下载 运行这里以Mac端为例 运行brook 运行shadowsocks 服务器配置页 其他环境的客户端配置大同小异，这里不多介绍了，大家请自行百度吧。 后记这次的分享不易，我一直在努力尝试怎样以最便宜最实用的方式翻墙上网，最后终于达到自己想要的效果了，希望看到这篇文章的朋友们进行科学上网能少走弯路吧。在油管上，我看到有人用墙改路由器上网的，很厉害的样子，不用一个个客户端配置，连上这个路由的所有设备都能科学上网，也有人用小米路由器刷入开发版，然后ssh进入系统安装ss客户端,也能达到同样的效果！看有没机会自己也来弄弄吧，就这样，byebye]]></content>
+    <content type="text"><![CDATA[关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cnE-mail: 437499914@qq.com、chenweibin1125@foxmail.com我的简书 https://www.jianshu.com/u/df3b46206dc4 前言关于 VPS (Virtual Private Server 虚拟专用服务器) ，搞技术的朋友都不会陌生，这个服务最近今年在国内外都很火热。我这几年科学上网后，个人感觉： 关于购买vpn服务上网 搭建、使用vps来科学上网的性价比似乎远不及买一个vpn服务账号来的高 vpn服务商稳定性不能保证，因为之前买过一些套餐，有时会很慢才能脸上，甚至最后服务商直接跑了。服务供应商如果不能稳定的生存下去，那么你买的服务也随流产 每家vpn服务商提供的客户端都不一样，导致每次换服务商就要下载新的客户端 关于自建vps上网 如果选购的vps带宽不高的话，看youtube视频的速度、清晰度也不如人意 选对一个实惠且稳定的vps供应商很重要，由于不是用于企业服务，仅仅是个人用来科学上网，vps除了高带宽和基本的cpu性能，根本不需要多余的配置 不要选购大品牌vps，因为买的人很多，国外ip流量很大，会被中国政府屏蔽ip! 例如：vultr，虽然vultr的计费方式是按分钟计费，可以重新部署新的系统来实现更换ip的目的，但是我试了很多次，每次分配的ip都无法ping通。于是我放弃了，浪费了精力、时间和金钱 所以选对一个相对冷门又稳定的vps供应商很重要，配合Lotsever加速技术（提高服务器处理网络数据的效率），再搭建ss/brook服务器，客户端就能享受相对稳定、快速的视频观看体验了 1080p直播 选购VPS这里我介绍一个vps供应商 搬瓦工官网 搬瓦工中文介绍目前仅支持安装Linux系统，既然搞技术，Linux是永远绕不过去的话题，大家就用Linux吧 虽然想通过这篇文章推荐给更多的人用这个供应商，但是又怕用的人多了，然后被政府针对封ip。俗话说的人怕出名，猪怕壮，完全能表达我对于搬瓦工这个平台的担忧。只希望大家不用利用vps去做违法的事就行了，一旦染上黑点，这家企业在大陆的活路就会断掉 搬瓦工最低的套餐价格目前是19.99美元/年（折合人民币约140元/年），相信大家完全可以接收这个价格，毕竟没用过谁也不敢保证国外竟然有这么低价格的vps。根据搬瓦工中文介绍 提供的优惠码购买、部署完你想要的vps后，就可以通过ssh进入服务器进行下一步配置了 我的vps后台 Lotsever加速我部署搬瓦工服务器（Ubuntu）已经有10多天了，但是看youtube视频速度很不理想，很多时候只能看480p，稍微提高到720p以上就会卡顿，但是我在github上找到一个加速脚本后，使这个服务器网络传输效率翻了三十几倍（1080p直播图2 连接速度为28894kbps ,而没开加速前大概是300-500kps），完全不虚一些vpn服务的速度！点我打开 Lotsever加速源码地址 （这个Lotsever加速目前仅支持Centos/Debian/Ubuntu）按照其说明配置加速后，就可以进行 shadowsocks/brook 服务端的搭建了 利用Brook程序搭建 shadowsocks、brook 服务端点我打开 Brook源码地址根据你的服务器类型选择下载对应的Brook程序 为方便执行命令，请将下载好的程序统一改名为brook,然后授予执行权限 chmod +x brook 开启brook服务./brook server -l :9999 -p 666 后台运行 nohup ./brook server -l :9999 -p 666 &amp; 其中9999为端口号，666为密码 开启shadowsocks服务默认加密方式 aes-256-cfb ./brook ssserver -l :9999 -p 666 后台运行 nohup ./brook ssserver -l :9999 -p 666 &amp; 其中9999为端口号，666为密码 关闭所有brook进程killall brook 运行客户端下载 如果在服务器开启的是brook服务，那么你必须下载对应的brook客户端，然后填入服务器地址、端口，密码进行连接 如果开启的是shadowsocks服务，那么可以用brook客户端、或者支持shadowsocks技术的客户端进行连接。 点我打开 Brook客户端 下载页面 点我打开 Shadowsocks Windows 下载页面 点我打开 Shadowsocks Android 下载页面 点我打开 Shadowsocks 苹果（Mac）下载页面 Shadowsocks IOS客户端请用国外appleid登录appstore,搜索shadowsocks并下载 运行这里以Mac端为例 运行brook 运行shadowsocks 服务器配置页 其他环境的客户端配置大同小异，这里不多介绍了，大家请自行百度吧。 关于在Windows10运行brook的情况 在Windows10下，若brook连接后无法科学上网的，请以兼容模式下运行brook - 右击brook主程序 - 点击属性 - 点击兼容性 - 选择windows7兼容模式 - 保存配置后重连就能科学上网了 后记这次的分享不易，我一直在努力尝试怎样以最便宜最实用的方式翻墙上网，最后终于达到自己想要的效果了，希望看到这篇文章的朋友们进行科学上网能少走弯路吧。在油管上，我看到有人用墙改路由器上网的，很厉害的样子，不用一个个客户端配置，连上这个路由的所有设备都能科学上网，也有人用小米路由器刷入开发版，然后ssh进入系统安装ss客户端,也能达到同样的效果！看有没机会自己也来弄弄吧，就这样，byebye]]></content>
       <categories>
         <category>科学上网</category>
       </categories>
@@ -160,8 +160,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>个人作品</tag>
         <tag>Android应用</tag>
+        <tag>个人作品</tag>
         <tag>音乐播放器</tag>
         <tag>QQ音乐</tag>
         <tag>酷狗音乐</tag>
@@ -216,8 +216,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>个人作品</tag>
         <tag>Android应用</tag>
+        <tag>个人作品</tag>
         <tag>纯粹漫画</tag>
       </tags>
   </entry>
@@ -230,8 +230,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>个人作品</tag>
         <tag>Android应用</tag>
+        <tag>个人作品</tag>
         <tag>纯粹菜谱</tag>
       </tags>
   </entry>
@@ -287,23 +287,23 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[关于]]></title>
-    <url>%2Fabout%2Findex.html</url>
-    <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐邮箱：437499914@qq.com 、chenweibin1125@foxmail.com微信：Ccapton]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[board]]></title>
-    <url>%2Fboard%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[分类]]></title>
     <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
+    <title><![CDATA[关于]]></title>
+    <url>%2Fabout%2Findex.html</url>
+    <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐邮箱：437499914@qq.com 、chenweibin1125@foxmail.com微信：Ccapton]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[标签]]></title>
     <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[board]]></title>
+    <url>%2Fboard%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
