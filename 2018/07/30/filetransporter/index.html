@@ -113,7 +113,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7287689-4a2b853991324404.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7287689-b55bce0a8dc80139.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-07-30T04:48:44.904Z">
+<meta property="og:updated_time" content="2018-08-24T00:24:17.619Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用python打造一个基于socket的文件（夹）传输系统">
 <meta name="twitter:description" content="关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn  前言这段时间在学习python，接触到了网络编程中的socket这块，加上自己在用的Linux服务器都是原生支持python的，于是乎有">
@@ -510,13 +510,7 @@
 </code></pre>
 <p>通过继承FileFinder的回调类FinderCallback，重写其 onFindDir(self,dir_path) 和onFindFile(self,file_path,size)方法，在这两个方法里面发送相关指令到接收端。</p>
 <p>但最难的就是两端的指令线程内的socket指令信息的处理，这需要深入代码去具体研究，本人能力有限，也就不细说了。需要研究一番的朋友，请移步该项目地址 <a href="https://github.com/Ccapton/python-stuff/tree/master/filetransporter" target="_blank" rel="external">https://github.com/Ccapton/python-stuff/tree/master/filetransporter</a></p>
-<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>运行接收端程序，需要一个能访问的地址，也即是说最好是局域网内进行文件传输工作，因为局域网本地ip都是可以直接访问的，若是在公共网络传输文件，必须知道接收方主机的公网ip和内网ip。<br>例如我现在用到接收方主机是腾讯云的主机，内网ip是10.135.xxx.xxx,公网ip是111.120.xxx.xxx。该主机内，运行接收（服务）端程序</p>
-<pre class=" language-python"><code class="language-python">python3 ftserver<span class="token punctuation">.</span>py <span class="token operator">-</span>i <span class="token number">10.135</span><span class="token punctuation">.</span>xxx<span class="token punctuation">.</span>xxx <span class="token operator">-</span>d <span class="token operator">/</span>home<span class="token operator">/</span>ubuntu<span class="token operator">/</span>downloads
-</code></pre>
-<p>而在你的主机运行发送（客户）端程序发送文件夹bilibili</p>
-<pre class=" language-python"><code class="language-python">python3 ftclient<span class="token punctuation">.</span>py <span class="token operator">-</span>i <span class="token number">111.120</span><span class="token punctuation">.</span>xxx<span class="token punctuation">.</span>xxx <span class="token operator">-</span>f <span class="token operator">/</span>Users<span class="token operator">/</span>capton<span class="token operator">/</span>desktop<span class="token operator">/</span>bilibili
-</code></pre>
-<p>因为腾讯云、阿里云等国内虚拟主机供应商是采用NAT地址转换对云主机进行地址分配的，所以按照我上面的步骤来运行两端程序才能连通。</p>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>运行接收端程序，需要一个能访问的地址，也即是说最好是局域网内进行文件传输工作，因为局域网本地ip都是可以直接访问的，若是在公共网络传输文件，必须知道接收方主机的公网ip。<br>如果用的是vps或者虚拟主机，请务必检查安全组配置，<strong>需开放9997、9998两个端口</strong></p>
 
       
     </div>
