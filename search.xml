@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[V2Ray服务端 Linux一键配置脚本]]></title>
-    <url>%2F2018%2F08%2F30%2Fv2ray_ok_shell%2F</url>
-    <content type="text"><![CDATA[关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn 脚本说明V2Ray是一个非常优秀的科学上网开源程序，而此脚本在运行了V2Ray官方安装脚本后进行了配置文件的修改（默认的配置文件是针对客户端的）,达到一键配置V2Ray服务端程序的目的，还可以一键修改端口、用户id 一键配置脚本以下指令假设已在 su 环境下，如果不是，请先运行: sudo su bash &lt;(curl -L -s https://raw.githubusercontent.com/Ccapton/v2ray-ok/master/v2ray-ok.sh) 更多详情先看更多用法请访问该脚本的github地址 项目地址： https://www.github.com/ccapton/v2ray-ok]]></content>
+    <title><![CDATA[brook-ok服务端配置程序：方便配置、管理brook、shadowsocks服务]]></title>
+    <url>%2F2018%2F09%2F11%2Fbrook_ok%2F</url>
+    <content type="text"><![CDATA[关于我，欢迎关注csdn博客：ccapton(http://blog.csdn.net/ccapton) 微信：CcaptonGithub: (https://www.github.com/ccapton)个人博客:http://www.ccapton.cn 项目地址：https://github.com/Ccapton/brook-ok介绍什么是brook?brook 是一款跨平台(Linux/MacOS/Windows/Android/iOS)代理 / Vpn软件（可用于科学上网）点我进入Brook项目 什么是brook-ok?brook-ok : 为了方便管理、开启brook和shadowsocks服务而生的程序 &gt;_&lt; !点我进入brook-ok项目]]></content>
       <categories>
         <category>Python</category>
       </categories>
       <tags>
         <tag>个人作品</tag>
-        <tag>Shell</tag>
-        <tag>脚本</tag>
-        <tag>V2Ray脚本</tag>
+        <tag>python</tag>
+        <tag>brook服务端配置程序</tag>
+        <tag>科学上网</tag>
+        <tag>vps</tag>
+        <tag>brook</tag>
+        <tag>shadowsocks</tag>
       </tags>
   </entry>
   <entry>
@@ -174,8 +177,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>个人作品</tag>
         <tag>Android应用</tag>
+        <tag>个人作品</tag>
         <tag>音乐播放器</tag>
         <tag>QQ音乐</tag>
         <tag>酷狗音乐</tag>
@@ -230,8 +233,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>个人作品</tag>
         <tag>Android应用</tag>
+        <tag>个人作品</tag>
         <tag>纯粹漫画</tag>
       </tags>
   </entry>
@@ -244,8 +247,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>个人作品</tag>
         <tag>Android应用</tag>
+        <tag>个人作品</tag>
         <tag>纯粹菜谱</tag>
       </tags>
   </entry>
@@ -258,9 +261,9 @@
       </categories>
       <tags>
         <tag>音乐分享</tag>
-        <tag>BGM</tag>
         <tag>龙珠</tag>
         <tag>龙珠Z</tag>
+        <tag>BGM</tag>
       </tags>
   </entry>
   <entry>
@@ -272,8 +275,8 @@
       </categories>
       <tags>
         <tag>音乐分享</tag>
-        <tag>英雄联盟</tag>
         <tag>BGM</tag>
+        <tag>英雄联盟</tag>
       </tags>
   </entry>
   <entry>
@@ -301,16 +304,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[关于]]></title>
-    <url>%2Fabout%2Findex.html</url>
-    <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐邮箱：437499914@qq.com 、chenweibin1125@foxmail.com微信：Ccapton]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[board]]></title>
-    <url>%2Fboard%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[分类]]></title>
     <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
@@ -318,6 +311,16 @@
   <entry>
     <title><![CDATA[标签]]></title>
     <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[关于]]></title>
+    <url>%2Fabout%2Findex.html</url>
+    <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐邮箱：437499914@qq.com 、chenweibin1125@foxmail.com微信：Ccapton]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[board]]></title>
+    <url>%2Fboard%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
