@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ccapton.cn/"/>
-  <updated>2018-09-11T15:01:26.653Z</updated>
+  <updated>2018-09-11T15:06:57.342Z</updated>
   <id>http://ccapton.cn/</id>
   
   <author>
@@ -20,14 +20,14 @@
     <link href="http://ccapton.cn/2018/09/11/brook_ok/"/>
     <id>http://ccapton.cn/2018/09/11/brook_ok/</id>
     <published>2018-09-11T14:10:38.000Z</published>
-    <updated>2018-09-11T15:01:26.653Z</updated>
+    <updated>2018-09-11T15:06:57.342Z</updated>
     
     <summary type="html">
     
       &lt;blockquote&gt;
 &lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href=&quot;&quot;&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/brook_ok1.jpeg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/brook_ok1.jpeg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -353,9 +353,9 @@
     
       <category term="Gif" scheme="http://ccapton.cn/tags/Gif/"/>
     
-      <category term="图片处理技术" scheme="http://ccapton.cn/tags/%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%E6%8A%80%E6%9C%AF/"/>
-    
       <category term="Gif制作软件" scheme="http://ccapton.cn/tags/Gif%E5%88%B6%E4%BD%9C%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="图片处理技术" scheme="http://ccapton.cn/tags/%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -407,9 +407,9 @@
     
       <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
     
-      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
-    
       <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
+    
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
       <category term="音乐播放器" scheme="http://ccapton.cn/tags/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/"/>
     
@@ -527,9 +527,9 @@
     
       <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
     
-      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
-    
       <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
+    
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
       <category term="纯粹漫画" scheme="http://ccapton.cn/tags/%E7%BA%AF%E7%B2%B9%E6%BC%AB%E7%94%BB/"/>
     
@@ -556,9 +556,9 @@
     
       <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
     
-      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
-    
       <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
+    
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
       <category term="纯粹菜谱" scheme="http://ccapton.cn/tags/%E7%BA%AF%E7%B2%B9%E8%8F%9C%E8%B0%B1/"/>
     
