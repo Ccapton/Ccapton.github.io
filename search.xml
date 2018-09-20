@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[filebrowser部署教程]]></title>
     <url>%2F2018%2F09%2F20%2Ffilebrowser%2F</url>
-    <content type="text"><![CDATA[Filebrowser部署教程FilebrowserWeb文件浏览器，可用作中间件或独立应用程序 ( 这里我们把它用作个人私有云盘 ) https://github.com/filebrowser/filebrowser Linux下部署Filebrowser环境：Linux 64 位系统下载filebrowser源文件wget -O filebrowser.tar.gz https://github.com/filebrowser/filebrowser/relea64-filebrowser.tar.gzlinux-amd6 解压filebrowser.tar.gztar -zvxf filebrowser.tar.gz 授予filebrowser执行权限chmod +x filebrowser 运行filebrowser 前台模式： ./filebrowser -p 12345 后台模式 nohup ./filebrowser -p 12345 &amp; 查看filebrowser后台进程号 ps aux|grep filebrowser 关闭进程 kill 进程号]]></content>
+    <content type="text"><![CDATA[Filebrowser部署教程FilebrowserWeb文件浏览器，可用作中间件或独立应用程序 ( 这里我们把它用作个人私有云盘 ) https://github.com/filebrowser/filebrowser Linux下部署Filebrowser 环境：Linux 64 位系统下载filebrowser源文件wget -O filebrowser.tar.gz https://github.com/filebrowser/filebrowser/relea64-filebrowser.tar.gzlinux-amd6 解压filebrowser.tar.gztar -zvxf filebrowser.tar.gz 授予filebrowser执行权限chmod +x filebrowser 运行filebrowser前台模式： ./filebrowser -p 12345 后台模式 nohup ./filebrowser -p 12345 &amp; 查看filebrowser后台进程号 ps aux|grep filebrowser 关闭进程 kill 进程号]]></content>
       <categories>
         <category>教程</category>
       </categories>
@@ -166,8 +166,8 @@
         <tag>个人作品</tag>
         <tag>Java技术</tag>
         <tag>Gif</tag>
-        <tag>Gif制作软件</tag>
         <tag>图片处理技术</tag>
+        <tag>Gif制作软件</tag>
       </tags>
   </entry>
   <entry>
@@ -319,13 +319,13 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[标签]]></title>
-    <url>%2Ftags%2Findex.html</url>
+    <title><![CDATA[分类]]></title>
+    <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[分类]]></title>
-    <url>%2Fcategories%2Findex.html</url>
+    <title><![CDATA[标签]]></title>
+    <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>

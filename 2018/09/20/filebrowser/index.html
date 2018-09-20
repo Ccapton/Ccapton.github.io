@@ -103,18 +103,18 @@
 
 
 
-<meta name="description" content="Filebrowser部署教程FilebrowserWeb文件浏览器，可用作中间件或独立应用程序 ( 这里我们把它用作个人私有云盘 ) https://github.com/filebrowser/filebrowser Linux下部署Filebrowser环境：Linux 64 位系统下载filebrowser源文件wget -O filebrowser.tar.gz https://gith">
+<meta name="description" content="Filebrowser部署教程FilebrowserWeb文件浏览器，可用作中间件或独立应用程序 ( 这里我们把它用作个人私有云盘 ) https://github.com/filebrowser/filebrowser Linux下部署Filebrowser">
 <meta name="keywords" content="个人作品,vps,github,教程,filebrowser">
 <meta property="og:type" content="article">
 <meta property="og:title" content="filebrowser部署教程">
 <meta property="og:url" content="http://ccapton.cn/2018/09/20/filebrowser/index.html">
 <meta property="og:site_name" content="Ccapton技术空间">
-<meta property="og:description" content="Filebrowser部署教程FilebrowserWeb文件浏览器，可用作中间件或独立应用程序 ( 这里我们把它用作个人私有云盘 ) https://github.com/filebrowser/filebrowser Linux下部署Filebrowser环境：Linux 64 位系统下载filebrowser源文件wget -O filebrowser.tar.gz https://gith">
+<meta property="og:description" content="Filebrowser部署教程FilebrowserWeb文件浏览器，可用作中间件或独立应用程序 ( 这里我们把它用作个人私有云盘 ) https://github.com/filebrowser/filebrowser Linux下部署Filebrowser">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-20T08:47:56.236Z">
+<meta property="og:updated_time" content="2018-09-20T08:51:04.448Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="filebrowser部署教程">
-<meta name="twitter:description" content="Filebrowser部署教程FilebrowserWeb文件浏览器，可用作中间件或独立应用程序 ( 这里我们把它用作个人私有云盘 ) https://github.com/filebrowser/filebrowser Linux下部署Filebrowser环境：Linux 64 位系统下载filebrowser源文件wget -O filebrowser.tar.gz https://gith">
+<meta name="twitter:description" content="Filebrowser部署教程FilebrowserWeb文件浏览器，可用作中间件或独立应用程序 ( 这里我们把它用作个人私有云盘 ) https://github.com/filebrowser/filebrowser Linux下部署Filebrowser">
 
 
 
@@ -438,23 +438,24 @@
       
         <h1 id="Filebrowser部署教程"><a href="#Filebrowser部署教程" class="headerlink" title="Filebrowser部署教程"></a><a href="https://github.com/filebrowser/filebrowser" target="_blank" rel="external">Filebrowser部署教程</a></h1><h2 id="Filebrowser"><a href="#Filebrowser" class="headerlink" title="Filebrowser"></a><a href="https://github.com/filebrowser/filebrowser" target="_blank" rel="external">Filebrowser</a></h2><p>Web文件浏览器，可用作中间件或独立应用程序 ( 这里我们把它用作个人私有云盘 )</p>
 <p><a href="https://github.com/filebrowser/filebrowser" target="_blank" rel="external">https://github.com/filebrowser/filebrowser</a></p>
-<h2 id="Linux下部署Filebrowser"><a href="#Linux下部署Filebrowser" class="headerlink" title="Linux下部署Filebrowser"></a>Linux下部署<a href="https://github.com/filebrowser/filebrowser" target="_blank" rel="external">Filebrowser</a></h2><h4 id="环境：Linux-64-位系统"><a href="#环境：Linux-64-位系统" class="headerlink" title="环境：Linux 64 位系统"></a><strong>环境：Linux 64 位系统</strong></h4><h4 id="下载filebrowser源文件"><a href="#下载filebrowser源文件" class="headerlink" title="下载filebrowser源文件"></a>下载filebrowser源文件</h4><pre class=" language-bash"><code class="language-bash"><span class="token function">wget</span> -O filebrowser.tar.gz https://github.com/filebrowser/filebrowser/relea64-filebrowser.tar.gzlinux-amd6
+<h2 id="Linux下部署Filebrowser"><a href="#Linux下部署Filebrowser" class="headerlink" title="Linux下部署Filebrowser"></a>Linux下部署<a href="https://github.com/filebrowser/filebrowser" target="_blank" rel="external">Filebrowser</a></h2><a id="more"></a>
+<h4 id="环境：Linux-64-位系统"><a href="#环境：Linux-64-位系统" class="headerlink" title="环境：Linux 64 位系统"></a><strong>环境：Linux 64 位系统</strong></h4><h4 id="下载filebrowser源文件"><a href="#下载filebrowser源文件" class="headerlink" title="下载filebrowser源文件"></a>下载filebrowser源文件</h4><pre class=" language-bash"><code class="language-bash"><span class="token function">wget</span> -O filebrowser.tar.gz https://github.com/filebrowser/filebrowser/relea64-filebrowser.tar.gzlinux-amd6
 </code></pre>
 <h4 id="解压filebrowser-tar-gz"><a href="#解压filebrowser-tar-gz" class="headerlink" title="解压filebrowser.tar.gz"></a>解压filebrowser.tar.gz</h4><pre class=" language-bash"><code class="language-bash"><span class="token function">tar</span> -zvxf filebrowser.tar.gz
 </code></pre>
 <h4 id="授予filebrowser执行权限"><a href="#授予filebrowser执行权限" class="headerlink" title="授予filebrowser执行权限"></a>授予filebrowser执行权限</h4><pre class=" language-bash"><code class="language-bash"><span class="token function">chmod</span> +x filebrowser
 </code></pre>
-<h4 id="运行filebrowser"><a href="#运行filebrowser" class="headerlink" title="运行filebrowser"></a>运行filebrowser</h4><p> 前台模式：</p>
-<pre class=" language-bash"><code class="language-bash"> ./filebrowser -p 12345
+<h4 id="运行filebrowser"><a href="#运行filebrowser" class="headerlink" title="运行filebrowser"></a>运行filebrowser</h4><p>前台模式：</p>
+<pre class=" language-bash"><code class="language-bash">./filebrowser -p 12345
 </code></pre>
-<p> 后台模式</p>
-<pre class=" language-bash"><code class="language-bash"> <span class="token function">nohup</span> ./filebrowser -p 12345 <span class="token operator">&amp;</span>
+<p>后台模式</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">nohup</span> ./filebrowser -p 12345 <span class="token operator">&amp;</span>
 </code></pre>
-<p> 查看filebrowser后台进程号</p>
-<pre class=" language-bash"><code class="language-bash"> <span class="token function">ps</span> aux<span class="token operator">|</span><span class="token function">grep</span> filebrowser
+<p>查看filebrowser后台进程号</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">ps</span> aux<span class="token operator">|</span><span class="token function">grep</span> filebrowser
 </code></pre>
-<p> 关闭进程</p>
-<pre class=" language-bash"><code class="language-bash"> <span class="token function">kill</span> 进程号
+<p>关闭进程</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">kill</span> 进程号
 </code></pre>
 
       
