@@ -331,6 +331,178 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ccapton.cn/2018/09/20/filebrowser/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ccapton">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ccapton技术空间">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/20/filebrowser/" itemprop="url">filebrowser部署教程</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-20T13:10:38+08:00">
+                2018-09-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/教程/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/09/20/filebrowser/" class="leancloud_visitors" data-flag-title="filebrowser部署教程">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Filebrowser部署教程"><a href="#Filebrowser部署教程" class="headerlink" title="Filebrowser部署教程"></a><a href="https://github.com/filebrowser/filebrowser" target="_blank" rel="external">Filebrowser部署教程</a></h1><h2 id="Filebrowser"><a href="#Filebrowser" class="headerlink" title="Filebrowser"></a><a href="https://github.com/filebrowser/filebrowser" target="_blank" rel="external">Filebrowser</a></h2><p>Web文件浏览器，可用作中间件或独立应用程序 ( 这里我们把它用作个人私有云盘 )</p>
+<p><a href="https://github.com/filebrowser/filebrowser" target="_blank" rel="external">https://github.com/filebrowser/filebrowser</a></p>
+<h2 id="Linux下部署Filebrowser"><a href="#Linux下部署Filebrowser" class="headerlink" title="Linux下部署Filebrowser"></a>Linux下部署<a href="https://github.com/filebrowser/filebrowser" target="_blank" rel="external">Filebrowser</a></h2><h4 id="环境：Linux-64-位系统"><a href="#环境：Linux-64-位系统" class="headerlink" title="环境：Linux 64 位系统"></a><strong>环境：Linux 64 位系统</strong></h4><h4 id="下载filebrowser源文件"><a href="#下载filebrowser源文件" class="headerlink" title="下载filebrowser源文件"></a>下载filebrowser源文件</h4><pre class=" language-bash"><code class="language-bash"><span class="token function">wget</span> -O filebrowser.tar.gz https://github.com/filebrowser/filebrowser/relea64-filebrowser.tar.gzlinux-amd6
+</code></pre>
+<h4 id="解压filebrowser-tar-gz"><a href="#解压filebrowser-tar-gz" class="headerlink" title="解压filebrowser.tar.gz"></a>解压filebrowser.tar.gz</h4><pre class=" language-bash"><code class="language-bash"><span class="token function">tar</span> -zvxf filebrowser.tar.gz
+</code></pre>
+<h4 id="授予filebrowser执行权限"><a href="#授予filebrowser执行权限" class="headerlink" title="授予filebrowser执行权限"></a>授予filebrowser执行权限</h4><pre class=" language-bash"><code class="language-bash"><span class="token function">chmod</span> +x filebrowser
+</code></pre>
+<h4 id="运行filebrowser"><a href="#运行filebrowser" class="headerlink" title="运行filebrowser"></a>运行filebrowser</h4><p> 前台模式：</p>
+<pre class=" language-bash"><code class="language-bash"> ./filebrowser -p 12345
+</code></pre>
+<p> 后台模式</p>
+<pre class=" language-bash"><code class="language-bash"> <span class="token function">nohup</span> ./filebrowser -p 12345 <span class="token operator">&amp;</span>
+</code></pre>
+<p> 查看filebrowser后台进程号</p>
+<pre class=" language-bash"><code class="language-bash"> <span class="token function">ps</span> aux<span class="token operator">|</span><span class="token function">grep</span> filebrowser
+</code></pre>
+<p> 关闭进程</p>
+<pre class=" language-bash"><code class="language-bash"> <span class="token function">kill</span> 进程号
+</code></pre>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://ccapton.cn/2018/09/11/brook_ok/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1780,166 +1952,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ccapton.cn/2017/09/05/mvp_rxjava_md/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ccapton">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ccapton技术空间">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/05/mvp_rxjava_md/" itemprop="url">MD风格Mvp—RxJava2应用，MVP初体验</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-05T01:08:48+08:00">
-                2017-09-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android开发/" itemprop="url" rel="index">
-                    <span itemprop="name">Android开发</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2017/09/05/mvp_rxjava_md/" class="leancloud_visitors" data-flag-title="MD风格Mvp—RxJava2应用，MVP初体验">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote>
-<p>关于我，欢迎关注<br>csdn博客：ccapton(<a href="http://blog.csdn.net/ccapton" target="_blank" rel="external">http://blog.csdn.net/ccapton</a>) 微信：<a href="">Ccapton</a><br>Github: (<a href="https://www.github.com/ccapton" target="_blank" rel="external">https://www.github.com/ccapton</a>)<br>个人博客:<a href="http://www.ccapton.cn/" target="_blank" rel="external">http://www.ccapton.cn</a></p>
-</blockquote>
-<p>项目地址<br><a href="https://github.com/Ccapton/Mvp-RxJava2" target="_blank" rel="external">https://github.com/Ccapton/Mvp-RxJava2</a><br>Demo apk:<br><a href="http://git.oschina.net/ccapton/Files/raw/master/ccapton_mvp.apk" target="_blank" rel="external">http://git.oschina.net/ccapton/Files/raw/master/ccapton_mvp.apk</a><br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/05/mvp_rxjava_md/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1990,7 +2002,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">22</span>
+                <span class="site-state-item-count">23</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -2001,7 +2013,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -2012,7 +2024,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">46</span>
+                <span class="site-state-item-count">49</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
