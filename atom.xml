@@ -46,6 +46,42 @@
   </entry>
   
   <entry>
+    <title>filebrowser部署教程</title>
+    <link href="http://ccapton.cn/2018/09/20/deepin_pac/"/>
+    <id>http://ccapton.cn/2018/09/20/deepin_pac/</id>
+    <published>2018-09-20T05:10:38.000Z</published>
+    <updated>2018-09-27T09:32:16.361Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;之前尝在Deepin（深度OS）上翻墙，无论怎样开启shadowsocks-qt5客户端或者brook客户端,都要到系统设置页里手动配置代理服务器，而且只能是全局模式翻墙（brook的vpn模式能一键上网，但是流量全部走vpn管道了）。这次&lt;strong&gt;配合SwitchyOmega这个Chrome插件就能实现PAC自动代理上网了！&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="教程" scheme="http://ccapton.cn/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
+    
+      <category term="vps" scheme="http://ccapton.cn/tags/vps/"/>
+    
+      <category term="github" scheme="http://ccapton.cn/tags/github/"/>
+    
+      <category term="教程" scheme="http://ccapton.cn/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="shadowsocks-qt5" scheme="http://ccapton.cn/tags/shadowsocks-qt5/"/>
+    
+      <category term="SwitchyOmega" scheme="http://ccapton.cn/tags/SwitchyOmega/"/>
+    
+      <category term="PAC" scheme="http://ccapton.cn/tags/PAC/"/>
+    
+      <category term="Linux" scheme="http://ccapton.cn/tags/Linux/"/>
+    
+      <category term="Deepin" scheme="http://ccapton.cn/tags/Deepin/"/>
+    
+  </entry>
+  
+  <entry>
     <title>brook服务端配置程序：方便配置、管理brook、shadowsocks服务</title>
     <link href="http://ccapton.cn/2018/09/11/brook_ok/"/>
     <id>http://ccapton.cn/2018/09/11/brook_ok/</id>
@@ -383,9 +419,9 @@
     
       <category term="Gif" scheme="http://ccapton.cn/tags/Gif/"/>
     
-      <category term="Gif制作软件" scheme="http://ccapton.cn/tags/Gif%E5%88%B6%E4%BD%9C%E8%BD%AF%E4%BB%B6/"/>
-    
       <category term="图片处理技术" scheme="http://ccapton.cn/tags/%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="Gif制作软件" scheme="http://ccapton.cn/tags/Gif%E5%88%B6%E4%BD%9C%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
@@ -591,32 +627,6 @@
       <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
       <category term="纯粹菜谱" scheme="http://ccapton.cn/tags/%E7%BA%AF%E7%B2%B9%E8%8F%9C%E8%B0%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>龙珠Z中热血的bgm</title>
-    <link href="http://ccapton.cn/2017/02/10/share_music2/"/>
-    <id>http://ccapton.cn/2017/02/10/share_music2/</id>
-    <published>2017-02-10T04:08:48.000Z</published>
-    <updated>2017-09-01T14:44:42.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/longzhu.jpeg&quot; class=&quot;full-image&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="音乐分享" scheme="http://ccapton.cn/categories/%E9%9F%B3%E4%B9%90%E5%88%86%E4%BA%AB/"/>
-    
-    
-      <category term="音乐分享" scheme="http://ccapton.cn/tags/%E9%9F%B3%E4%B9%90%E5%88%86%E4%BA%AB/"/>
-    
-      <category term="BGM" scheme="http://ccapton.cn/tags/BGM/"/>
-    
-      <category term="龙珠" scheme="http://ccapton.cn/tags/%E9%BE%99%E7%8F%A0/"/>
-    
-      <category term="龙珠Z" scheme="http://ccapton.cn/tags/%E9%BE%99%E7%8F%A0Z/"/>
     
   </entry>
   
