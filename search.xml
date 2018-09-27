@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[深度OS（Deepin）下开启PAC科学上网]]></title>
+    <url>%2F2018%2F09%2F27%2Fdeepin_pac%2F</url>
+    <content type="text"><![CDATA[前言之前尝在Deepin（深度OS）上翻墙，无论怎样开启shadowsocks-qt5客户端或者brook客户端,都要到系统设置页里手动配置代理服务器，而且只能是全局模式翻墙（brook的vpn模式能一键上网，但是流量全部走vpn管道了）。这次配合SwitchyOmega这个Chrome插件就能实现PAC自动代理上网了！ 下载地址 shadowsocks-qt5安装说明 https://github.com/shadowsocks/shadow… SwitchyOmega下载地址 https://github.com/FelisCatus/Switchy… 可用的PAC项目 https://github.com/txthinking/pac 视频教程https://www.youtube.com/watch?v=LQc4UvEyChs]]></content>
+      <categories>
+        <category>科学上网</category>
+      </categories>
+      <tags>
+        <tag>个人作品</tag>
+        <tag>科学上网</tag>
+        <tag>vps</tag>
+        <tag>教程</tag>
+        <tag>shadowsocks-qt5</tag>
+        <tag>SwitchyOmega</tag>
+        <tag>PAC</tag>
+        <tag>Linux</tag>
+        <tag>Deepin</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[filebrowser部署教程]]></title>
     <url>%2F2018%2F09%2F20%2Ffilebrowser%2F</url>
     <content type="text"><![CDATA[Filebrowser部署教程FilebrowserWeb文件浏览器，可用作中间件或独立应用程序 ( 这里我们把它用作个人私有云盘 ) https://github.com/filebrowser/filebrowser Linux下部署Filebrowser 环境：Linux 64 位系统下载filebrowser源文件wget -O filebrowser.tar.gz https://github.com/filebrowser/filebrowser/releases/download/v1.10.0/linux-amd64-filebrowser.tar.gz 解压filebrowser.tar.gztar -zvxf filebrowser.tar.gz 授予filebrowser执行权限chmod +x filebrowser 运行filebrowser前台模式： ./filebrowser -p 12345 后台模式 nohup ./filebrowser -p 12345 &amp; 查看filebrowser后台进程号 ps aux|grep filebrowser 关闭进程 kill 进程号]]></content>
@@ -10,28 +29,9 @@
       <tags>
         <tag>个人作品</tag>
         <tag>vps</tag>
-        <tag>github</tag>
         <tag>教程</tag>
+        <tag>github</tag>
         <tag>filebrowser</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[filebrowser部署教程]]></title>
-    <url>%2F2018%2F09%2F20%2Fdeepin_pac%2F</url>
-    <content type="text"><![CDATA[前言之前尝在Deepin（深度OS）上翻墙，无论怎样开启shadowsocks-qt5客户端或者brook客户端,都要到系统设置页里手动配置代理服务器，而且只能是全局模式翻墙（brook的vpn模式能一键上网，但是流量全部走vpn管道了）。这次配合SwitchyOmega这个Chrome插件就能实现PAC自动代理上网了！ 下载地址 shadowsocks-qt5安装说明 https://github.com/shadowsocks/shadow… SwitchyOmega下载地址 https://github.com/FelisCatus/Switchy… 可用的PAC项目 https://github.com/txthinking/pac 视频教程https://www.youtube.com/watch?v=LQc4UvEyChs]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>个人作品</tag>
-        <tag>vps</tag>
-        <tag>github</tag>
-        <tag>教程</tag>
-        <tag>shadowsocks-qt5</tag>
-        <tag>SwitchyOmega</tag>
-        <tag>PAC</tag>
-        <tag>Linux</tag>
-        <tag>Deepin</tag>
       </tags>
   </entry>
   <entry>
@@ -43,10 +43,10 @@
       </categories>
       <tags>
         <tag>个人作品</tag>
-        <tag>vps</tag>
         <tag>python</tag>
         <tag>brook服务端配置程序</tag>
         <tag>科学上网</tag>
+        <tag>vps</tag>
         <tag>brook</tag>
         <tag>shadowsocks</tag>
       </tags>
@@ -211,8 +211,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>Android应用</tag>
         <tag>个人作品</tag>
+        <tag>Android应用</tag>
         <tag>音乐播放器</tag>
         <tag>QQ音乐</tag>
         <tag>酷狗音乐</tag>
@@ -267,8 +267,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>Android应用</tag>
         <tag>个人作品</tag>
+        <tag>Android应用</tag>
         <tag>纯粹漫画</tag>
       </tags>
   </entry>
@@ -281,8 +281,8 @@
       </categories>
       <tags>
         <tag>Android开发</tag>
-        <tag>Android应用</tag>
         <tag>个人作品</tag>
+        <tag>Android应用</tag>
         <tag>纯粹菜谱</tag>
       </tags>
   </entry>
@@ -343,6 +343,11 @@
     <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐邮箱：437499914@qq.com 、chenweibin1125@foxmail.com微信：Ccapton]]></content>
   </entry>
   <entry>
+    <title><![CDATA[board]]></title>
+    <url>%2Fboard%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[分类]]></title>
     <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
@@ -350,11 +355,6 @@
   <entry>
     <title><![CDATA[标签]]></title>
     <url>%2Ftags%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[board]]></title>
-    <url>%2Fboard%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
