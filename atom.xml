@@ -33,11 +33,11 @@
     
       <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
+      <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
       <category term="vps" scheme="http://ccapton.cn/tags/vps/"/>
     
       <category term="教程" scheme="http://ccapton.cn/tags/%E6%95%99%E7%A8%8B/"/>
-    
-      <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
       <category term="shadowsocks-qt5" scheme="http://ccapton.cn/tags/shadowsocks-qt5/"/>
     
@@ -102,13 +102,13 @@
     
       <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
-      <category term="vps" scheme="http://ccapton.cn/tags/vps/"/>
-    
-      <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
       <category term="python" scheme="http://ccapton.cn/tags/python/"/>
     
       <category term="brook服务端配置程序" scheme="http://ccapton.cn/tags/brook%E6%9C%8D%E5%8A%A1%E7%AB%AF%E9%85%8D%E7%BD%AE%E7%A8%8B%E5%BA%8F/"/>
+    
+      <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+      <category term="vps" scheme="http://ccapton.cn/tags/vps/"/>
     
       <category term="brook" scheme="http://ccapton.cn/tags/brook/"/>
     
@@ -473,9 +473,9 @@
     
       <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
     
-      <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
-    
       <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
+    
+      <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
     
       <category term="音乐播放器" scheme="http://ccapton.cn/tags/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/"/>
     
@@ -593,9 +593,9 @@
     
       <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
     
-      <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
-    
       <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
+    
+      <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
     
       <category term="纯粹漫画" scheme="http://ccapton.cn/tags/%E7%BA%AF%E7%B2%B9%E6%BC%AB%E7%94%BB/"/>
     
@@ -622,9 +622,9 @@
     
       <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
     
-      <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
-    
       <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
+    
+      <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
     
       <category term="纯粹菜谱" scheme="http://ccapton.cn/tags/%E7%BA%AF%E7%B2%B9%E8%8F%9C%E8%B0%B1/"/>
     

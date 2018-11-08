@@ -1,2 +1,1 @@
-# 个人博客静态网页
-**当前绑定域名：ccapton.cn**
+# Ccapton.github.io
