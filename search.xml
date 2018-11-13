@@ -37,6 +37,20 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[龙珠Z中热血的bgm]]></title>
+    <url>%2F2018%2F10%2F01%2Flols_music%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>音乐分享</category>
+      </categories>
+      <tags>
+        <tag>音乐分享</tag>
+        <tag>英雄联盟</tag>
+        <tag>lol</tag>
+        <tag>BGM</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[深度OS（Deepin）下开启PAC科学上网]]></title>
     <url>%2F2018%2F09%2F27%2Fdeepin_pac%2F</url>
     <content type="text"><![CDATA[前言之前尝在Deepin（深度OS）上翻墙，无论怎样开启shadowsocks-qt5客户端或者brook客户端,都要到系统设置页里手动配置代理服务器，而且只能是全局模式翻墙（brook的vpn模式能一键上网，但是流量全部走vpn管道了）。这次配合SwitchyOmega这个Chrome插件就能实现PAC自动代理上网了！ 下载地址 shadowsocks-qt5安装说明 https://github.com/shadowsocks/shadowsocks-qt5/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97 SwitchyOmega下载地址 https://github.com/FelisCatus/SwitchyOmega/releases 可用的PAC项目 https://github.com/txthinking/pac 视频教程https://www.youtube.com/watch?v=LQc4UvEyChs]]></content>
