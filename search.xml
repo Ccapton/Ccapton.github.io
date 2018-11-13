@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[brook-qt5（Linux桌面应用客户端），用来连接brook服务！！！]]></title>
+    <url>%2F2018%2F11%2F13%2Fbrook-qt5%2F</url>
+    <content type="text"><![CDATA[图片镇楼 项目地址https://github.com/Ccapton/brook-qt5 前提 需要有个桌面版Linux系统，例如我正在使用的DeepinOS 需要知道brook服务链接，或已经自行搭建了境外brook服务后话 部署这个项目后，你可以以图形界面的方式管理多个brook服务了！传统模式下，Linux只能使用通过brook程序以CLI模式连接brook服务，由于brook客户端没有多账号管理功能，这非常不方便，于是我就写了这么一个界面程序用于实现我要的功能，目前可能有些连接上面的问题，有待后续改进吧 废话不多说了，大家点击上面的Github项目地址看Wiki和首页的说明吧！]]></content>
+      <categories>
+        <category>科学上网</category>
+      </categories>
+      <tags>
+        <tag>个人作品</tag>
+        <tag>vps</tag>
+        <tag>教程</tag>
+        <tag>科学上网</tag>
+        <tag>brook-qt5</tag>
+        <tag>brook</tag>
+        <tag>Linux</tag>
+        <tag>socks5</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[brook-web后台管理项目，直接通过网页管理你的brook服务端口]]></title>
     <url>%2F2018%2F10%2F30%2Fbrook-web%2F</url>
     <content type="text"><![CDATA[图片镇楼 项目地址https://github.com/Ccapton/brook-web 前提需要有个境外的Linux或者macos服务器。 后话部署这个项目后，你可以通过网页直接管理Brook、ShadowSocks、Socks5服务(Telegram可用)！ 废话不多说了，大家点击上面的Github项目地址看Wiki和首页的说明吧！]]></content>
@@ -12,10 +30,10 @@
         <tag>vps</tag>
         <tag>教程</tag>
         <tag>科学上网</tag>
-        <tag>shadowsocks-qt5</tag>
         <tag>brook</tag>
         <tag>Linux</tag>
         <tag>socks5</tag>
+        <tag>shadowsocks-qt5</tag>
       </tags>
   </entry>
   <entry>
@@ -30,8 +48,8 @@
         <tag>vps</tag>
         <tag>教程</tag>
         <tag>科学上网</tag>
-        <tag>shadowsocks-qt5</tag>
         <tag>Linux</tag>
+        <tag>shadowsocks-qt5</tag>
         <tag>SwitchyOmega</tag>
         <tag>PAC</tag>
         <tag>Deepin</tag>
@@ -361,13 +379,13 @@
     <content type="text"><![CDATA[这是我的个人博客站，上传一些自己写的android代码和技术文章。偶尔分享一些好用的软件，好听的音乐邮箱：437499914@qq.com 、chenweibin1125@foxmail.com微信：Ccapton]]></content>
   </entry>
   <entry>
-    <title><![CDATA[分类]]></title>
-    <url>%2Fcategories%2Findex.html</url>
+    <title><![CDATA[board]]></title>
+    <url>%2Fboard%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[board]]></title>
-    <url>%2Fboard%2Findex.html</url>
+    <title><![CDATA[分类]]></title>
+    <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>

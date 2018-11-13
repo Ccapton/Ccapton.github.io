@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ccapton.cn/"/>
-  <updated>2018-11-13T13:39:19.404Z</updated>
+  <updated>2018-11-13T13:49:16.287Z</updated>
   <id>http://ccapton.cn/</id>
   
   <author>
@@ -14,6 +14,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>brook-qt5（Linux桌面应用客户端），用来连接brook服务！！！</title>
+    <link href="http://ccapton.cn/2018/11/13/brook-qt5/"/>
+    <id>http://ccapton.cn/2018/11/13/brook-qt5/</id>
+    <published>2018-11-12T16:06:42.000Z</published>
+    <updated>2018-11-13T13:49:16.287Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;图片镇楼&quot;&gt;&lt;a href=&quot;#图片镇楼&quot; class=&quot;headerlink&quot; title=&quot;图片镇楼&quot;&gt;&lt;/a&gt;图片镇楼&lt;/h3&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Ccapton/brook-qt5/master/image/brookqt.png&quot; height=&quot;460&quot; width=&quot;700&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="科学上网" scheme="http://ccapton.cn/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
+    
+      <category term="vps" scheme="http://ccapton.cn/tags/vps/"/>
+    
+      <category term="教程" scheme="http://ccapton.cn/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+      <category term="brook-qt5" scheme="http://ccapton.cn/tags/brook-qt5/"/>
+    
+      <category term="brook" scheme="http://ccapton.cn/tags/brook/"/>
+    
+      <category term="Linux" scheme="http://ccapton.cn/tags/Linux/"/>
+    
+      <category term="socks5" scheme="http://ccapton.cn/tags/socks5/"/>
+    
+  </entry>
   
   <entry>
     <title>brook-web后台管理项目，直接通过网页管理你的brook服务端口</title>
@@ -39,13 +73,13 @@
     
       <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
-      <category term="shadowsocks-qt5" scheme="http://ccapton.cn/tags/shadowsocks-qt5/"/>
-    
       <category term="brook" scheme="http://ccapton.cn/tags/brook/"/>
     
       <category term="Linux" scheme="http://ccapton.cn/tags/Linux/"/>
     
       <category term="socks5" scheme="http://ccapton.cn/tags/socks5/"/>
+    
+      <category term="shadowsocks-qt5" scheme="http://ccapton.cn/tags/shadowsocks-qt5/"/>
     
   </entry>
   
@@ -73,9 +107,9 @@
     
       <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
-      <category term="shadowsocks-qt5" scheme="http://ccapton.cn/tags/shadowsocks-qt5/"/>
-    
       <category term="Linux" scheme="http://ccapton.cn/tags/Linux/"/>
+    
+      <category term="shadowsocks-qt5" scheme="http://ccapton.cn/tags/shadowsocks-qt5/"/>
     
       <category term="SwitchyOmega" scheme="http://ccapton.cn/tags/SwitchyOmega/"/>
     
@@ -603,35 +637,6 @@
       <category term="软件分享" scheme="http://ccapton.cn/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
     
       <category term="IntelliJ IDEA_2017" scheme="http://ccapton.cn/tags/IntelliJ-IDEA-2017/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>个人开发应用《纯粹漫画》</title>
-    <link href="http://ccapton.cn/2017/05/03/PureComic/"/>
-    <id>http://ccapton.cn/2017/05/03/PureComic/</id>
-    <published>2017-05-03T04:50:48.000Z</published>
-    <updated>2017-09-01T14:44:18.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;概况&quot;&gt;&lt;a href=&quot;#概况&quot; class=&quot;headerlink&quot; title=&quot;概况&quot;&gt;&lt;/a&gt;概况&lt;/h3&gt;&lt;p&gt;应用下载页&lt;/p&gt;
-&lt;p&gt; &lt;a href=&quot;http://shouji.baidu.com/software/11411328.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://shouji.baidu.com/software/11411328.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;直接扫码下载apk &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/purecomic2.jpeg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Android个人作品" scheme="http://ccapton.cn/categories/Android%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
-    
-    
-      <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
-    
-      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
-    
-      <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
-    
-      <category term="纯粹漫画" scheme="http://ccapton.cn/tags/%E7%BA%AF%E7%B2%B9%E6%BC%AB%E7%94%BB/"/>
     
   </entry>
   
