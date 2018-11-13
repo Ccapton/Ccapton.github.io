@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[brook-qt5（Linux桌面应用客户端），用来连接brook服务！！！]]></title>
     <url>%2F2018%2F11%2F13%2Fbrook-qt5%2F</url>
-    <content type="text"><![CDATA[图片镇楼 项目地址https://github.com/Ccapton/brook-qt5 前提 需要有个桌面版Linux系统，例如我正在使用的DeepinOS 需要知道brook服务链接，或已经自行搭建了境外brook服务后话 部署这个项目后，你可以以图形界面的方式管理多个brook服务了！传统模式下，Linux只能使用通过brook程序以CLI模式连接brook服务，由于brook客户端没有多账号管理功能，这非常不方便，于是我就写了这么一个界面程序用于实现我要的功能，目前可能有些连接上面的问题，有待后续改进吧 废话不多说了，大家点击上面的Github项目地址看Wiki和首页的说明吧！]]></content>
+    <content type="text"><![CDATA[图片镇楼 项目地址https://github.com/Ccapton/brook-qt5 前提 需要有个桌面版Linux系统，例如我正在使用的DeepinOS 需要知道brook服务链接，或已经自行搭建了境外brook服务 后话部署这个项目后，你可以以图形界面的方式管理多个brook服务了！传统模式下，Linux只能使用通过brook程序以CLI模式连接brook服务，由于brook客户端没有多账号管理功能，这非常不方便，于是我就写了这么一个界面程序用于实现我要的功能，目前可能有些连接上面的问题，有待后续改进吧 废话不多说了，大家点击上面的Github项目地址看Wiki和首页的说明吧！]]></content>
       <categories>
         <category>科学上网</category>
       </categories>
