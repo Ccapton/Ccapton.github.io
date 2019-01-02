@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[适用于Android平台的aes+rsa混合加密方案]]></title>
+    <url>%2F2019%2F01%2F01%2Fandroid_aes_rsa%2F</url>
+    <content type="text"><![CDATA[图片镇楼 项目地址https://github.com/Ccapton/android-aes-rsa 后话无意中发现一个老外写的东西 https://github.com/brianPlummer/AndroidEncryptionExample ，稍微改了一下]]></content>
+      <categories>
+        <category>Android开发</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+        <tag>个人作品</tag>
+        <tag>算法</tag>
+        <tag>加密</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[brook-qt5（Linux桌面应用客户端），用来连接brook服务！！！]]></title>
     <url>%2F2018%2F11%2F13%2Fbrook-qt5%2F</url>
     <content type="text"><![CDATA[图片镇楼 项目地址https://github.com/Ccapton/brook-qt5 前提 需要有个桌面版Linux系统，例如我正在使用的DeepinOS 需要知道brook服务链接，或已经自行搭建了境外brook服务 后话部署这个项目后，你可以以图形界面的方式管理多个brook服务了！传统模式下，Linux只能使用通过brook程序以CLI模式连接brook服务，由于brook客户端没有多账号管理功能，这非常不方便，于是我就写了这么一个界面程序用于实现我要的功能，目前可能有些连接上面的问题，有待后续改进吧 废话不多说了，大家点击上面的Github项目地址看Wiki和首页的说明吧！]]></content>
@@ -235,8 +249,8 @@
         <tag>个人作品</tag>
         <tag>Java技术</tag>
         <tag>Gif</tag>
-        <tag>图片处理技术</tag>
         <tag>Gif制作软件</tag>
+        <tag>图片处理技术</tag>
       </tags>
   </entry>
   <entry>
