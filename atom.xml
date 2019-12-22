@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ccapton.cn/"/>
-  <updated>2019-01-02T14:18:44.315Z</updated>
+  <updated>2019-12-22T12:18:24.484Z</updated>
   <id>http://ccapton.cn/</id>
   
   <author>
@@ -16,11 +16,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>android开发之无线连接功能</title>
+    <link href="http://ccapton.cn/2019/12/22/android_adb/"/>
+    <id>http://ccapton.cn/2019/12/22/android_adb/</id>
+    <published>2019-12-21T16:06:42.000Z</published>
+    <updated>2019-12-22T12:18:24.484Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;分享缘由&quot;&gt;&lt;a href=&quot;#分享缘由&quot; class=&quot;headerlink&quot; title=&quot;分享缘由&quot;&gt;&lt;/a&gt;分享缘由&lt;/h3&gt;&lt;p&gt;前段时间和同事在一起用了一下AndroidStudio的无线连接功能，然后就去琢磨了一下，发现原来它使用的是adb命令进行操
+    
+    </summary>
+    
+      <category term="Android开发" scheme="http://ccapton.cn/categories/Android%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Android" scheme="http://ccapton.cn/tags/Android/"/>
+    
+      <category term="特别技巧" scheme="http://ccapton.cn/tags/%E7%89%B9%E5%88%AB%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>适用于Android平台的aes+rsa混合加密方案</title>
     <link href="http://ccapton.cn/2019/01/01/android_aes_rsa/"/>
     <id>http://ccapton.cn/2019/01/01/android_aes_rsa/</id>
     <published>2018-12-31T16:06:42.000Z</published>
-    <updated>2019-01-02T14:18:44.315Z</updated>
+    <updated>2019-01-02T14:18:44.000Z</updated>
     
     <summary type="html">
     
@@ -31,9 +53,9 @@
       <category term="Android开发" scheme="http://ccapton.cn/categories/Android%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
-    
       <category term="Android" scheme="http://ccapton.cn/tags/Android/"/>
+    
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
       <category term="算法" scheme="http://ccapton.cn/tags/%E7%AE%97%E6%B3%95/"/>
     
@@ -46,7 +68,7 @@
     <link href="http://ccapton.cn/2018/11/13/brook-qt5/"/>
     <id>http://ccapton.cn/2018/11/13/brook-qt5/</id>
     <published>2018-11-12T16:06:42.000Z</published>
-    <updated>2018-11-13T14:07:07.025Z</updated>
+    <updated>2018-11-13T14:07:07.000Z</updated>
     
     <summary type="html">
     
@@ -59,13 +81,13 @@
     
       <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
-      <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
       <category term="vps" scheme="http://ccapton.cn/tags/vps/"/>
     
-      <category term="brook" scheme="http://ccapton.cn/tags/brook/"/>
-    
       <category term="教程" scheme="http://ccapton.cn/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+      <category term="brook" scheme="http://ccapton.cn/tags/brook/"/>
     
       <category term="Linux" scheme="http://ccapton.cn/tags/Linux/"/>
     
@@ -80,7 +102,7 @@
     <link href="http://ccapton.cn/2018/10/30/brook-web/"/>
     <id>http://ccapton.cn/2018/10/30/brook-web/</id>
     <published>2018-10-30T04:08:42.000Z</published>
-    <updated>2018-11-13T13:39:19.404Z</updated>
+    <updated>2018-11-13T13:39:19.000Z</updated>
     
     <summary type="html">
     
@@ -93,15 +115,15 @@
     
       <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
-      <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
       <category term="vps" scheme="http://ccapton.cn/tags/vps/"/>
-    
-      <category term="brook" scheme="http://ccapton.cn/tags/brook/"/>
     
       <category term="教程" scheme="http://ccapton.cn/tags/%E6%95%99%E7%A8%8B/"/>
     
+      <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
       <category term="shadowsocks-qt5" scheme="http://ccapton.cn/tags/shadowsocks-qt5/"/>
+    
+      <category term="brook" scheme="http://ccapton.cn/tags/brook/"/>
     
       <category term="Linux" scheme="http://ccapton.cn/tags/Linux/"/>
     
@@ -114,7 +136,7 @@
     <link href="http://ccapton.cn/2018/10/01/lols_music/"/>
     <id>http://ccapton.cn/2018/10/01/lols_music/</id>
     <published>2018-10-01T12:08:48.000Z</published>
-    <updated>2018-11-13T14:08:59.461Z</updated>
+    <updated>2018-11-13T14:08:59.000Z</updated>
     
     <summary type="html">
     
@@ -153,19 +175,19 @@
     
       <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
-      <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
       <category term="vps" scheme="http://ccapton.cn/tags/vps/"/>
     
       <category term="教程" scheme="http://ccapton.cn/tags/%E6%95%99%E7%A8%8B/"/>
     
+      <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
       <category term="shadowsocks-qt5" scheme="http://ccapton.cn/tags/shadowsocks-qt5/"/>
+    
+      <category term="Linux" scheme="http://ccapton.cn/tags/Linux/"/>
     
       <category term="SwitchyOmega" scheme="http://ccapton.cn/tags/SwitchyOmega/"/>
     
       <category term="PAC" scheme="http://ccapton.cn/tags/PAC/"/>
-    
-      <category term="Linux" scheme="http://ccapton.cn/tags/Linux/"/>
     
       <category term="Deepin" scheme="http://ccapton.cn/tags/Deepin/"/>
     
@@ -180,9 +202,9 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Filebrowser部署教程&quot;&gt;&lt;a href=&quot;#Filebrowser部署教程&quot; class=&quot;headerlink&quot; title=&quot;Filebrowser部署教程&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/filebrowser/filebrowser&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Filebrowser部署教程&lt;/a&gt;&lt;/h1&gt;&lt;h2 id=&quot;Filebrowser&quot;&gt;&lt;a href=&quot;#Filebrowser&quot; class=&quot;headerlink&quot; title=&quot;Filebrowser&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/filebrowser/filebrowser&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Filebrowser&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Web文件浏览器，可用作中间件或独立应用程序 ( 这里我们把它用作个人私有云盘 )&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/filebrowser/filebrowser&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/filebrowser/filebrowser&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Linux下部署Filebrowser&quot;&gt;&lt;a href=&quot;#Linux下部署Filebrowser&quot; class=&quot;headerlink&quot; title=&quot;Linux下部署Filebrowser&quot;&gt;&lt;/a&gt;Linux下部署&lt;a href=&quot;https://github.com/filebrowser/filebrowser&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Filebrowser&lt;/a&gt;&lt;/h2&gt;
+      &lt;h1 id=&quot;Filebrowser部署教程&quot;&gt;&lt;a href=&quot;#Filebrowser部署教程&quot; class=&quot;headerlink&quot; title=&quot;Filebrowser部署教程&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/filebrowser/filebrowser&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Filebrowser部署教程&lt;/a&gt;&lt;/h1&gt;&lt;h2 id=&quot;Filebrowser&quot;&gt;&lt;a href=&quot;#Filebrowser&quot; class=&quot;headerlink&quot; title=&quot;Filebrowser&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/filebrowser/filebrowser&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Filebrowser&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Web文件浏览器，可用作中间件或独立应用程序 ( 这里我们把它用作个人私有云盘 )&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/filebrowser/filebrowser&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/filebrowser/filebrowser&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Linux下部署Filebrowser&quot;&gt;&lt;a href=&quot;#Linux下部署Filebrowser&quot; class=&quot;headerlink&quot; title=&quot;Linux下部署Filebrowser&quot;&gt;&lt;/a&gt;Linux下部署&lt;a href=&quot;https://github.com/filebrowser/filebrowser&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Filebrowser&lt;/a&gt;&lt;/h2&gt;
     
     </summary>
     
@@ -193,9 +215,9 @@
     
       <category term="vps" scheme="http://ccapton.cn/tags/vps/"/>
     
-      <category term="github" scheme="http://ccapton.cn/tags/github/"/>
-    
       <category term="教程" scheme="http://ccapton.cn/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="github" scheme="http://ccapton.cn/tags/github/"/>
     
       <category term="filebrowser" scheme="http://ccapton.cn/tags/filebrowser/"/>
     
@@ -211,7 +233,7 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href=&quot;&quot;&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)   &lt;/p&gt;
+&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)   &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div align=&quot;center&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/brook_ok0.png&quot; height=&quot;355&quot; width=&quot;200&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/brook_ok1.png&quot; height=&quot;355&quot; width=&quot;200&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/brook_ok2.png&quot; height=&quot;355&quot; width=&quot;200&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/brook_ok3.png&quot; height=&quot;355&quot; width=&quot;200&quot;&gt;&lt;br&gt;&lt;/div&gt;
     
@@ -222,15 +244,15 @@
     
       <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
-      <category term="python" scheme="http://ccapton.cn/tags/python/"/>
-    
-      <category term="brook服务端配置程序" scheme="http://ccapton.cn/tags/brook%E6%9C%8D%E5%8A%A1%E7%AB%AF%E9%85%8D%E7%BD%AE%E7%A8%8B%E5%BA%8F/"/>
+      <category term="vps" scheme="http://ccapton.cn/tags/vps/"/>
     
       <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
-      <category term="vps" scheme="http://ccapton.cn/tags/vps/"/>
-    
       <category term="brook" scheme="http://ccapton.cn/tags/brook/"/>
+    
+      <category term="python" scheme="http://ccapton.cn/tags/python/"/>
+    
+      <category term="brook服务端配置程序" scheme="http://ccapton.cn/tags/brook%E6%9C%8D%E5%8A%A1%E7%AB%AF%E9%85%8D%E7%BD%AE%E7%A8%8B%E5%BA%8F/"/>
     
       <category term="shadowsocks" scheme="http://ccapton.cn/tags/shadowsocks/"/>
     
@@ -246,7 +268,7 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href=&quot;&quot;&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;br&gt;E-mail: 437499914@qq.com、chenweibin1125@foxmail.com&lt;br&gt;我的简书   &lt;a href=&quot;https://www.jianshu.com/u/df3b46206dc4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.jianshu.com/u/df3b46206dc4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;br&gt;E-mail: 437499914@qq.com、chenweibin1125@foxmail.com&lt;br&gt;我的简书   &lt;a href=&quot;https://www.jianshu.com/u/df3b46206dc4&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.jianshu.com/u/df3b46206dc4&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id=400074157&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
 
@@ -291,9 +313,9 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href=&quot;&quot;&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&quot;岛国裡蕃Api&quot;&gt;&lt;a href=&quot;#岛国裡蕃Api&quot; class=&quot;headerlink&quot; title=&quot;岛国裡蕃Api&quot;&gt;&lt;/a&gt;岛国裡蕃Api&lt;/h1&gt;&lt;h3 id=&quot;岛国裡蕃api数据展示&quot;&gt;&lt;a href=&quot;#岛国裡蕃api数据展示&quot; class=&quot;headerlink&quot; title=&quot;岛国裡蕃api数据展示&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://111.230.231.107:5050/lifan&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;岛国裡蕃api数据展示&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;数据来源:&lt;a href=&quot;http://www.lvmaojun.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;裡蕃收藏夹&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;岛国裡蕃Api&quot;&gt;&lt;a href=&quot;#岛国裡蕃Api&quot; class=&quot;headerlink&quot; title=&quot;岛国裡蕃Api&quot;&gt;&lt;/a&gt;岛国裡蕃Api&lt;/h1&gt;&lt;h3 id=&quot;岛国裡蕃api数据展示&quot;&gt;&lt;a href=&quot;#岛国裡蕃api数据展示&quot; class=&quot;headerlink&quot; title=&quot;岛国裡蕃api数据展示&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://111.230.231.107:5050/lifan&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;岛国裡蕃api数据展示&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;数据来源:&lt;a href=&quot;http://www.lvmaojun.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;裡蕃收藏夹&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;裡蕃收藏夹app截图：&quot;&gt;&lt;a href=&quot;#裡蕃收藏夹app截图：&quot; class=&quot;headerlink&quot; title=&quot;裡蕃收藏夹app截图：&quot;&gt;&lt;/a&gt;裡蕃收藏夹app截图：&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/lifan4.png&quot; width=&quot;300px&quot;&gt;&lt;/p&gt;
     
     </summary>
@@ -325,10 +347,10 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href=&quot;&quot;&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;这段时间在学习python，接触到了网络编程中的socket这块，加上自己在用的Linux服务器都是原生支持python的，于是乎有了个做文件传输功能程序的想法。毕竟python语言中，有下载功能的框架一抓一大把，但是主机与主机间快速搭建文件（夹）传输通道的程序似乎不常见，因为我刚接触python不久，有但是我不知道也不奇怪，总得来说，自己做一个练手，成就感满满。&lt;/p&gt;
-&lt;h1 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/Ccapton/python-stuff/tree/master/filetransporter&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/Ccapton/python-stuff/tree/master/filetransporter&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/Ccapton/python-stuff/tree/master/filetransporter&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/Ccapton/python-stuff/tree/master/filetransporter&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;实操预览&quot;&gt;&lt;a href=&quot;#实操预览&quot; class=&quot;headerlink&quot; title=&quot;实操预览&quot;&gt;&lt;/a&gt;实操预览&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://upload-images.jianshu.io/upload_images/7287689-4a2b853991324404.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;本地主机发送文件到远端服务器主机&quot;&gt;&lt;/p&gt;
     
     </summary>
@@ -352,7 +374,7 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href=&quot;&quot;&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;最近开始学习cocos2d-x引擎，用来做一些2d小游戏。在基本做完一个飞机大战游戏的情况下，感觉手机玩沙盒2d游戏需要一个控制角色移动的控制手柄，不然光靠点屏幕是不精确而又费劲的体验。于是开始写了一个角色控制器RoleController，效果如下&lt;br&gt;&lt;img src=&quot;https://upload-images.jianshu.io/upload_images/7287689-e3d6e9e0d0e41a7a.gif?imageMogr2/auto-orient/strip&quot; alt=&quot;效果还行吧&quot;&gt;&lt;br&gt;
     
@@ -379,7 +401,7 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href=&quot;&quot;&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;br&gt;E-mail: 437499914@qq.com、chenweibin1125@foxmail.com&lt;br&gt;我的简书   &lt;a href=&quot;https://www.jianshu.com/u/df3b46206dc4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.jianshu.com/u/df3b46206dc4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;br&gt;E-mail: 437499914@qq.com、chenweibin1125@foxmail.com&lt;br&gt;我的简书   &lt;a href=&quot;https://www.jianshu.com/u/df3b46206dc4&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.jianshu.com/u/df3b46206dc4&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h3&gt;&lt;p&gt;之前科学上网时，一直是买一些vpn提供商的服务，但是性价比非常低。因为自己不是天天翻墙查资料、看youtube视频，每个月10-20块的支出感觉有点多余，加上他们的速度简直不敢恭维，卡的不行。后来找了一个免费的vpn平台，还是因为它的速度，让我提不起兴趣每次上网的时候去开启软件，因为一旦开启的vpn，浏览国内的ip内容就会很慢。终于前两天在逛今日头条的时候看到一个关于自建谷歌服务器（国外ip的服务器）科学上网的视频(这段视频很快被今日头条官方和谐掉了2333，还好我眼疾手快，很快就明白了之中的原理)，加上我对Linux服务器的理解，很快就搭建了一个外服的vpn服务系统，现在能通过各平台客户端连接到vpn服务器并科学上网了，速度简直出乎所有人意料的快，令我非常满意。现在特地写出这篇博文给小伙伴们分享一下，让你们体验从所未有的科学冲浪！&lt;/p&gt;
     
@@ -408,7 +430,7 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href=&quot;&quot;&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;br&gt;E-mail: 437499914@qq.com、chenweibin1125@foxmail.com&lt;/p&gt;
+&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;br&gt;E-mail: 437499914@qq.com、chenweibin1125@foxmail.com&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h3&gt;&lt;p&gt;由于自己没有专心研究后端技术，很多与数据库打交道的工作让我这个菜鸟弄起来很麻烦，之前做android应用用到自己的独立数据都是寄托于bmob云后端平台，但是一直调用的是它集成在android端的sdk代码来实现数据库数据的更新与获取。这段时间突然想到这个调用sdk代码的方式真的是太僵硬了，而且把大量原本应该自由变更的逻辑写死在了移动应用内，以后业务需求变了就只能更新app了。所以用云函数进行app数据交互是一个对于移动端开发者获取、更新数据的最佳方式吧。&lt;br&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/7287689-8c600f17aaadc4de.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;Bmob云函数&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/7287689-02ecc4e4515e0ee3.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;通过http方式调用云函数&quot;&gt;&lt;br&gt;
@@ -418,9 +440,9 @@
       <category term="Android" scheme="http://ccapton.cn/categories/Android/"/>
     
     
-      <category term="Android" scheme="http://ccapton.cn/tags/Android/"/>
-    
       <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="Android" scheme="http://ccapton.cn/tags/Android/"/>
     
       <category term="云函数" scheme="http://ccapton.cn/tags/%E4%BA%91%E5%87%BD%E6%95%B0/"/>
     
@@ -438,21 +460,21 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href=&quot;&quot;&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;额，突然心血来潮，把这个功能给做出来了。之前一直以为要一次遍历手机的所有文件再显示出来，后来仔细想了会，没那么复杂，只需要先指定一个路径再获取其子目录，即可完成我想要的效果。 &lt;/p&gt;
-&lt;h3 id=&quot;效果&quot;&gt;&lt;a href=&quot;#效果&quot; class=&quot;headerlink&quot; title=&quot;效果&quot;&gt;&lt;/a&gt;效果&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/7287689-f58aceee04d38231.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;h3 id=&quot;效果&quot;&gt;&lt;a href=&quot;#效果&quot; class=&quot;headerlink&quot; title=&quot;效果&quot;&gt;&lt;/a&gt;效果&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/7287689-f58aceee04d38231.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt&gt;&lt;br&gt;
     
     </summary>
     
       <category term="Android" scheme="http://ccapton.cn/categories/Android/"/>
     
     
-      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
+      <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
     
       <category term="Android" scheme="http://ccapton.cn/tags/Android/"/>
     
-      <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
   </entry>
   
@@ -466,7 +488,7 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href=&quot;&quot;&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt; 除了普通的文本链接，还可以将电子名片生成为二维码图片。&lt;/p&gt;
 &lt;p&gt; 这个程序没有任何广告、没有任何恶意插件、病毒，生成过程不依赖网络，请放心使用。&lt;/p&gt;
@@ -476,11 +498,11 @@
       <category term="软件分享" scheme="http://ccapton.cn/categories/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
+      <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
     
       <category term="Android" scheme="http://ccapton.cn/tags/Android/"/>
     
-      <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
       <category term="软件分享" scheme="http://ccapton.cn/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
     
@@ -496,20 +518,20 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href=&quot;&quot;&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;项目地址&lt;br&gt;&lt;a href=&quot;https://github.com/Ccapton/Mvp-RxJava2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/Ccapton/Mvp-RxJava2&lt;/a&gt;&lt;br&gt;Demo apk:&lt;br&gt;&lt;a href=&quot;http://git.oschina.net/ccapton/Files/raw/master/ccapton_mvp.apk&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://git.oschina.net/ccapton/Files/raw/master/ccapton_mvp.apk&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;项目地址&lt;br&gt;&lt;a href=&quot;https://github.com/Ccapton/Mvp-RxJava2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/Ccapton/Mvp-RxJava2&lt;/a&gt;&lt;br&gt;Demo apk:&lt;br&gt;&lt;a href=&quot;http://git.oschina.net/ccapton/Files/raw/master/ccapton_mvp.apk&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://git.oschina.net/ccapton/Files/raw/master/ccapton_mvp.apk&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
       <category term="Android开发" scheme="http://ccapton.cn/categories/Android%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
+      <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
     
       <category term="Android" scheme="http://ccapton.cn/tags/Android/"/>
     
-      <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
   </entry>
   
@@ -523,10 +545,10 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href=&quot;&quot;&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;关于我，欢迎关注&lt;br&gt;csdn博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href&gt;Ccapton&lt;/a&gt;&lt;br&gt;Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;br&gt;个人博客:&lt;a href=&quot;http://www.ccapton.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.ccapton.cn&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Gif合成软件：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/7287689-c8a699b51fbb62f7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/7287689-c8a699b51fbb62f7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt&gt;&lt;/p&gt;
     
     </summary>
     
@@ -554,9 +576,9 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;Gif编码器-gifencoder&quot;&gt;&lt;a href=&quot;#Gif编码器-gifencoder&quot; class=&quot;headerlink&quot; title=&quot;Gif编码器 gifencoder&quot;&gt;&lt;/a&gt;Gif编码器 gifencoder&lt;/h3&gt;&lt;p&gt;  gifencoder 这是一个Java写的图片转Gif的框架 &lt;a href=&quot;https://github.com/square/gifencoder&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/square/gifencoder&lt;/a&gt; &lt;/p&gt;
-&lt;p&gt;  &lt;img src=&quot;https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/apple.gif&quot; alt=&quot;&quot;&gt; &lt;/p&gt;
-&lt;p&gt;本来想搜一下视频转Gif的相关框架的，找到了一个用JavaScript写 &lt;a href=&quot;https://github.com/vvo/gifify&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/vvo/gifify&lt;/a&gt; ，但是&lt;/p&gt;
+      &lt;h3 id=&quot;Gif编码器-gifencoder&quot;&gt;&lt;a href=&quot;#Gif编码器-gifencoder&quot; class=&quot;headerlink&quot; title=&quot;Gif编码器 gifencoder&quot;&gt;&lt;/a&gt;Gif编码器 gifencoder&lt;/h3&gt;&lt;p&gt;  gifencoder 这是一个Java写的图片转Gif的框架 &lt;a href=&quot;https://github.com/square/gifencoder&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/square/gifencoder&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;  &lt;img src=&quot;https://raw.githubusercontent.com/Ccapton/FileRepertory/master/files/apple.gif&quot; alt&gt; &lt;/p&gt;
+&lt;p&gt;本来想搜一下视频转Gif的相关框架的，找到了一个用JavaScript写 &lt;a href=&quot;https://github.com/vvo/gifify&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/vvo/gifify&lt;/a&gt; ，但是&lt;/p&gt;
     
     </summary>
     
@@ -582,7 +604,7 @@
     
       &lt;h3 id=&quot;数据源&quot;&gt;&lt;a href=&quot;#数据源&quot; class=&quot;headerlink&quot; title=&quot;数据源&quot;&gt;&lt;/a&gt;数据源&lt;/h3&gt;&lt;p&gt;本来只想重新练练RecyclerView的，一不小心又弄得复杂了。。。&lt;/p&gt;
 &lt;p&gt;无意中想起来搞个网络音乐播放器，本地的就算了，目前没时间去仔细弄了，但是这个没有多深入的逻辑控制，只是简单的播放逻辑，这也是很折磨人啊，大家看看就好了。于是上网搜了一下免费的音乐api，误打误撞找到一个用Java写的几个国内音乐搜索（QQ音乐，酷狗，虾米，网易云音乐）接口&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/Qrilee/MusicuuApi&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/Qrilee/MusicuuApi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Qrilee/MusicuuApi&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/Qrilee/MusicuuApi&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;请直接拷贝代码到你的工程里去，jar包也直接拷到libs下。&lt;/p&gt;
 &lt;p&gt;其中网易云好像被封了，访问不了，反正经过我的测试返回404信息。&lt;/p&gt;
     
@@ -591,9 +613,9 @@
       <category term="Android个人作品" scheme="http://ccapton.cn/categories/Android%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
     
-      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
-    
       <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="个人作品" scheme="http://ccapton.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/"/>
     
       <category term="Android应用" scheme="http://ccapton.cn/tags/Android%E5%BA%94%E7%94%A8/"/>
     
@@ -606,33 +628,6 @@
       <category term="网易云音乐" scheme="http://ccapton.cn/tags/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90/"/>
     
       <category term="虾米音乐" scheme="http://ccapton.cn/tags/%E8%99%BE%E7%B1%B3%E9%9F%B3%E4%B9%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android自定义View之-ColorfulSeekbar</title>
-    <link href="http://ccapton.cn/2017/08/18/Android%E8%87%AA%E5%AE%9A%E4%B9%89View%E4%B9%8B-ColorfulSeekbar/"/>
-    <id>http://ccapton.cn/2017/08/18/Android自定义View之-ColorfulSeekbar/</id>
-    <published>2017-08-17T18:50:48.000Z</published>
-    <updated>2017-09-01T14:44:01.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Android-ColorfulSeekbar&quot;&gt;&lt;a href=&quot;#Android-ColorfulSeekbar&quot; class=&quot;headerlink&quot; title=&quot;Android-ColorfulSeekbar&quot;&gt;&lt;/a&gt;Android-ColorfulSeekbar&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;关于我，欢迎关注&lt;br&gt;  博客：ccapton(&lt;a href=&quot;http://blog.csdn.net/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/ccapton&lt;/a&gt;) 微信：&lt;a href=&quot;&quot;&gt;Ccapton&lt;/a&gt;&lt;br&gt;  Github: (&lt;a href=&quot;https://www.github.com/ccapton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.github.com/ccapton&lt;/a&gt;)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;ColorfulSeekbar这个控件是我根据前作ColorfulProgressbar &lt;a href=&quot;https://github.com/Ccapton/Android-ColorfulProgressBar&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/Ccapton/Android-ColorfulProgressBar&lt;/a&gt;&lt;br&gt;变化而来的，进度条与之相比没有变化，功能与原生Seekbar没差别。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Android开发" scheme="http://ccapton.cn/categories/Android%E5%BC%80%E5%8F%91/"/>
-    
-    
-      <category term="Android" scheme="http://ccapton.cn/tags/Android/"/>
-    
-      <category term="Android开发" scheme="http://ccapton.cn/tags/Android%E5%BC%80%E5%8F%91/"/>
-    
-      <category term="自定义View" scheme="http://ccapton.cn/tags/%E8%87%AA%E5%AE%9A%E4%B9%89View/"/>
     
   </entry>
   
