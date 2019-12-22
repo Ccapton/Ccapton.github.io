@@ -87,13 +87,13 @@
     
       <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
+      <category term="brook-qt5" scheme="http://ccapton.cn/tags/brook-qt5/"/>
+    
       <category term="brook" scheme="http://ccapton.cn/tags/brook/"/>
     
       <category term="Linux" scheme="http://ccapton.cn/tags/Linux/"/>
     
       <category term="socks5" scheme="http://ccapton.cn/tags/socks5/"/>
-    
-      <category term="brook-qt5" scheme="http://ccapton.cn/tags/brook-qt5/"/>
     
   </entry>
   
@@ -121,13 +121,13 @@
     
       <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
-      <category term="shadowsocks-qt5" scheme="http://ccapton.cn/tags/shadowsocks-qt5/"/>
-    
       <category term="brook" scheme="http://ccapton.cn/tags/brook/"/>
     
       <category term="Linux" scheme="http://ccapton.cn/tags/Linux/"/>
     
       <category term="socks5" scheme="http://ccapton.cn/tags/socks5/"/>
+    
+      <category term="shadowsocks-qt5" scheme="http://ccapton.cn/tags/shadowsocks-qt5/"/>
     
   </entry>
   
@@ -181,9 +181,9 @@
     
       <category term="科学上网" scheme="http://ccapton.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
-      <category term="shadowsocks-qt5" scheme="http://ccapton.cn/tags/shadowsocks-qt5/"/>
-    
       <category term="Linux" scheme="http://ccapton.cn/tags/Linux/"/>
+    
+      <category term="shadowsocks-qt5" scheme="http://ccapton.cn/tags/shadowsocks-qt5/"/>
     
       <category term="SwitchyOmega" scheme="http://ccapton.cn/tags/SwitchyOmega/"/>
     

@@ -38,10 +38,10 @@
         <tag>vps</tag>
         <tag>教程</tag>
         <tag>科学上网</tag>
+        <tag>brook-qt5</tag>
         <tag>brook</tag>
         <tag>Linux</tag>
         <tag>socks5</tag>
-        <tag>brook-qt5</tag>
       </tags>
   </entry>
   <entry>
@@ -56,10 +56,10 @@
         <tag>vps</tag>
         <tag>教程</tag>
         <tag>科学上网</tag>
-        <tag>shadowsocks-qt5</tag>
         <tag>brook</tag>
         <tag>Linux</tag>
         <tag>socks5</tag>
+        <tag>shadowsocks-qt5</tag>
       </tags>
   </entry>
   <entry>
@@ -88,8 +88,8 @@
         <tag>vps</tag>
         <tag>教程</tag>
         <tag>科学上网</tag>
-        <tag>shadowsocks-qt5</tag>
         <tag>Linux</tag>
+        <tag>shadowsocks-qt5</tag>
         <tag>SwitchyOmega</tag>
         <tag>PAC</tag>
         <tag>Deepin</tag>
@@ -414,6 +414,11 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[关于]]></title>
+    <url>%2Fabout%2Findex.html</url>
+    <content type="text"><![CDATA[这是我的个人博客，静态网页托管在Github上,大家国内访问本站可能有些慢。 上传一些自己写的开源程序和技术文章。 偶尔分享一些好用的软件，好听的音乐 邮箱：437499914@qq.com 、chenweibin1125@foxmail.com微信：Ccapton]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[board]]></title>
     <url>%2Fboard%2Findex.html</url>
     <content type="text"></content>
@@ -422,11 +427,6 @@
     <title><![CDATA[分类]]></title>
     <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[关于]]></title>
-    <url>%2Fabout%2Findex.html</url>
-    <content type="text"><![CDATA[这是我的个人博客，静态网页托管在Github上,大家国内访问本站可能有些慢。 上传一些自己写的开源程序和技术文章。 偶尔分享一些好用的软件，好听的音乐 邮箱：437499914@qq.com 、chenweibin1125@foxmail.com微信：Ccapton]]></content>
   </entry>
   <entry>
     <title><![CDATA[标签]]></title>
